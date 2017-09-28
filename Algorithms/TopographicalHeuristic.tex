@@ -1,0 +1,47 @@
+\begin{breakablealgorithm}
+\caption{TopographicalHeuristic($f(\cdot)$, $v(\cdot)$, $Population$, $K$, $\alpha$)}
+\label{alg:TopographicalHeuristic}
+\begin{spacing}{1.5}
+\begin{algorithmic}[1]
+
+
+\State $M \gets |Population|;$
+\State $\bm{best} \gets Population(0);$
+\State $\bm{KNN}_K \gets Build\_KNN(Population, K);$
+\State $\bm{R} \gets random([0, 1]^{M \times M});$
+\State $TopoBest \gets \{\};$
+%\State $\bm{Dist}_{i, j} \gets \{|Population(i) - Population(j)|, \ i, j \in \{1, ..., |Population|\}\};$ 
+
+\For{$i \in \{1, ..., |Population|\}$}
+
+\State $insert = \bm{True};$
+
+\For{$j \in \{1, ..., |Population|\} \ \cap \ \{\bm{x}_j \in \bm{KNN}_K(\bm{x}_i)\}$}
+	\If{$\bm{R}_{i, j} < \alpha$}
+		\State $insert \gets insert$ \& $Compare(f(\cdot), v(\cdot), \bm{x}_i, \bm{x}_j);$
+	\Else
+		\State $insert \gets insert$ \& $f(\bm{x}) < f(\bm{y});$
+	\EndIf
+\EndFor
+
+\If{$insert = \bm{True}$}
+\State $TopoBest \gets TopoBest \ \cup \ \{\bm{x}_i\};$
+\EndIf
+
+\If{$Compare(f(\cdot), v(\cdot), \bm{x}_i, \bm{best})$}
+\State $\bm{best} \gets \bm{x}_i;$
+\EndIf
+\EndFor
+
+\If{$|TopoBest| = 0$}
+	\State $TopoBest \gets \{\bm{best}\};$
+\EndIf
+
+\State \Return $TopoBest;$
+
+
+
+\end{algorithmic}
+\end{spacing}
+\algcomment{Creates topographical ordering and returns the best elements.}
+\end{breakablealgorithm}

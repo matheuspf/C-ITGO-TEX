@@ -1,0 +1,48 @@
+\begin{breakablealgorithm}
+\caption{Initialize($\bm{l}$, $\bm{u}$, $TopoBest$, $\bm{best}$, $\alpha$, $popSize$)}
+\label{alg:Initialize}
+\begin{algorithmic}[1]
+
+
+\INPUT\tikzmark{a}
+%\Statex $N$ : \ \ Dimensionality of the solution vectors;
+\Statex $\bm{l}$ : \ \, \, Vector defining the lower bound of the domain;
+\Statex $\bm{u}$ : \quad \  Vector defining the upper bound of the domain;
+\Statex $TopoBest$ : Best elements found using the topographical heuristic;
+\Statex $\bm{best}$ : Current best element found in the search;
+\Statex $\alpha$: \ \, \,   Shrinking factor;
+\Statex $popSize$ : Size of the new population;
+\Statex
+
+\OUTPUT\tikzmark{a}
+\Statex $Population$ : A new population consisting of random elements;
+\Statex
+\Statex
+
+\State $Population \gets \{\};$
+\Statex
+
+
+\If{$|TopoBest| > 0$}
+
+\For{$\bm{x} \in TopoBest$}
+\State $Population \gets Population \ \cup \ \{CreatePop(\bm{x}, \bm{l}, \bm{u}, 20, \alpha) \};$
+\EndFor
+\Statex
+
+\State $Population \gets Population \ \cup \ \{CreatePop(\bm{best}, \bm{l}, \bm{u}, 50, \alpha) \};$
+
+\EndIf
+\Statex
+
+\State $Population \gets Population \ \cup \ \{\bm{x} = \bm{x}^1, ..., \bm{x}^{popSize-|Population|} :$
+\StatexIndent[2] $\hspace{3.8cm}  \bm{x} \in random(\bm{l}, \bm{u}) \};$
+\Statex
+
+\State \Return $Population;$
+
+
+
+\end{algorithmic}
+\algcomment{Initialization before each iteration of the C-ITGO algorithm.}
+\end{breakablealgorithm}

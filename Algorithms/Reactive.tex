@@ -1,0 +1,41 @@
+\begin{breakablealgorithm}
+\caption{Reactive($\bm{RQ}$, $\bm{RC}$, $f_{best}$, $\theta$)}
+\label{alg:Reactive}
+\begin{algorithmic}[1]
+
+
+\INPUT\tikzmark{a}
+\Statex $\bm{RQ}$ : Values defining the probability distribution $\bm{RP}$;
+\Statex $\bm{RC}$ : Number of individuals evaluated for $\bm{RQ}$;
+\Statex $f_{best}$ : Fitness of the current best element found in the search.
+\Statex $\theta$: \quad \, Intensification factor for reactive parameter selection;
+\Statex
+
+\OUTPUT\tikzmark{a}
+\Statex $\bm{RP}'$ : Updated probability distribution for chosing the $K's$;
+\Statex
+\Statex
+
+
+\For{$i \in |\bm{RC}|$}
+
+\If{$\bm{RC}(i) = 0$}
+\State $\bm{RQ}(i) \gets f_{best};$
+\Else
+\State $\bm{RQ}(i) \gets \frac{\bm{RQ}(i)}{\bm{RC}(i)};$
+\EndIf
+\Statex
+\State $\bm{RQ}(i) \gets \Big( \frac{f_{best}}{\bm{RQ}(i)} \Big)^{\theta};$
+\EndFor
+\Statex
+
+\State $\bm{RP}' \gets \{\frac{\bm{RQ}(i)}{\sum_j^{|\bm{RQ}|} \bm{RQ}(j)}, \ i = 1, ..., |\bm{RQ}|\};$
+\Statex
+
+
+\State \Return $\bm{RP}';$
+
+
+\end{algorithmic}
+\algcomment{Reactive heuristic for chosing different values for $K$.}
+\end{breakablealgorithm}

@@ -1,0 +1,203 @@
+\section{Computational Results} \label{sec:Results}
+
+To evaluate the performance of the developed method, we use eight difficult constrained engineering optimization problems, including continuous and mixed integer problems. We now present a general overview of each problem, along with comparison with state of the art results.
+
+In all tests, we run CI-TGO 25 times, saving the best and worst feasible solutions, as well as the mean value and standard deviation of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of CI-TGO as soon as the best found solution in a run is considerable close to the optimum. Also, a fixed number of maximum number of function evaluations was set for each problem. If the number of FEs exceeds this number, the algorithm immediately stops, and the best found solution is returned. At the end, the average number of function calls is reported for all runs.
+
+In our tests, all solutions reported by CI-TGO are completely feasible, for all problems, so we exclude from comparison methods that violate any constraint.
+
+We compare 27 different optimization against CI-TGO. In order of presentation, they are: PSO-DE \cite{PSO-DE}
+
+
+\subsection{Welded bean design problem}
+
+The welded bean design \citep{WB} is the problem of minimizing the fabrication cost of a welded bean, subject to seven inequality constraints, being two linear and five non linear. The constraints include shear stress, bending stress in the beam, buckloading on the bar and end deflection on the beam. The four design variables are continuous. Figure \ref{fig:WB} shows the structure of the problem.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.7]{Imgs/WB.jpg}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Welded bean design problem structure.}\label{fig:WB}
+\end{figure}
+
+We compare the results obtained by CI-TGO against a number of state of the art methods used to solve this problem, including PSO-DE, HPSO, MBA, CPSO, LCA, NM-PSO, IABC-MAL, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the results obtained by all cited methods to solve the welded bean design problem. All the methods, with exception of SAMP-Jaya and CI-TGO, took more than 10,000 iterations to achieve good quality solutions. CI-TGO achieved optimal solutions with a very small standard deviation of $6.7E \!-\! 16$ with ten times less function evaluations in average than most of the methods.
+
+\input{Tables/WB}
+
+The results for CI-TGO and SAMP-Jaya are very similar, with same standard deviation, but with the former converging in less than one third of the number of function evaluations. We note here that the best solution achieved by NM-PSO is slightly infeasible, so it should not be directly compared to the rest of the methods.
+
+
+
+
+\subsection{Tension / compression spring design problem}
+
+This problem was introduced by \cite{TC}, and the objective is the minimization of the weight of a tension / compression string (Figure \ref{fig:TC}). The problem has three continuous design variables, being them the diameter of spring wire, the diameter of spring mean coil and the number of active coils. It is subject to three non linear and one linear inequality constraints.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{Imgs/TC.png}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Schematic view of the tension/compression spring design problem}\label{fig:TC}
+\end{figure}
+
+
+A variety of methods were used in literature to solve the tension / compression spring design problem. Between them, we can cite HPSO, NM-PSO, MBA, PSO-DE, ABC, PSO, CB-ABC, CPSO, GA1, GA2, QPSO, G-QPSO, CAEP, DELC, IAPSO, IABC-MAL and SAMP-Jaya. Table \ref{tab:TC} shows the statistical results of all methods, along with the number of function evaluations taken to achieve such results.
+
+\input{Tables/TC}
+
+
+The methods vary greatly in the number of function evaluations required to converge to good quality solutions. Only four of the methods (PSO, QPSO, G-QPSO and IAPSO) achieved convergence with 2,000 function evaluations, while some methods required more than 100,000. The best solution achieved by all methods have the same fitness value up to 3 decimal places.
+ 
+The best solution reported by NM-PSO is again infeasible, so we do not compare it against other methods. The SAMP-Jaya method also seems to report a slightly infeasible best found solution, differing from the optimal value reported by other methods. However, the result differs only at the sixth decimal place, and the difference may be due to wrong rounding. We cannot state this for sure since we do not have access to the solution vector found by the method. Given the differences in rounding between the methods, we consider $f(\bm{x}) = 0.012665$ to be the best found solution.
+
+The CI-TGO method performed remarkably well on this problem, converging to the best found solution among all methods in 535.08 function evaluations on average, almost four times less than the second competing method. Also, the standard deviation is very small, in the order of $2.81E-9$. 
+
+Given the relatively small domain of the problem, we believe that the CI-TGO method was able to cover the space efficiently, providing hot starting points for the local search method, which proved to be very effective in this case.
+
+
+
+
+\subsection{Three-bar truss design problem}
+
+The three-bar truss design problem \citep{TB} consists in minimizing the volume of a statically loaded three-bar truss. Theere are two continuous design variables and three non linear inequality constraints, based on the stress ($\sigma$) on each of the truss members. Figure \ref{fig:TB} shows the schematic view of the problem.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{Imgs/TB.png}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Structure of three-bar truss design problem}\label{fig:TB}
+\end{figure}
+
+
+Here we present only the five good performing methods used to solve this problem, since the solutions found in literature have very small variance from each other. These methods are CMA-ES, MVDE, DELC, MBA and IABC-MAL. We present the statistical results for this problem in table \ref{tab:TB}.
+
+\input{Tables/TB}
+
+We can note that all methods have very similar results, differing mainly in the number of function calls. This is not surprising, given that the problem is simpler, has less variables and has a smaller domain than any other problem used in this work.
+
+CI-TGO achieved convergence quickly, taking 141.8 function evaluations in average. In this problem, we have set a small population, as well as small number of function calls allowed in the local search procedure. It seems that the solutions found by the topographical heuristic were already close to the optimum, so the local search converged in very few iterations. However, the CI-TGO method still has a worst standard deviation than DELC and IABC-MAL.
+
+
+
+
+
+\subsection{Speed reducer design problem}
+
+The total weight of the speed reducer (Figure \ref{fig:SR}) is to be minimized. The problem has seven design variables: face width, teeth module, number of teeth on pinion, first and second length of shafts between bearings and first and second shafts diameter \citep{SR}. The problem has 11 non linear constraints, and the third variable is constrained to be integer. We use two versions of this problem, where the only difference is in the bounds of the fifth variable. We will call this problems SRI and SRII, respectively.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{Imgs/SR.jpg}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Schematic view of the speed reducer design problem}\label{fig:SR}
+\end{figure}
+
+For SRI, we compare CI-TGO results against 5 optimization methods, namely COPSO, LCA, CiP-PSO, IPSO and IAPSO, shown in table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, so we do not include it in our comparison. The LCA, IPSO, IAPSO and CI-TGO present similar results, all finding the global optimum solution and having very low standard deviation. The SiC-PSO and COPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
+
+\input{Tables/SP1}
+
+The first four methods take more than 20,000 iterations to converge to good quality solutions, while IAPSO takes only 6,000 FEs. CI-TGO outperforms the other methods by a large margin, converging in 858.40 function calls in average, while maintaining negligible worst standard deviation than IAPSO and IPSO.
+
+For this problem, we used considerable greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, CI-TGO takes 3 full iterations to converge, while converging in the first iteration in most runs.
+
+For SRII, the methods used for comparison were PSO-DE, MBA, DELC, CB-ABC, CMA-ES, IABC-MAL, IPSO and IAPSO. From Table \ref{tab:SP2}, we can see that DELC, CMA-ES, IAPSO and CI-TGO are the only methods that converged very close to the optimum in every run, having very small standard deviation. Although similar results are observed regarding the quality of the solutions, CI-TGO converges much quicker than any competing method, using six times less function evaluations than IAPSO. The standard deviation achieved by CI-TGO is also the smallest among all compared methods.
+
+\input{Tables/SP2}
+
+For this specific problem, we used the SQP algorithm as local search, and rounded the value of the third variable. In this case, this approach proved to converge much faster than using a mixed integer local search. Also, the first population size is considerable smaller than the one used in SRI (100 in this problem).
+
+
+
+\subsection{Pressure vessel design problem}
+
+In the pressure vessel design problem, the objective is to minimize the total manufacturing cost, including the cost of the material, forming and welding costs \citep{PV}. The problem is subject to three linear and one non linear inequality constraint, and its structure is shown in Figure \ref{fig:PV}. The four variables are the thickness of the shell, the thickness of the head, the inner radius, and the length of the cylindrical section of the vessel. This is an example of a mixed integer problem, where the first and second variables are constrained to be integers.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{Imgs/PV.png}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Pressure vessel design problem structure.}\label{fig:PV}
+\end{figure}
+
+
+Some methods in literature optimized the pressure vessel design problem without taking into account the integer constraints at the first and second variables. So, to compare the CI-TGO performance against other methods, we will only consider methods that respect the integer constraints.
+
+\input{Tables/PV}
+
+We compare CI-TGO against the PSO, GA1, GA2, QPSO, G-QPSO, CB-ABC, IABC-MAL and IAPSO methods. The statistical results are shown in table \ref{tab:PV}. The algorithms CB-ABC, IABC-MAl, IAPSO and CI-TGO are the only who found the optimal solution, and also the ones with smaller mean fitness value. All other methods presented relatively poor performance, with much higher FEs in average.
+
+CI-TGO takes less than six times the number of function evaluations to converge than the best competing method, IAPSO, which reported a result of 7,500 FEs. Also, CI-TGO achieves a extremely small standard deviation of $9.8E-13$, many orders of magnitude smaller than IAPSO. All runs of CI-TGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison in this work.
+
+
+
+\subsection{Gear train design problem}
+
+In this problem, the objective is to minimize the cost of the gear ratio of the gear train \citep{PV}. An example is shown in Figure \ref{fig:GT}. The problem has four variables, representing the number of teeth for the four gears. The only constraint of the problem is that all variables must be integers.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{Imgs/GT.jpg}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Pressure vessel design problem structure.}\label{fig:GT}
+\end{figure}
+
+
+We compare the CI-TGO results, shown in table \ref{fig:GT}, against other five methods: CS, APSO, MBA, UPSO and IAPSO. In general, all methods compared achieved similar results, having found the optimal solution for the problem. UPSO failed at finding some solutions, while APSO has a considerable greater mean value than other the methods.
+The main difference relies in the number of function calls, varying from 100,00 for UPSO to 800, for IAPSO and CI-TGO.
+
+\input{Tables/GT}
+
+
+Since this is a integer optimization problem, we used the mixed integer local search based on the NOMAD solver. In this problem, the solver had some difficulty in some runs, achieving $6.85E-09$ standard deviation, more than IAPSO, CS and MBA. The mean fitness value, however, is only worst than the MBA method, which takes 1120 function calls to converge. Besides these drawbacks, CI-TGO converges faster than the other methods compared here, taking only 773.0 function calls on average.
+
+
+
+\subsection{Multiple disk clutch brake design problem}
+
+This is also an example of a problem where all variables are discrete. The Multiple disk clutch brake design problem aims at minimizing the mass of a multiple disc clutch brake \cite{MD}. There are five integer variables: the inner radius, outer radius, thickness of the disc, actuating force and number of friction surfaces (Figure \ref{fig:MD}). The problem is also constrained by nine non linear inequalities.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{Imgs/MD.jpg}
+\end{center}
+\captionsetup{justification=centering}
+\caption{Schematic view of the multiple disk clutch brake design problem.}\label{fig:MD}
+\end{figure}
+
+To compare the results, we used only methods who achieved close performance to the obtained by CI-TGO, since some methods in literature have very diverging results. The WCA, IPSO and IAPSO methods achieved good performance in this problem, finding the optimal solution and having very small variance, as shown in table \ref{tab:MD}. The WCA and IAPSO took very few function evaluations to converge, respectively 500 and 400. IPSO took long more, with 20,000 function evaluations. However, the reported standard deviation for IPSO was 0.0.
+
+\input{Tables/MD}
+
+The CI-TGO clearly outperforms the other methods, having a standard deviation of $1.13E-16$, while converging with only 286.48 function evaluations on average. For this problem, we also have used a very small populations, of size 20 and 5. The number of function evaluations in the first step was 100, and most runs converged in much less, enjoying the quality of initial solutions provided by the topographical heuristic step. Some runs, however, took more than 1,500 function evaluations, bringing the mean FEs up.
+
+
+
+
+
+
+\iffalse
+
+\input{Problems/WB}
+
+\input{Problems/PV}
+
+\input{Problems/SR1}
+
+\input{Problems/TC}
+
+\input{Problems/GT}
+
+\input{Problems/MD}
+
+\input{Problems/TB}
+
+\fi

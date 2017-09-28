@@ -1,0 +1,179 @@
+\begin{thebibliography}{21}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Belegundu(1982)}]{TC}
+\bibinfo{author}{Belegundu, A.~D.} (\bibinfo{year}{1982}).
+\newblock \bibinfo{title}{A study of mathematical programming methods for
+  structural optimization}.
+\newblock {\it \bibinfo{journal}{Ph.D. Thesis, Department of Civil and
+  Environmental Engineering}\/}, .
+%Type = Misc
+\bibitem[{Biegler et~al.(2015)Biegler, Conn, Cornuejols, Grossmann, Lodi \&
+  Sawaya}]{BONMIN}
+\bibinfo{author}{Biegler, L.~T.}, \bibinfo{author}{Conn, A.~R.},
+  \bibinfo{author}{Cornuejols, G.}, \bibinfo{author}{Grossmann, I.~E.},
+  \bibinfo{author}{Lodi, A.}, \& \bibinfo{author}{Sawaya, N.}
+  (\bibinfo{year}{2015}).
+\newblock \bibinfo{title}{Bonmin (basic open-source nonlinear mixed integer
+  programming)}.
+\newblock \bibinfo{howpublished}{\url{https://projects.coin-or.org/Bonmin}}.
+\newblock \bibinfo{note}{Accessed: 2017-09-7}.
+%Type = Misc
+\bibitem[{Currie(2014)}]{OPTI}
+\bibinfo{author}{Currie, J.} (\bibinfo{year}{2014}).
+\newblock \bibinfo{title}{Opti toolbox - a free matlab toolbox for
+  optimization}.
+\newblock \bibinfo{howpublished}{\url{https://www.inverseproblem.co.nz/OPTI/}}.
+\newblock \bibinfo{note}{Accessed: 2017-09-14}.
+%Type = Article
+\bibitem[{Deb(2000)}]{ConHandling}
+\bibinfo{author}{Deb, K.} (\bibinfo{year}{2000}).
+\newblock \bibinfo{title}{An efficient constraint handling method for genetic
+  algorithms}.
+\newblock {\it \bibinfo{journal}{Comput. Methods Appl. Mech. Eng}\/},  {\it
+  \bibinfo{volume}{186}\/}, \bibinfo{pages}{311–338}.
+%Type = Article
+\bibitem[{Golinski(1973)}]{SR}
+\bibinfo{author}{Golinski, J.} (\bibinfo{year}{1973}).
+\newblock \bibinfo{title}{An adaptive optimization system applied to machine
+  synthesis}.
+\newblock {\it \bibinfo{journal}{Mech. Mach. Theory}\/},  {\it
+  \bibinfo{volume}{8}\/}, \bibinfo{pages}{419--436}.
+%Type = Article
+\bibitem[{Henderson et~al.(2015)Henderson, Rêgo, Sacco \& Rodrigues}]{ITGO3}
+\bibinfo{author}{Henderson, N.}, \bibinfo{author}{Rêgo, S.~M.},
+  \bibinfo{author}{Sacco, W.~F.}, \& \bibinfo{author}{Rodrigues, R.~A.}
+  (\bibinfo{year}{2015}).
+\newblock \bibinfo{title}{A new look at the topographical global optimization
+  method and its application to the phase stability analysis of mixtures}.
+\newblock {\it \bibinfo{journal}{Chemical Engineering Science}\/},  {\it
+  \bibinfo{volume}{127}\/}, \bibinfo{pages}{151--174}.
+%Type = Article
+\bibitem[{Jardim et~al.(2015)Jardim, Knupp, Sacco \& Silva~Neto}]{ITGO4}
+\bibinfo{author}{Jardim, L. C.~S.}, \bibinfo{author}{Knupp, D.~C.},
+  \bibinfo{author}{Sacco, W.~F.}, \& \bibinfo{author}{Silva~Neto, A.~J.}
+  (\bibinfo{year}{2015}).
+\newblock \bibinfo{title}{A new look at the topographical global optimization
+  method and its application to the phase stability analysis of mixtures}.
+\newblock {\it \bibinfo{journal}{Chemical Engineering Science}\/},  {\it
+  \bibinfo{volume}{127}\/}, \bibinfo{pages}{151--174}.
+%Type = Article
+\bibitem[{Le~Digabel(2011)}]{NOMAD}
+\bibinfo{author}{Le~Digabel, S.} (\bibinfo{year}{2011}).
+\newblock \bibinfo{title}{Nomad: Nonlinear optimization with the mads
+  algorithm}.
+\newblock {\it \bibinfo{journal}{ACM Transactions on Mathematical Software}\/},
+   {\it \bibinfo{volume}{37(4)}\/}, \bibinfo{pages}{44:1--44:15}.
+%Type = Misc
+\bibitem[{MathWorks(2017)}]{fmincon}
+\bibinfo{author}{MathWorks, I.} (\bibinfo{year}{2017}).
+\newblock \bibinfo{title}{Find minimum of constrained nonlinear multivariable
+  function - matlab fmincon}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.mathworks.com/help/optim/ug/fmincon.html}}.
+\newblock \bibinfo{note}{Accessed: 2017-09-28}.
+%Type = Article
+\bibitem[{Matsumoto \& Nishimura(1998)}]{mt19937}
+\bibinfo{author}{Matsumoto, M.}, \& \bibinfo{author}{Nishimura, T.}
+  (\bibinfo{year}{1998}).
+\newblock \bibinfo{title}{Mersenne twister: A 623-dimensionally equidistributed
+  uniform pseudo-random number generator}.
+\newblock {\it \bibinfo{journal}{ACM Trans. Model. Comput. Simul.}\/},  {\it
+  \bibinfo{volume}{8}\/}, \bibinfo{pages}{3--30}.
+%Type = Article
+\bibitem[{Montes et~al.(2006)Montes, Reyes \& C.}]{DE3}
+\bibinfo{author}{Montes, E.~M.}, \bibinfo{author}{Reyes, J.~V.}, \&
+  \bibinfo{author}{C., C. C.~A.} (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{Modified differential evolution for constrained
+  optimization}.
+\newblock {\it \bibinfo{journal}{IEEE Congress on Evolutionary Computation}\/},
+  .
+%Type = Article
+\bibitem[{Osyczka(2002)}]{MD}
+\bibinfo{author}{Osyczka, A.} (\bibinfo{year}{2002}).
+\newblock \bibinfo{title}{Evolutionary algorithms for single and multicriteria
+  design optimization: studies in fuzzyness and soft computing}.
+\newblock {\it \bibinfo{journal}{Physica-Verlag, Heidelberg}\/},  (p.
+  \bibinfo{pages}{218}).
+%Type = Article
+\bibitem[{Ragsdell \& Phillips(1973)}]{TB}
+\bibinfo{author}{Ragsdell, K.}, \& \bibinfo{author}{Phillips, D.}
+  (\bibinfo{year}{1973}).
+\newblock \bibinfo{title}{Optimization in pre-contract ship design}.
+\newblock {\it \bibinfo{journal}{Proceedings of international conference on
+  computer application in the automation of shipyard operation and ship design.
+  Tokyo, Japan}\/},  (pp. \bibinfo{pages}{327--338}).
+%Type = Article
+\bibitem[{Ragsdell \& Phillips(1976)}]{WB}
+\bibinfo{author}{Ragsdell, K.}, \& \bibinfo{author}{Phillips, D.}
+  (\bibinfo{year}{1976}).
+\newblock \bibinfo{title}{Optimal design of a class of welded structures using
+  geometric programming}.
+\newblock {\it \bibinfo{journal}{J. Eng. Ind.}\/},  (pp.
+  \bibinfo{pages}{1021--1025}).
+%Type = Article
+\bibitem[{Rueda \& Erlich(2016)}]{MVMO}
+\bibinfo{author}{Rueda, J.~L.}, \& \bibinfo{author}{Erlich, I.}
+  (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{Solving the cec2016 real-parameter single objective
+  optimization problems through mvmo-phm}.
+\newblock {\it \bibinfo{journal}{IEEE Congress on Evolutionary Computation}\/},
+  .
+%Type = Article
+\bibitem[{Sacco et~al.(2014)Sacco, Henderson \& Rios~Coleho}]{ITGO2}
+\bibinfo{author}{Sacco, W.~F.}, \bibinfo{author}{Henderson, N.}, \&
+  \bibinfo{author}{Rios~Coleho, A.~C.} (\bibinfo{year}{2014}).
+\newblock \bibinfo{title}{Topographical global optimization applied to nuclear
+  reactor core design: Some preliminary results}.
+\newblock {\it \bibinfo{journal}{Annals of Nuclear Energy}\/},  {\it
+  \bibinfo{volume}{65}\/}, \bibinfo{pages}{166--173}.
+%Type = Article
+\bibitem[{Sandgren(1990)}]{PV}
+\bibinfo{author}{Sandgren, E.} (\bibinfo{year}{1990}).
+\newblock \bibinfo{title}{Nonlinear integer and discrete programming in
+  mechanical design optimization}.
+\newblock {\it \bibinfo{journal}{ASME J Mech Des}\/},  {\it
+  \bibinfo{volume}{112(2)}\/}, \bibinfo{pages}{223--229}.
+%Type = Article
+\bibitem[{Sarker et~al.(2014)Sarker, Elsayed \& Ray}]{DE1}
+\bibinfo{author}{Sarker, R.~A.}, \bibinfo{author}{Elsayed, S.~M.}, \&
+  \bibinfo{author}{Ray, T.} (\bibinfo{year}{2014}).
+\newblock \bibinfo{title}{Differential evolution with dynamic parameters
+  selection for optimization problems}.
+\newblock {\it \bibinfo{journal}{IEEE Transactions on Evolutionary
+  Computation}\/},  {\it \bibinfo{volume}{18}\/}, \bibinfo{pages}{689--707}.
+%Type = Article
+\bibitem[{Sobol(1967)}]{Sobol}
+\bibinfo{author}{Sobol, I.} (\bibinfo{year}{1967}).
+\newblock \bibinfo{title}{The distribution of points in a cube and the
+  approximate evaluation of integrals}.
+\newblock {\it \bibinfo{journal}{USSR Comput. Math. Math. Phys}\/},  {\it
+  \bibinfo{volume}{7}\/}, \bibinfo{pages}{86--112}.
+%Type = Article
+\bibitem[{Takahama \& Sakai(2006)}]{DE2}
+\bibinfo{author}{Takahama, T.}, \& \bibinfo{author}{Sakai, S.}
+  (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{Constrained optimization by the {$\epsilon$}
+  constrained differential evolution with gradient-based mutation and feasible
+  elites}.
+\newblock {\it \bibinfo{journal}{IEEE Congress on Evolutionary Computation}\/},
+  .
+%Type = Book
+\bibitem[{Törn \& Viitanen(1992)}]{ITGO1}
+\bibinfo{author}{Törn, A.}, \& \bibinfo{author}{Viitanen, S.}
+  (\bibinfo{year}{1992}).
+\newblock {\it \bibinfo{title}{Topographical global optimization}\/}.
+\newblock \bibinfo{publisher}{Princeton University Press}.
+
+\end{thebibliography}

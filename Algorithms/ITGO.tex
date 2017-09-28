@@ -1,0 +1,73 @@
+\begin{breakablealgorithm}
+\caption{CI-TGO($f(\cdot)$, $v(\cdot)$, $\bm{l}$, $\bm{u}$, $\bm{PS}$, $\bm{KS}$, $Max\_LS$, $LS_1$, $LS_2$, $\phi$, $\alpha$)}
+\label{alg:ITGO}
+\begin{spacing}{1.5}
+\begin{algorithmic}[1]
+
+%\State $Population \gets \{\};$
+\Statex
+\State $\bm{best} \gets random(\bm{l}, \bm{u});$
+%\NoNumber{}
+
+
+\While{$Converged(\bm{best}) == \textbf{False}$}
+
+\State $Populations \gets \{\bm{x} = \bm{x}^1, ..., \bm{x}^{\bm{PS}(1)} : \bm{x} \in random(\bm{l}, \bm{u}) \};$
+\State $TopoBest \gets \{\};$
+
+%\NoNumber{}
+
+\For{$p \in \{1, ..., |\bm{PS}|\}$}
+%\State $ps \gets \bm{PS}(numPs);$
+\State $NewPops \gets \{\};$
+%\NoNumber{}
+
+\For{$pop \in Populations$}
+
+\State $Topo_p \gets TopographicalHeuristic(f(\cdot), v(\cdot), pop, \bm{KS}(p), \alpha);$
+
+
+\If{$p < |\bm{PS}|$}
+
+\For{$\bm{x} \in Topo_p$}
+\State $NewPops \gets NewPops \ \cup \ CreatePop(\bm{x}, \bm{l}, \bm{u},\bm{PS}(p+1), \phi^p);$
+\EndFor
+
+\Else
+\State $TopoBest \gets TopoBest \cup Topo_p;$
+\EndIf
+\EndFor
+
+\If{$p < |\bm{PS}|$}
+\State $Populations \gets NewPops;$
+\EndIf
+\EndFor
+
+\State $TopoBest \gets \{\bm{x} = \bm{x}^1, ..., \bm{x}^{min(|TopoBest|, Max\_LS)} : \bm{x} \in sort(TopoBest)\};$
+
+\For{$\bm{x} \in TopoBest$}
+
+\State $\bm{x} \gets LocalSearch(f(\cdot), v(\cdot), \bm{x}, LS_1);$
+
+
+\If{$Compare(f(\cdot), v(\cdot), \bm{x}, \bm{best})$ \ \textbf{or} \ $f(\bm{x}) < f(\bm{best})$}
+
+\State $\bm{x} \gets LocalSearch(f(\cdot), v(\cdot), \bm{x}, LS_2);$
+
+
+\If{$Compare(f(\cdot), v(\cdot), \bm{x}, \bm{best})$}
+\State $\bm{best} \gets \bm{x};$
+\EndIf
+\EndIf
+
+\EndFor
+
+\EndWhile
+
+\State \Return $best;$
+
+
+\end{algorithmic}
+\end{spacing}
+\algcomment{Pseudocode for Constrained I-TGO.}
+\end{breakablealgorithm}

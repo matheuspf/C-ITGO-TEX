@@ -1,0 +1,145 @@
+\documentclass{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{algorithm, float}
+\usepackage{etoolbox}
+\usepackage{bm}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{enumitem}
+\usepackage{algpseudocode}
+\usepackage{setspace}
+%\usepackage[noend]{algpseudocode}
+
+\usepackage{tikz}
+
+
+\newcommand\tikzmark[1]{%
+  \tikz[remember picture,overlay]\node[inner sep=2pt] (#1) {};}
+\newcommand\DrawBox[3][]{%
+  \tikz[remember picture,overlay]\draw[#1] ([xshift=-3.5em,yshift=7pt]#2.north west) rectangle (#3.south east);}
+
+\algnewcommand\algorithmicinput{\textbf{Input:}}
+\algnewcommand\INPUT{\item[\algorithmicinput]}
+
+\algnewcommand\algorithmicoutput{\textbf{Output:}}
+\algnewcommand\OUTPUT{\item[\algorithmicoutput]}
+
+\algnewcommand\algorithmicLet{\textbf{Let:}}
+\algnewcommand\LET{\item[\algorithmicLet]}
+
+
+
+\usepackage{varwidth}% http://ctan.org/pkg/varwidth
+
+\newcommand\NoThen{\renewcommand\algorithmicthen{}}
+\newcommand\ReThen{\renewcommand\algorithmicthen{\textbf{then}}}
+
+
+\makeatletter
+\newcommand{\StatexIndent}[1][3]{%
+  \setlength\@tempdima{\algorithmicindent}%
+  \Statex\hskip\dimexpr#1\@tempdima\relax}%
+  
+
+
+\makeatletter
+\newenvironment{breakablealgorithm}
+  {% \begin{breakablealgorithm}
+   \begin{center}
+     \refstepcounter{algorithm}% New algorithm
+     \hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
+     \renewcommand{\caption}[2][\relax]{% Make a new \caption
+       {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+       \ifx\relax##1\relax % #1 is \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+       \else % #1 is not \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+       \fi
+       \kern2pt\hrule\kern2pt
+     }
+  }{% \end{breakablealgorithm}
+     \kern2pt\hrule\relax% \@fs@post for \@fs@ruled
+   \end{center}
+  }
+
+
+\makeatletter
+\AfterEndEnvironment{breakablealgorithm}{\let\@algcomment\relax}
+\AtEndEnvironment{breakablealgorithm}{\kern2pt\hrule\relax\vskip3pt\@algcomment}
+\let\@algcomment\relax
+\newcommand\algcomment[1]{\def\@algcomment{\begin{flushleft}\footnotesize#1\end{flushleft}}}
+
+\makeatother
+
+
+
+
+
+
+
+\iffalse
+
+\errorcontextlines\maxdimen
+
+% begin vertical rule patch for algorithmicx (http://tex.stackexchange.com/questions/144840/vertical-loop-block-lines-in-algorithmicx-with-noend-option)
+\makeatletter
+% start with some helper code
+% This is the vertical rule that is inserted
+\newcommand*{\algrule}[1][\algorithmicindent]{\makebox[#1][l]{\hspace*{.5em}\vrule height .75\baselineskip depth .25\baselineskip}}%
+
+\newcount\ALG@printindent@tempcnta
+\def\ALG@printindent{%
+    \ifnum \theALG@nested>0% is there anything to print
+        \ifx\ALG@text\ALG@x@notext% is this an end group without any text?
+            % do nothing
+            \addvspace{-3pt}% FUDGE for cases where no text is shown, to make the rules line up
+        \else
+            \unskip
+            % draw a rule for each indent level
+            \ALG@printindent@tempcnta=1
+            \loop
+                \algrule[\csname ALG@ind@\the\ALG@printindent@tempcnta\endcsname]%
+                \advance \ALG@printindent@tempcnta 1
+            \ifnum \ALG@printindent@tempcnta<\numexpr\theALG@nested+1\relax% can't do <=, so add one to RHS and use < instead
+            \repeat
+        \fi
+    \fi
+    }%
+% the following line injects our new indent handling code in place of the default spacing
+\patchcmd{\ALG@doentity}{\noindent\hskip\ALG@tlm}{\ALG@printindent}{}{\errmessage{failed to patch}}
+\makeatother
+
+\fi
+
+\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}
+%\def\NoNumberb#1{\def\alglinenumber##1{}\State #1\addtocounter{ALG@line}{-1}}
+
+
+
+
+\begin{document}
+
+\input{ITGO.tex}
+\newpage
+
+%\input{Initialize.tex}
+%\newpage
+
+
+\input{SelectTopoBest.tex}
+\newpage
+
+%\input{IsBetter.tex}
+%\newpage
+
+\input{CreatePop.tex}
+\newpage
+
+%\input{Reactive.tex}
+%\newpage
+
+%\input{ParameterValues.tex}
+
+\end{document}

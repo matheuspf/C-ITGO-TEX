@@ -1,0 +1,41 @@
+\begin{breakablealgorithm}
+%\caption{IsBetter($f_{\bm{x}}$, $v_{\bm{x}}$, $f_{\bm{y}}$, $v_{\bm{y}}$)}
+\caption{IsBetter($f(\cdot)$, $v(\cdot)$, $\bm{x}$, $\bm{y}$)}
+\label{alg:IsBetter}
+\begin{algorithmic}[1]
+
+
+\INPUT\tikzmark{a}
+\Statex $f(\cdot)$ : Function to be minimized, returning the fitness of a given individual;
+\Statex $v(\cdot)$ : Function returning the sum of violations of a given individual;
+\Statex $\bm{x}$ : Solution vector
+\Statex $\bm{y}$ : Solution vector
+\Statex
+
+\OUTPUT\tikzmark{a}
+\Statex Boolean value indicating whether element $\bm{x}$ is better than element $\bm{y}$ or not.
+\Statex
+\Statex
+
+\If{$v(\bm{x}) = 0$ and $v(\bm{y}) = 0$}
+\State \Return $f(\bm{x}) < f(\bm{y});$
+\Statex
+
+\ElsIf{$v(\bm{x}) = 0$}
+\State \Return \textbf{true}$;$
+\Statex
+
+\ElsIf{$v(\bm{y}) = 0$}
+\State \Return \textbf{false}$;$
+\Statex
+\EndIf
+
+\Statex
+\State \Return $v(\bm{x}) < v(\bm{y});$
+
+
+
+
+\end{algorithmic}
+\algcomment{Three step comparison.}
+\end{breakablealgorithm}

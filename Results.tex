@@ -1,12 +1,14 @@
 \section{Computational Results} \label{sec:Results}
 
-To evaluate the performance of the developed method, we use eight difficult constrained engineering optimization problems, including continuous and mixed integer problems. We now present a general overview of each problem, along with comparison with state of the art results.
+To evaluate the performance of the developed method, we use eight difficult constrained engineering optimization problems, with non-convex and non-linear functions, and some with integer variables. We now present a general overview of each problem, along with comparison with state of the art techniques and their results..
 
-In all tests, we run CI-TGO 25 times, saving the best and worst feasible solutions, as well as the mean value and standard deviation of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of CI-TGO as soon as the best found solution in a run is considerable close to the optimum. Also, a fixed number of maximum number of function evaluations was set for each problem. If the number of FEs exceeds this number, the algorithm immediately stops, and the best found solution is returned. At the end, the average number of function calls is reported for all runs.
+In all tests, given the stochastic characteristic of CI-TGO, we run it 25 times, saving the best and worst feasible solutions, as well as the mean value and standard deviation of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of CI-TGO as soon as the best found solution in a run is considerable close to the optimum. Also, a fixed number of maximum number of function evaluations was set for each problem. If the number of FEs exceeds this number, the algorithm immediately stops, and the best found solution is returned. At the end, the average number of function calls is reported for all runs.
 
 In our tests, all solutions reported by CI-TGO are completely feasible, for all problems, so we exclude from comparison methods that violate any constraint.
 
-We compare 27 different optimization against CI-TGO. In order of presentation, they are: PSO-DE \cite{PSO-DE}
+We compare 27 different optimization methods against CI-TGO. The most common meta-heuristic is the particle swarm optimization, including PSO-DE \citep{PSO-DE}, a hybrid particle swarm optimization method combined with differential evolution, HPSO \citep{HPSO}, another hybridized particle swarm method in combination with simulated annealing, a co-evolutionary PSO denominated CPSO \citep{CPSO}, the hybridized PSO with Nelder-Mead simplex NM-PSO \cite{NM-PSO}, the APSO, standind for accelerated PSO  \citep{APSO} and gaussian quantum-behaved particle swarm optimization methods, named QPSO and G-QPSO \citep{QPSO}. More recently, and among the best state of the art PSO methods, we have IPSO \citep{IPSO}, which incorporates an interval reducing procedure and IAPSO \citep{IAPSO}, which proposes some modifications and improves the APSO method.
+
+Many other different methods were also used, such as the Mine Blast Algorithm (MBA) \cite{MBA} that is a population-based optimization method based on mine bomb explosion concept, the League Championship Algorithm (LCA) \cite{LCA}, which models a league championship environment with artificial teams playing in an artificial league, 
 
 
 \subsection{Welded bean design problem}

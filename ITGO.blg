@@ -3,48 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ITGO.aux
 The style file: BibStyle/model5-names.bst
 Database file #1: ITGO.bib.bib
-Warning--I didn't find a database entry for "PSO-DE"
+Warning--I didn't find a database entry for "LCA"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 21 entries,
+You've used 31 entries,
             3390 wiz_defined-function locations,
-            824 strings with 8642 characters,
-and the built_in function-call counts, 13390 in all, are:
-= -- 1032
-> -- 463
-< -- 18
-+ -- 372
-- -- 132
-* -- 1352
-:= -- 1806
-add.period$ -- 66
-call.type$ -- 21
-change.case$ -- 151
-chr.to.int$ -- 21
-cite$ -- 21
-duplicate$ -- 1034
-empty$ -- 1008
-format.name$ -- 189
-if$ -- 2511
-int.to.chr$ -- 1
+            888 strings with 10308 characters,
+and the built_in function-call counts, 20098 in all, are:
+= -- 1531
+> -- 706
+< -- 25
++ -- 575
+- -- 201
+* -- 2076
+:= -- 2693
+add.period$ -- 96
+call.type$ -- 31
+change.case$ -- 222
+chr.to.int$ -- 30
+cite$ -- 31
+duplicate$ -- 1532
+empty$ -- 1527
+format.name$ -- 290
+if$ -- 3775
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 174
-newline$ -- 123
-num.names$ -- 84
-pop$ -- 443
+missing$ -- 267
+newline$ -- 173
+num.names$ -- 124
+pop$ -- 663
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 191
 quote$ -- 0
-skip$ -- 389
+skip$ -- 562
 stack$ -- 0
-substring$ -- 576
-swap$ -- 689
+substring$ -- 886
+swap$ -- 1041
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 270
 warning$ -- 0
-while$ -- 89
+while$ -- 129
 width$ -- 0
-write$ -- 306
+write$ -- 444
 (There was 1 warning)

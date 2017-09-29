@@ -3,48 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ITGO.aux
 The style file: BibStyle/model5-names.bst
 Database file #1: ITGO.bib.bib
-Warning--I didn't find a database entry for "LCA"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 31 entries,
+You've used 34 entries,
             3390 wiz_defined-function locations,
-            888 strings with 10308 characters,
-and the built_in function-call counts, 20098 in all, are:
-= -- 1531
-> -- 706
-< -- 25
-+ -- 575
-- -- 201
-* -- 2076
-:= -- 2693
-add.period$ -- 96
-call.type$ -- 31
-change.case$ -- 222
-chr.to.int$ -- 30
-cite$ -- 31
-duplicate$ -- 1532
-empty$ -- 1527
-format.name$ -- 290
-if$ -- 3775
+            907 strings with 10823 characters,
+and the built_in function-call counts, 21912 in all, are:
+= -- 1668
+> -- 747
+< -- 28
++ -- 603
+- -- 213
+* -- 2267
+:= -- 2940
+add.period$ -- 105
+call.type$ -- 34
+change.case$ -- 241
+chr.to.int$ -- 33
+cite$ -- 34
+duplicate$ -- 1677
+empty$ -- 1685
+format.name$ -- 309
+if$ -- 4121
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 267
-newline$ -- 173
-num.names$ -- 124
-pop$ -- 663
+missing$ -- 292
+newline$ -- 188
+num.names$ -- 136
+pop$ -- 711
 preamble$ -- 1
-purify$ -- 191
+purify$ -- 207
 quote$ -- 0
-skip$ -- 562
+skip$ -- 606
 stack$ -- 0
-substring$ -- 886
-swap$ -- 1041
+substring$ -- 998
+swap$ -- 1138
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 270
+type$ -- 297
 warning$ -- 0
-while$ -- 129
+while$ -- 141
 width$ -- 0
-write$ -- 444
-(There was 1 warning)
+write$ -- 486

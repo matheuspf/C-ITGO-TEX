@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex ITGO"] 1506686146 "ITGO.aux" "ITGO.bbl" "ITGO" 1506686169
+["bibtex ITGO"] 1506718594 "ITGO.aux" "ITGO.bbl" "ITGO" 1506718668
   "./BibStyle/model5-names.bst" 1379964026 32241 fae611c68a6c57676804c7c668674116 ""
-  "ITGO.aux" 1506686168 11548 fd4288365dfd7f91970fb740b3dac5fb ""
+  "ITGO.aux" 1506718668 11712 479ae62cb90d731231395bb17a3de5ef ""
   "ITGO.bcf" 0 -1 0 ""
-  "ITGO.bib" 1506685835 9340 4f1aadb2aa856a255904f78dc15ca31a ""
+  "ITGO.bib" 1506700144 10942 38dbfa6bc18de4ce62336d156d9b3f3e ""
   (generated)
-  "ITGO.blg"
   "ITGO.bbl"
-["pdflatex"] 1506686167 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex" "ITGO.pdf" "ITGO" 1506686169
+  "ITGO.blg"
+["pdflatex"] 1506718667 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex" "ITGO.pdf" "ITGO" 1506718668
   "/etc/texmf/web2c/texmf.cnf" 1482280374 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex" 1505396304 451 5409e08dd15a4d32d4468e5821a49487 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -287,10 +287,10 @@
   "Algorithms/TopographicalHeuristic.tex" 1505307050 1291 988b050ebc3307e026f3fcc15943636f ""
   "BibStyle.tex" 1505129223 884 5955ae6080f27c483c45ebd5cbd3423e ""
   "Conclusion.tex" 1505128875 59 339bf29c2345f237869b8e3c6195ad97 ""
-  "ITGO.aux" 1506686168 11548 fd4288365dfd7f91970fb740b3dac5fb ""
-  "ITGO.bbl" 1506686146 12797 ad88fa3b85c23dc527245f3a319af542 "bibtex ITGO"
-  "ITGO.out" 1506686168 1037 d1cd7e109d1f6da55216d0e9ed6eee20 ""
-  "ITGO.spl" 1506686168 40 db4273f1747fbfa72eecf6e053c19657 ""
+  "ITGO.aux" 1506718668 11712 479ae62cb90d731231395bb17a3de5ef ""
+  "ITGO.bbl" 1506718608 13952 0710d10ebdbf0eb8801d63d87096564f "bibtex ITGO"
+  "ITGO.out" 1506718668 1037 d1cd7e109d1f6da55216d0e9ed6eee20 ""
+  "ITGO.spl" 1506718668 40 db4273f1747fbfa72eecf6e053c19657 ""
   "ITGO.tex" 1505396304 451 5409e08dd15a4d32d4468e5821a49487 ""
   "Imgs/GT.jpg" 1505399275 30151 d33dce4ee25c7ac78a66256c438e81d2 ""
   "Imgs/MD.jpg" 1505399866 32800 62954e52edc0e5e8e022a134f136656d ""
@@ -303,7 +303,7 @@
   "Methods.tex" 1506686086 21189 99f6dae28d1c67d761823bde81275641 ""
   "Packages.tex" 1505328046 4728 685f5374d76023e799b2ebf0370ee73c ""
   "Presentation.tex" 1505128928 2307 7167066546bf5ed4bc5c2b7c5577507e ""
-  "Results.tex" 1506686167 16592 b60df37c68e8ba1f6d6038e0f6fbfbb9 ""
+  "Results.tex" 1506718666 17417 359d0017fd73e9d9815da50a5c201727 ""
   "Tables/GT.tex" 1506553181 793 ec9a0c09ca207ac692f9c2693ca8e261 ""
   "Tables/MD.tex" 1506096052 668 7e17ef7896ca93a772c2b39f0fa25724 ""
   "Tables/PV.tex" 1506620853 1038 e59c9d1e40089f0bdfbfcf440f711c3d ""
@@ -317,8 +317,8 @@
   "fig_3.eps" 1503944713 1391325 3011276ac222a0a01fd5cc2ace85e07f ""
   "scatter.eps" 1503596018 274336 736f74a84d8e466c4f77499369bddbfb ""
   (generated)
-  "ITGO.pdf"
-  "ITGO.out"
   "ITGO.aux"
   "ITGO.log"
+  "ITGO.out"
+  "ITGO.pdf"
   "ITGO.spl"

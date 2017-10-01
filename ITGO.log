@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  29 SEP 2017 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  30 SEP 2017 23:16
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**ITGO.tex
-(./ITGO.tex
+**/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex
+(/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
@@ -1953,7 +1954,7 @@ LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 (./Methods.tex
 Overfull \hbox (13.64339pt too wide) has occurred while \output is active
 \T1/fve/m/sl/9 Preprint submitted to Engineering Applications of Artificial Int
-elligence September 29, 2017
+elligence September 30, 2017
  []
 
 [1
@@ -1986,7 +1987,7 @@ df scatter.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
 
-<scatter-eps-converted-to.pdf, id=97, 361.35pt x 252.945pt>
+<scatter-eps-converted-to.pdf, id=101, 361.35pt x 252.945pt>
 File: scatter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use scatter-eps-converted-to.pdf>
@@ -2032,7 +2033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-[4] <fig_1.pdf, id=137, 462.52798pt x 346.89601pt>
+[4] <fig_1.pdf, id=141, 462.52798pt x 346.89601pt>
 File: fig_1.pdf Graphic file (type pdf)
  <use fig_1.pdf>
 Package pdftex.def Info: fig_1.pdf used on input line 71.
@@ -2052,7 +2053,7 @@ Package epstopdf Info: Source file: <fig_2.eps>
  fig_2.eps>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
-<fig_2-eps-converted-to.pdf, id=143, 462.72874pt x 348.30125pt>
+<fig_2-eps-converted-to.pdf, id=147, 462.72874pt x 348.30125pt>
 File: fig_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_2-eps-converted-to.pdf>
@@ -2075,7 +2076,7 @@ Package epstopdf Info: Source file: <fig_3.eps>
  fig_3.eps>
 (epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
-<fig_3-eps-converted-to.pdf, id=144, 462.72874pt x 348.30125pt>
+<fig_3-eps-converted-to.pdf, id=148, 462.72874pt x 348.30125pt>
 File: fig_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_3-eps-converted-to.pdf>
@@ -2104,47 +2105,90 @@ LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
 (Font)              scaled to size 4.49997pt on input line 13.
  [8]) [9] (./Algorithms/CreatePop.tex) [10]
-(./Algorithms/TopographicalHeuristic.tex [11]) [12]) (./Results.tex [13]
-Overfull \hbox (4.41664pt too wide) in paragraph at lines 9--10
-[]\T1/fve/m/n/10.95 2010[]), and gaus-sian quantum-behaved par-ti-cle swarm op-
-ti-miza-tion meth-
+(./Algorithms/TopographicalHeuristic.tex [11]) [12] (./Tables/Parameters.tex
+Overfull \hbox (2.24286pt too wide) in paragraph at lines 7--7
+ []|$\OML/cmm/b/it/6 Prob \OMS/cmsy/b/n/6 ^^@ 
  []
 
-[14]
-Overfull \hbox (3.84541pt too wide) in paragraph at lines 13--14
+
+Overfull \hbox (4.70404pt too wide) in paragraph at lines 7--7
+ \OML/cmm/b/it/6 Param$| 
+ []
+
+
+Overfull \hbox (6.24182pt too wide) in paragraph at lines 7--7
+ []|$\OML/cmm/b/it/6 MaxLS$| 
+ []
+
+
+Overfull \hbox (6.99384pt too wide) in paragraph at lines 7--8
+ []|$\OML/cmm/b/it/6 LSType$| 
+ []
+
+
+Overfull \hbox (4.98268pt too wide) in paragraph at lines 13--14
+ []|\T1/fve/b/n/6 BONMIN| 
+ []
+
+
+Overfull \hbox (4.98268pt too wide) in paragraph at lines 15--16
+ []|\T1/fve/b/n/6 BONMIN| 
+ []
+
+
+Overfull \hbox (1.72653pt too wide) in paragraph at lines 16--17
+ []|\T1/fve/b/n/6 NOMAD| 
+ []
+
+
+Overfull \hbox (1.72653pt too wide) in paragraph at lines 17--18
+ []|\T1/fve/b/n/6 NOMAD| 
+ []
+
+
+Overfull \hbox (27.18504pt too wide) in paragraph at lines 5--21
+ [] 
+ []
+
+) [13]) (./Results.tex [14]
+Overfull \hbox (4.60378pt too wide) in paragraph at lines 10--11
+\T1/fve/m/n/10.95 de-nom-i-nated CPSO ([]He & Wang[], []2007a[]); the hy-bridiz
+ed PSO with Nelder-
+ []
+
+[15]
+
+Package natbib Warning: Citation `IABC' on page 16 undefined on input line 12.
+
+
+Overfull \hbox (3.84541pt too wide) in paragraph at lines 15--16
 []\T1/fve/m/n/10.95 Following, will be briefly ex-plained the en-gi-neer-ing op
 -ti-miza-tion prob-
  []
 
-<Imgs/WB.jpg, id=354, 202.73973pt x 146.45868pt>
+[16] <Imgs/WB.jpg, id=401, 202.73973pt x 146.45868pt>
 File: Imgs/WB.jpg Graphic file (type jpg)
  <use Imgs/WB.jpg>
 Package pdftex.def Info: Imgs/WB.jpg used on input line 25.
 (pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./Tables/WB.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--25
  [] 
  []
 
-[15]) <Imgs/TC.png, id=372, 389.455pt x 116.435pt>
+) [17 <./Imgs/WB.jpg>] <Imgs/TC.png, id=413, 389.455pt x 116.435pt>
 File: Imgs/TC.png Graphic file (type png)
- <use Imgs/TC.png>
+
+<use Imgs/TC.png>
 Package pdftex.def Info: Imgs/TC.png used on input line 46.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./Imgs/WB.jpg>] (./Tables/TC.tex
+ (./Tables/TC.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--32
  [] 
  []
 
-) [17 <./Imgs/TC.png>] <Imgs/TB.png, id=388, 333.245pt x 242.9075pt>
+) [18 <./Imgs/TC.png>] [19] <Imgs/TB.png, id=431, 333.245pt x 242.9075pt>
 File: Imgs/TB.png Graphic file (type png)
 
 <use Imgs/TB.png>
@@ -2155,69 +2199,65 @@ Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--21
  [] 
  []
 
-) [18 <./Imgs/TB.png>] <Imgs/SR.jpg, id=400, 333.20947pt x 120.87637pt>
+) [20 <./Imgs/TB.png>] <Imgs/SR.jpg, id=443, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
 
 <use Imgs/SR.jpg>
 Package pdftex.def Info: Imgs/SR.jpg used on input line 101.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19] (./Tables/SP1.tex
+ (./Tables/SP1.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--20
  [] 
  []
 
-)
+) [21 <./Imgs/SR.jpg>]
 Overfull \hbox (5.55818pt too wide) in paragraph at lines 115--116
 []\T1/fve/m/n/10.95 For SRII, the meth-ods used for com-par-i-son were PSO-DE, 
 MBA, DELC,
  []
 
-[20 <./Imgs/SR.jpg>] (./Tables/SP2.tex
+(./Tables/SP2.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--24
  [] 
  []
 
-) <Imgs/PV.png, id=420, 333.245pt x 158.5925pt>
+) [22] <Imgs/PV.png, id=461, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
  <use Imgs/PV.png>
 Package pdftex.def Info: Imgs/PV.png used on input line 130.
 (pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./Tables/PV.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--23
  [] 
  []
 
-) [21] [22 <./Imgs/PV.png>] <Imgs/GT.jpg, id=437, 251.3461pt x 113.84123pt>
+) [23 <./Imgs/PV.png>] <Imgs/GT.jpg, id=474, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
 
 <use Imgs/GT.jpg>
 Package pdftex.def Info: Imgs/GT.jpg used on input line 154.
 (pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
- (./Tables/GT.tex
+ [24 <./Imgs/GT.jpg>] (./Tables/GT.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--21
  [] 
  []
 
-) [23 <./Imgs/GT.jpg>] <Imgs/MD.jpg, id=446, 216.81pt x 168.84319pt>
+) <Imgs/MD.jpg, id=484, 216.81pt x 168.84319pt>
 File: Imgs/MD.jpg Graphic file (type jpg)
-
-<use Imgs/MD.jpg>
+ <use Imgs/MD.jpg>
 Package pdftex.def Info: Imgs/MD.jpg used on input line 177.
 (pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
- (./Tables/MD.tex
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25] (./Tables/MD.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--18
  [] 
  []
 
-) [24 <./Imgs/MD.jpg>]) (./Conclusion.tex) (./Acknowledgment.tex
+)) (./Conclusion.tex) (./Acknowledgment.tex
 Overfull \hbox (5.95062pt too wide) in paragraph at lines 3--4
 \T1/fve/m/n/10.95 UFT In-sti-tu-tional Pro-duc-tiv-ity Re-search Pro-gram (PROP
 ESQ / UFT). AJSN
@@ -2229,60 +2269,67 @@ Overfull \hbox (12.12129pt too wide) in paragraph at lines 3--4
 CNPq and CAPES,
  []
 
-) (./ITGO.bbl
+[26 <./Imgs/MD.jpg>]) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 30.
- [25] [26] [27])
+ [27] [28] [29])
+
+Package natbib Warning: There were undefined citations.
+
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 141.
 See the caption package documentation for explanation.
 
-[28]
+[30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (./ITGO.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 Package rerunfilecheck Info: File `ITGO.out' has not changed.
-(rerunfilecheck)             Checksum: D1CD7E109D1F6DA55216D0E9ED6EEE20;1037.
+(rerunfilecheck)             Checksum: D7F675B2A144622BE0332F72B0FC8832;1097.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 34153 strings out of 493029
- 642501 string characters out of 6136233
- 739562 words of memory out of 5000000
- 36920 multiletter control sequences out of 15000+600000
+ 34188 strings out of 493029
+ 643065 string characters out of 6136233
+ 743405 words of memory out of 5000000
+ 36941 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 56i,11n,77p,10376b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,77p,10416b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cmextra/cmmib6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/bera/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/bera/fver8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fve
-r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (28 pages, 2503617 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera
+/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ITGO.pdf (30 pages, 2544805 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 630 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

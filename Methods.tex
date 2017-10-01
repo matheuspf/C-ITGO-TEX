@@ -177,6 +177,15 @@ At line 6 we loop through all indices of $Population$, and set the $insert$ flag
 At line 13 we check if $insert = \bm{True}$, and, if so, $\bm{x}_i$ is a local optimum, and we insert it in the $TopoBest$ set, at line 14. Lines 15-16 selects the best element found in the whole population based on the three step comparison, and stores that solution in the variable $\bm{best}$. In case of no solution is selected as a local optimum, the set $TopoBest$ is composed only of the $\bm{best}$ element (lines 17-18). At line 19 we return the $TopoBest$ set, containing all the local optimum points (or the $\bm{best}$ element).
 
 
+
+\subsection{Parameters}
+
+Given the differences in the number of variables, constraints, size of the space and general complexity of the problems considered in this work, we selected specific parameters for each problem, since it is a general approach taken for most of the optimization methods compared here. Table \ref{tab:Parameters} shows the choice of the parameters for the eight engineering design problems we consider: Welded Beam (WB), Tension / Compression String (TC), Three-Bar truss (TB), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT), Multiple Disk clutch brake (MD). We shall comment each problem and the results obtained by CI-TGO and other competing methods in section \ref{sec:Results}.
+
+\input{Tables/Parameters}
+
+For all problems, we only use a single space reduction, which generates two populations and two values for $K$, namely $\bm{PS_1}$ and $\bm{PS_2}$, and $\bm{K_1}$ and $\bm{K_2}$. The value for the probability $\bm{\alpha}$ was kept constant for all problems, as well as the maximum number of elements to execute the local search, $\bm{MaxLs}$. The value of $\bm{\phi}$ was set to smaller values for problems defined on entirely continuous domains, and assumed higher values for mixed integer problems. The $\bm{LS_1}$ and $\bm{LS_2}$ control the maximum number of allowed function evaluations in the local search in the first and second calls, respectively. Finally, $\bm{LSType}$ represents the type of local search procedure used. In next section, we discuss the three different methods of local search used and their implications on the final performance of the method.
+
 \subsection{Local Search}
 
 We used Matlab to program CI-TGO, so a natural choice for local search is the optimization toolbox. In the case of real non-linearly constrained problems, we used the \textit{SQP} (Sequential Quadratic Programming), present in the \textit{fmincon} package \citep{fmincon}. The basic SQP algorithm is described in Chapter 18 of \cite{Nocedal}, although the actual implementation used in fmincon uses some additional heuristics. 
@@ -190,3 +199,4 @@ We emphasize here that any kind of local search can be used in conjunction with 
 It is true that some problems can be solved solely by using an exact method such as those cited above, for example by calling the procedure at different random points. However, in multimodal objective functions with nonlinear constraints it is usually infeasible. And even if a problem can be solved by an exact method, the number of function evaluations can be very large.
 
 The objective is not to rely heavily in the local search procedure. Rather, what we want to achieve with the topographical heuristic is provide solutions close to a local or global optimum, so that any reasonably good local search can converge with relative ease. In this work, the maximum number of function evaluations allowed in the first call to the local search procedure is kept as small as possible, and, in most cases, it is enough to find nearly optimum solutions.
+

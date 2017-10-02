@@ -1,7 +1,6 @@
 \section{Computational Results} \label{sec:Results}
 
-The C-ITGO has been implemented using Matlab version R2016 and the experiments were acomplished on a machine with the Intel i3-3110M CPU @ 2.40GHz processor with 4GB of RAM. To evaluate the performance of the developed method, we use eight difficult constrained engineering optimization problems from literature, with non-convex and non-linear functions, and some with integer variables. 
-%We now present a general overview of each problem, along with comparison with state of the art techniques and their results.
+The C-ITGO has been implemented using Matlab version R2016 and the experiments were acomplished on a machine with the Intel i3-3110M CPU @ 2.40GHz processor with 4GB of RAM. To evaluate the performance of the developed method, we use eight difficult constrained engineering optimization problems from literature, whose objective functions and constraints are diverse (quadratic, cubic, polynomial and nonlinear) with many numbers and types of design variables (continuous, mixed and integer). 
 
 In all tests, given the stochastic characteristic of CI-TGO, we run it 25 times, saving the Best and Worst feasible solutions, as well as the mean value (Mean) and standard deviation (SD) of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of CI-TGO as soon as the best solution found in a run is considerable close to the optimum. Also, a maximum number of function evaluations (NFEs) was set for each problem. If the value of NFEs exceeds the maximum, the algorithm immediately stops, and the best solution found is returned. At the end, the mean number of function evaluations (MNFEs) is reported for all runs.
 
@@ -25,7 +24,7 @@ The welded beam design \citep{WB} is the problem of minimizing the fabrication c
 \includegraphics[scale=0.7]{Imgs/WB.jpg}
 \end{center}
 \captionsetup{justification=centering}
-\caption{Schematic of welded beam design problem.}\label{fig:WB}
+\caption{Schematic view of the welded beam design problem.}\label{fig:WB}
 \end{figure}
 
 We compare the results obtained by CI-TGO against a number of state of the art methods used to solve this problem, including PSO-DE, HPSO, MBA, CPSO, LCA, NM-PSO, IABC-MAL, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the statistical results obtained by all cited methods to solve the welded beam design problem. All the methods, with exception of SAMP-Jaya and CI-TGO, took more than 10,000 iterations to achieve good quality solutions. CI-TGO achieved optimal solutions with a very small standard deviation of $6.7E \!-\! 16$ with ten times less function evaluations in average than most of the methods.
@@ -130,7 +129,7 @@ In the pressure vessel design problem, the objective is to minimize the total ma
 \includegraphics[scale=0.6]{Imgs/PV.png}
 \end{center}
 \captionsetup{justification=centering}
-\caption{Schematic view of the gear train design problem.}\label{fig:PV}
+\caption{Schematic view of pressure vessel design problem.}\label{fig:PV}
 \end{figure}
 
 

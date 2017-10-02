@@ -107,15 +107,15 @@
   method and its application to the phase stability analysis of mixtures}.
 \newblock {\it \bibinfo{journal}{Chemical Engineering Science}\/},  {\it
   \bibinfo{volume}{127}\/}, \bibinfo{pages}{151--174}.
-%Type = Article
+%Type = Inproceedings
 \bibitem[{Jardim et~al.(2015)Jardim, Knupp, Sacco \& Silva~Neto}]{ITGO4}
 \bibinfo{author}{Jardim, L. C.~S.}, \bibinfo{author}{Knupp, D.~C.},
   \bibinfo{author}{Sacco, W.~F.}, \& \bibinfo{author}{Silva~Neto, A.~J.}
   (\bibinfo{year}{2015}).
-\newblock \bibinfo{title}{A new look at the topographical global optimization
-  method and its application to the phase stability analysis of mixtures}.
-\newblock {\it \bibinfo{journal}{Chemical Engineering Science}\/},  {\it
-  \bibinfo{volume}{127}\/}, \bibinfo{pages}{151--174}.
+\newblock \bibinfo{title}{Iterative topographical global optimization with
+  space reduction}.
+\newblock In {\it \bibinfo{booktitle}{SENAI CIMATEC - Salvador - BA}\/}.
+\newblock volume \bibinfo{volume}{127}.
 %Type = Article
 \bibitem[{Kashan(2011)}]{LCA}
 \bibinfo{author}{Kashan, A.~H.} (\bibinfo{year}{2011}).

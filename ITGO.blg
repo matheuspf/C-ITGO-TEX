@@ -5,44 +5,44 @@ The style file: BibStyle/model5-names.bst
 Database file #1: ITGO.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 41 entries,
+You've used 44 entries,
             3390 wiz_defined-function locations,
-            951 strings with 12212 characters,
-and the built_in function-call counts, 26927 in all, are:
-= -- 2034
-> -- 949
-< -- 34
-+ -- 783
-- -- 270
-* -- 2808
-:= -- 3588
-add.period$ -- 127
-call.type$ -- 41
-change.case$ -- 297
-chr.to.int$ -- 40
-cite$ -- 41
-duplicate$ -- 2051
-empty$ -- 2052
-format.name$ -- 391
-if$ -- 5068
+            969 strings with 12635 characters,
+and the built_in function-call counts, 29657 in all, are:
+= -- 2267
+> -- 1045
+< -- 37
++ -- 867
+- -- 297
+* -- 3076
+:= -- 3914
+add.period$ -- 136
+call.type$ -- 44
+change.case$ -- 321
+chr.to.int$ -- 43
+cite$ -- 44
+duplicate$ -- 2248
+empty$ -- 2244
+format.name$ -- 427
+if$ -- 5618
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 360
-newline$ -- 224
-num.names$ -- 164
-pop$ -- 883
+missing$ -- 389
+newline$ -- 239
+num.names$ -- 176
+pop$ -- 963
 preamble$ -- 1
-purify$ -- 254
+purify$ -- 275
 quote$ -- 0
-skip$ -- 744
+skip$ -- 849
 stack$ -- 0
-substring$ -- 1193
-swap$ -- 1409
-text.length$ -- 5
+substring$ -- 1363
+swap$ -- 1561
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 360
+type$ -- 387
 warning$ -- 0
-while$ -- 168
+while$ -- 187
 width$ -- 0
-write$ -- 585
+write$ -- 628

@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  12 SEP 2017 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  5 OCT 2017 19:48
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**Alg.tex
-(./Alg.tex
+**/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Algorithms/Alg.tex
+(/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Algorithms/Alg.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -604,7 +605,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (3.43475pt too wide) in paragraph at lines 45--46
+Overfull \hbox (3.43475pt too wide) in paragraph at lines 46--47
 [] $\OML/cmm/m/it/10 TopoBest \OMS/cmsy/m/n/10   f\OML/cmm/b/it/10 x \OT1/cmr/m
 /n/10 = \OML/cmm/b/it/10 x[]\OML/cmm/m/it/10 ; :::; \OML/cmm/b/it/10 x[] \OT1/c
 mr/m/n/10 : \OML/cmm/b/it/10 x \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 sort\OT1/cmr
@@ -612,33 +613,31 @@ mr/m/n/10 : \OML/cmm/b/it/10 x \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 sort\OT1/cmr
 /n/10 ;$ 
  []
 
-) [1
+[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./SelectTopoBest.tex) [2]
- (./CreatePop.tex) [3] (./Alg.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2]
+
+! LaTeX Error: File `SelectTopoBest.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Algorithms/Alg.tex:131: Emergency stop.
+<read *> 
+         
+l.131 \input{SelectTopoBest.tex}
+                                ^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
 Here is how much of TeX's memory you used:
- 14566 strings out of 493029
- 276870 string characters out of 6136233
- 328287 words of memory out of 5000000
- 17779 multiletter control sequences out of 15000+600000
- 13045 words of font info for 49 fonts, out of 8000000 for 9000
+ 14523 strings out of 493029
+ 276551 string characters out of 6136233
+ 327271 words of memory out of 5000000
+ 17754 multiletter control sequences out of 15000+600000
+ 8395 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,56p,783b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Alg.pdf (3 pages, 125550 bytes).
-PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 62i,6n,56p,834b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Algorithms/Alg.tex:131:  ==> Fatal erro
+r occurred, no output PDF file produced!

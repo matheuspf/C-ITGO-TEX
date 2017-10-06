@@ -5,9 +5,7 @@
 
 \State $\bm{l}' \gets max(\bm{l}, \bm{x} - (0.5 * \phi) * (\bm{u} - \bm{l}));$
 \State $\bm{u}' \gets min(\bm{u}, \bm{x} + (0.5 * \phi) * (\bm{u} - \bm{l}));$
-\Statex
 \State $Population \gets \{\bm{x} = \bm{x}^1, ..., \bm{x}^{popSize} : \bm{x} \in random(\bm{l}', \bm{u}')\};$
-\Statex
 
 \State \Return $Population;$
 

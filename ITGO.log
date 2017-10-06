@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  4 OCT 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  6 OCT 2017 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1917,34 +1917,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \c__siunitx_mathtt_int=\count340
  (./Presentation.tex
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 68.
+(Font)              scaled to size 9.85492pt on input line 71.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 72.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 76.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 9.85492pt on input line 72.
+(Font)              scaled to size 9.85492pt on input line 76.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 83.
+(Font)              scaled to size 8.09995pt on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 83.
+(Font)              scaled to size 5.39996pt on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <9> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 83.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 83.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 83.
+(Font)              scaled to size 8.09995pt on input line 87.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 83.
+(Font)              scaled to size 8.09995pt on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 83.
+(Font)              scaled to size 12.9599pt on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 83.
+(Font)              scaled to size 7.19995pt on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <6> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 83.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 87.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 5.39996pt on input line 83.
+(Font)              scaled to size 5.39996pt on input line 87.
 ) (./Introduction.tex
 [1
 Non-PDF special ignored!
@@ -1976,22 +1976,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
-[2]) (./Methods.tex <scatter-crop.pdf, id=150, 346.29375pt x 242.9075pt>
+[2]) (./Methods.tex [3] <scatter-crop.pdf, id=156, 346.29375pt x 242.9075pt>
 File: scatter-crop.pdf Graphic file (type pdf)
 
 <use scatter-crop.pdf>
 Package pdftex.def Info: scatter-crop.pdf used on input line 11.
 (pdftex.def)             Requested size: 277.03537pt x 194.32625pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3]
+ [4 <./scatter-crop.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
  []
 
-[4 <./scatter-crop.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
@@ -2001,12 +1997,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
-<fig_1.pdf, id=192, 462.52798pt x 346.89601pt>
+[6] <fig_1.pdf, id=198, 462.52798pt x 346.89601pt>
 File: fig_1.pdf Graphic file (type pdf)
  <use fig_1.pdf>
 Package pdftex.def Info: fig_1.pdf used on input line 80.
 (pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
- [6]
+ [7 <./fig_1.pdf>]
 Package epstopdf Info: Source file: <fig_2.eps>
 (epstopdf)                    date: 2017-08-28 15:24:38
 (epstopdf)                    size: 1387472 bytes
@@ -2017,8 +2013,7 @@ Package epstopdf Info: Source file: <fig_2.eps>
  fig_2.eps>
 (epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
-
-<fig_2-eps-converted-to.pdf, id=203, 462.72874pt x 348.30125pt>
+ <fig_2-eps-converted-to.pdf, id=278, 462.72874pt x 348.30125pt>
 File: fig_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_2-eps-converted-to.pdf>
@@ -2039,7 +2034,7 @@ Package epstopdf Info: Source file: <fig_3.eps>
  fig_3.eps>
 (epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<fig_3-eps-converted-to.pdf, id=204, 462.72874pt x 348.30125pt>
+<fig_3-eps-converted-to.pdf, id=279, 462.72874pt x 348.30125pt>
 File: fig_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_3-eps-converted-to.pdf>
@@ -2050,27 +2045,24 @@ Overfull \hbox (18.0011pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
-[7 <./fig_1.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+fve on input line 124.
 
- (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
+(/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
 )
 LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 124.
-
-[8 <./fig_2-eps-converted-to.pdf> <./fig_3-eps-converted-to.pdf>]
-(./Algorithms/ITGO.tex
+ [8 <./fig_2-eps-converted-to.pdf> <./fig_3-eps-converted-to.pdf>] [9] (./Algor
+ithms/ITGO.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 2.
- [9]
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 13.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
 (Font)              scaled to size 4.49997pt on input line 13.
-) [10] (./Algorithms/CreatePop.tex) [11]
-(./Algorithms/TopographicalHeuristic.tex [12]) [13] [14]
-(./Tables/Parameters.tex
+)
+[10] (./Algorithms/CreatePop.tex) [11] (./Algorithms/TopographicalHeuristic.tex
+[12]) [13] [14] (./Tables/Parameters.tex
 Overfull \hbox (27.45918pt too wide) in paragraph at lines 7--7
  []|$\OML/cmm/b/it/6 Prob=Param$| 
  []
@@ -2110,13 +2102,13 @@ Overfull \hbox (27.18504pt too wide) in paragraph at lines 5--21
  [] 
  []
 
-)) [15] (./Results.tex
+)) [15] (./Results.tex [16]
 Overfull \hbox (4.60378pt too wide) in paragraph at lines 9--10
 \T1/fve/m/n/10.95 de-nom-i-nated CPSO ([]He & Wang[], []2007a[]); the hy-bridiz
 ed PSO with Nelder-
  []
 
-[16] [17]
+[17]
 Overfull \hbox (3.84541pt too wide) in paragraph at lines 14--15
 []\T1/fve/m/n/10.95 Following, will be briefly ex-plained the en-gi-neer-ing op
 -ti-miza-tion prob-
@@ -2127,44 +2119,56 @@ File: Imgs/WB.jpg Graphic file (type jpg)
  <use Imgs/WB.jpg>
 Package pdftex.def Info: Imgs/WB.jpg used on input line 24.
 (pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
- [18 <./Imgs/WB.jpg>] (./Tables/WB.tex
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18] (./Tables/WB.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--25
  [] 
  []
 
-) <Imgs/TC.png, id=461, 389.455pt x 116.435pt>
+) <Imgs/TC.png, id=462, 389.455pt x 116.435pt>
 File: Imgs/TC.png Graphic file (type png)
  <use Imgs/TC.png>
 Package pdftex.def Info: Imgs/TC.png used on input line 45.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
- [19 <./Imgs/TC.png>] (./Tables/TC.tex
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <./Imgs/WB.jpg>] (./Tables/TC.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--32
  [] 
  []
 
-) [20] <Imgs/TB.png, id=478, 333.245pt x 242.9075pt>
+) [20 <./Imgs/TC.png>] <Imgs/TB.png, id=479, 333.245pt x 242.9075pt>
 File: Imgs/TB.png Graphic file (type png)
- <use Imgs/TB.png>
+
+<use Imgs/TB.png>
 Package pdftex.def Info: Imgs/TB.png used on input line 74.
 (pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
-
-(./Tables/TB.tex
+ (./Tables/TB.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--21
  [] 
  []
 
-) [21 <./Imgs/TB.png>] <Imgs/SR.jpg, id=491, 333.20947pt x 120.87637pt>
+[21 <./Imgs/TB.png>]) <Imgs/SR.jpg, id=491, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
 
 <use Imgs/SR.jpg>
 Package pdftex.def Info: Imgs/SR.jpg used on input line 100.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
- [22 <./Imgs/SR.jpg>] (./Tables/SP1.tex
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22] (./Tables/SP1.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--20
  [] 
  []
 
-)
+) [23 <./Imgs/SR.jpg>]
 Overfull \hbox (5.55818pt too wide) in paragraph at lines 114--115
 []\T1/fve/m/n/10.95 For SRII, the meth-ods used for com-par-i-son were PSO-DE, 
 MBA, DELC,
@@ -2175,41 +2179,43 @@ Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--24
  [] 
  []
 
-[23]) <Imgs/PV.png, id=509, 333.245pt x 158.5925pt>
+) <Imgs/PV.png, id=509, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
  <use Imgs/PV.png>
 Package pdftex.def Info: Imgs/PV.png used on input line 129.
 (pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
- [24 <./Imgs/PV.png>] (./Tables/PV.tex
-Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--23
- [] 
- []
-
-) <Imgs/GT.jpg, id=520, 251.3461pt x 113.84123pt>
-File: Imgs/GT.jpg Graphic file (type jpg)
- <use Imgs/GT.jpg>
-Package pdftex.def Info: Imgs/GT.jpg used on input line 153.
-(pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] (./Tables/GT.tex
+[24] (./Tables/PV.tex
+Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--23
+ [] 
+ []
+
+) [25 <./Imgs/PV.png>] <Imgs/GT.jpg, id=527, 251.3461pt x 113.84123pt>
+File: Imgs/GT.jpg Graphic file (type jpg)
+
+<use Imgs/GT.jpg>
+Package pdftex.def Info: Imgs/GT.jpg used on input line 153.
+(pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
+ (./Tables/GT.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--21
  [] 
  []
 
-) <Imgs/MD.jpg, id=532, 216.81pt x 168.84319pt>
+) [26 <./Imgs/GT.jpg>] <Imgs/MD.jpg, id=538, 216.81pt x 168.84319pt>
 File: Imgs/MD.jpg Graphic file (type jpg)
- <use Imgs/MD.jpg>
+
+<use Imgs/MD.jpg>
 Package pdftex.def Info: Imgs/MD.jpg used on input line 176.
 (pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
- [26 <./Imgs/GT.jpg>] (./Tables/MD.tex
+ (./Tables/MD.tex
 Overfull \hbox (53.43301pt too wide) in paragraph at lines 6--18
  [] 
  []
 
-)) (./Conclusion.tex [27 <./Imgs/MD.jpg>]) (./Acknowledgment.tex
+) [27 <./Imgs/MD.jpg>]) (./Conclusion.tex) (./Acknowledgment.tex
 Overfull \hbox (5.95062pt too wide) in paragraph at lines 3--4
 \T1/fve/m/n/10.95 UFT In-sti-tu-tional Pro-duc-tiv-ity Re-search Pro-gram (PROP
 ESQ / UFT). AJSN
@@ -2221,10 +2227,10 @@ Overfull \hbox (12.12129pt too wide) in paragraph at lines 3--4
 CNPq and CAPES,
  []
 
-) (./ITGO.bbl
+[28]) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 30.
- [28] [29] [30] [31] [32])
+ [29] [30] [31] [32])
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 141.
 See the caption package documentation for explanation.
@@ -2239,13 +2245,13 @@ Package rerunfilecheck Info: File `ITGO.out' has not changed.
 (rerunfilecheck)             Checksum: 24FA139AEA5A22632EEF9AB9182BA24B;1081.
  ) 
 Here is how much of TeX's memory you used:
- 34212 strings out of 493029
- 643164 string characters out of 6136233
- 740783 words of memory out of 5000000
- 36957 multiletter control sequences out of 15000+600000
+ 34214 strings out of 493029
+ 643178 string characters out of 6136233
+ 741820 words of memory out of 5000000
+ 36958 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 56i,15n,77p,10376b,1012s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,77p,10376b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/
@@ -2269,10 +2275,10 @@ era/fveb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (33 pages, 2543206 bytes).
+Output written on ITGO.pdf (33 pages, 2543910 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 684 PDF objects out of 1000 (max. 8388607)
+ 572 compressed objects within 6 object streams
+ 124 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

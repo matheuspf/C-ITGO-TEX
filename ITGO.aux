@@ -34,11 +34,11 @@
 \newlabel{sec:Introduction}{{1}{2}{Introduction}{section.1}{}}
 \newlabel{eq:func}{{1}{2}{Introduction}{equation.1.1}{}}
 \citation{ITGO1}
-\citation{Sobol,ITGO3}
-\citation{mt19937}
 \newlabel{eq:viol}{{2}{3}{Introduction}{equation.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}CI-TGO}{3}{section.2}}
 \newlabel{sec:Methods}{{2}{3}{CI-TGO}{section.2}{}}
+\citation{Sobol,ITGO3}
+\citation{mt19937}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example showing the distribution of points in the domain $[0, 1]^2$ by the Mersenne Twister generator (blue points) and by a Sobol sequence (red points). \relax }}{4}{figure.caption.1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:Sobol}{{1}{4}{Example showing the distribution of points in the domain $[0, 1]^2$ by the Mersenne Twister generator (blue points) and by a Sobol sequence (red points). \relax }{figure.caption.1}{}}
@@ -59,7 +59,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Example showing the application of the space reduction heuristic. In (a) we have the space reduction around the three individuals of Fig. 2 ($\bm  {x}_1$, $\bm  {x}_5$ and $\bm  {x}_8$) in red (based on the topographical heuristic). In (b) are the respective populations generated in each restricted space to apply TGO.\relax }}{8}{figure.caption.3}}
 \newlabel{fig:SpaceReduction}{{3}{8}{Example showing the application of the space reduction heuristic. In (a) we have the space reduction around the three individuals of Fig. 2 ($\bm {x}_1$, $\bm {x}_5$ and $\bm {x}_8$) in red (based on the topographical heuristic). In (b) are the respective populations generated in each restricted space to apply TGO.\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Constrained Optimization}{8}{subsection.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{9}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Implementation}{10}{subsection.2.3}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}CI-TGO($f(\cdot )$, $v(\cdot )$, $\bm  {l}$, $\bm  {u}$, $\bm  {PS}$, $\bm  {KS}$, $Max\_LS$, $LS_1$, $LS_2$, $\phi $, $\alpha $)}{10}{algorithm.1}}
 \newlabel{alg:ITGO}{{1}{10}{Implementation}{algorithm.1}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}CreatePop($\bm  {x}$, $\bm  {l}$, $\bm  {u}$, $popSize$, $\phi $)}{11}{algorithm.2}}
@@ -69,10 +69,10 @@
 \citation{fmincon}
 \citation{Nocedal}
 \citation{MVMO}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Local Search}{14}{subsection.2.4}}
 \citation{OPTI}
 \citation{BONMIN}
 \citation{NOMAD}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Local Search}{14}{subsection.2.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Parameters}{15}{subsection.2.5}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \fontsize  {8}{8}\selectfont   Parameters of CI-TGO for each engineering problem.  [1em]\relax }}{16}{table.caption.4}}
 \newlabel{tab:Parameters}{{1}{16}{\fnt {8} Parameters of CI-TGO for each engineering problem. \\[1em]\relax }{table.caption.4}{}}
@@ -97,58 +97,60 @@
 \citation{IABC}
 \citation{SAMP-Jaya}
 \citation{Jaya}
+\citation{IAPSO}
+\citation{MBA}
 \citation{WB}
-\citation{TC}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Welded beam design problem}{19}{subsection.3.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Schematic view of the welded beam design problem.\relax }}{19}{figure.caption.5}}
 \newlabel{fig:WB}{{4}{19}{Schematic view of the welded beam design problem.\relax }{figure.caption.5}{}}
+\citation{TC}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for Welded beam problem.  [1em]\relax }}{20}{table.caption.6}}
 \newlabel{tab:WB}{{2}{20}{\fnt {8} Statistical results of different methods for Welded beam problem. \\[1em]\relax }{table.caption.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Tension / compression spring design problem}{20}{subsection.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Schematic view of the tension/compression spring design problem\relax }}{20}{figure.caption.7}}
-\newlabel{fig:TC}{{5}{20}{Schematic view of the tension/compression spring design problem\relax }{figure.caption.7}{}}
-\citation{TB}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Schematic view of the tension/compression spring design problem\relax }}{21}{figure.caption.7}}
+\newlabel{fig:TC}{{5}{21}{Schematic view of the tension/compression spring design problem\relax }{figure.caption.7}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for tension/compression spring design problem.  [1em]\relax }}{21}{table.caption.8}}
 \newlabel{tab:TC}{{3}{21}{\fnt {8} Statistical results of different methods for tension/compression spring design problem. \\[1em]\relax }{table.caption.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Three-bar truss design problem}{21}{subsection.3.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for three-bar truss design problem.  [1em]\relax }}{22}{table.caption.10}}
-\newlabel{tab:TB}{{4}{22}{\fnt {8} Statistical results of different methods for three-bar truss design problem. \\[1em]\relax }{table.caption.10}{}}
+\citation{TB}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Three-bar truss design problem}{22}{subsection.3.3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Schematic view of the three-bar truss design problem\relax }}{22}{figure.caption.9}}
 \newlabel{fig:TB}{{6}{22}{Schematic view of the three-bar truss design problem\relax }{figure.caption.9}{}}
 \citation{SR}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for three-bar truss design problem.  [1em]\relax }}{23}{table.caption.10}}
+\newlabel{tab:TB}{{4}{23}{\fnt {8} Statistical results of different methods for three-bar truss design problem. \\[1em]\relax }{table.caption.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Speed reducer design problem}{23}{subsection.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Schematic view of the speed reducer design problem\relax }}{23}{figure.caption.11}}
-\newlabel{fig:SR}{{7}{23}{Schematic view of the speed reducer design problem\relax }{figure.caption.11}{}}
-\citation{PV}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Schematic view of the speed reducer design problem\relax }}{24}{figure.caption.11}}
+\newlabel{fig:SR}{{7}{24}{Schematic view of the speed reducer design problem\relax }{figure.caption.11}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for the speed reducer design problem I.  [1em]\relax }}{24}{table.caption.12}}
 \newlabel{tab:SP1}{{5}{24}{\fnt {8} Statistical results of different methods for the speed reducer design problem I. \\[1em]\relax }{table.caption.12}{}}
+\citation{PV}
 \@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for the speed reducer design problem II.  [1em]\relax }}{25}{table.caption.13}}
 \newlabel{tab:SP2}{{6}{25}{\fnt {8} Statistical results of different methods for the speed reducer design problem II. \\[1em]\relax }{table.caption.13}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Pressure vessel design problem}{25}{subsection.3.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Schematic view of pressure vessel design problem.\relax }}{25}{figure.caption.14}}
-\newlabel{fig:PV}{{8}{25}{Schematic view of pressure vessel design problem.\relax }{figure.caption.14}{}}
 \citation{PV}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Schematic view of pressure vessel design problem.\relax }}{26}{figure.caption.14}}
+\newlabel{fig:PV}{{8}{26}{Schematic view of pressure vessel design problem.\relax }{figure.caption.14}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for the pressure vessel design problem.  [1em]\relax }}{26}{table.caption.15}}
 \newlabel{tab:PV}{{7}{26}{\fnt {8} Statistical results of different methods for the pressure vessel design problem. \\[1em]\relax }{table.caption.15}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Gear train design problem}{26}{subsection.3.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Pressure vessel design problem structure.\relax }}{26}{figure.caption.16}}
-\newlabel{fig:GT}{{9}{26}{Pressure vessel design problem structure.\relax }{figure.caption.16}{}}
 \citation{MD}
 \@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for the gear train design problem.  [1em]\relax }}{27}{table.caption.17}}
 \newlabel{tab:GT}{{8}{27}{\fnt {8} Statistical results of different methods for the gear train design problem. \\[1em]\relax }{table.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Multiple disk clutch brake design problem}{27}{subsection.3.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Schematic view of the multiple disk clutch brake design problem.\relax }}{28}{figure.caption.18}}
-\newlabel{fig:MD}{{10}{28}{Schematic view of the multiple disk clutch brake design problem.\relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Pressure vessel design problem structure.\relax }}{27}{figure.caption.16}}
+\newlabel{fig:GT}{{9}{27}{Pressure vessel design problem structure.\relax }{figure.caption.16}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces \fontsize  {8}{8}\selectfont   Statistical results of different methods for the multiple disk clutch break design problem.  [1em]\relax }}{28}{table.caption.19}}
 \newlabel{tab:MD}{{9}{28}{\fnt {8} Statistical results of different methods for the multiple disk clutch break design problem. \\[1em]\relax }{table.caption.19}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{28}{section.4}}
-\newlabel{sec:Conclusion}{{4}{28}{Conclusion}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Multiple disk clutch brake design problem}{28}{subsection.3.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Schematic view of the multiple disk clutch brake design problem.\relax }}{28}{figure.caption.18}}
+\newlabel{fig:MD}{{10}{28}{Schematic view of the multiple disk clutch brake design problem.\relax }{figure.caption.18}{}}
 \bibdata{ITGO.bib}
 \bibcite{TC}{{1}{1982}{{Belegundu}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{29}{section.4}}
+\newlabel{sec:Conclusion}{{4}{29}{Conclusion}{section.4}{}}
+\newlabel{sec:Acknowledgment}{{4}{29}{Acknowledgments}{section*.20}{}}
 \bibcite{BONMIN}{{2}{2015}{{Biegler et~al.}}{{Biegler, Conn, Cornuejols, Grossmann, Lodi \& Sawaya}}}
 \bibcite{CB-ABC}{{3}{2015}{{Brajevic}}{{}}}
 \bibcite{QPSO}{{4}{2010}{{Coelho}}{{}}}
-\newlabel{sec:Acknowledgment}{{4}{29}{Acknowledgments}{section*.20}{}}
 \bibcite{OPTI}{{5}{2014}{{Currie}}{{}}}
 \bibcite{ConHandling}{{6}{2000}{{Deb}}{{}}}
 \bibcite{WCA}{{7}{2012}{{Eskandar et~al.}}{{Eskandar, Sadollah, Bahreininejad \& Hamdi}}}

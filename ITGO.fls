@@ -499,10 +499,10 @@ INPUT Algorithms/TopographicalHeuristic.tex
 INPUT Algorithms/TopographicalHeuristic.tex
 INPUT Tables/Parameters.tex
 INPUT Tables/Parameters.tex
-INPUT Results.tex
-INPUT Results.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/bera/fveb8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bera/fveb8r.tfm
+INPUT Results.tex
+INPUT Results.tex
 INPUT ./Imgs/WB.jpg
 INPUT ./Imgs/WB.jpg
 INPUT ./Imgs/WB.jpg

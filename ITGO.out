@@ -1,5 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{CI-TGO}{}% 2
+\BOOKMARK [1][-]{section.2}{C-ITGO}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Space Reduction}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Constrained Optimization}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Implementation}{section.2}% 5
@@ -13,4 +13,5 @@
 \BOOKMARK [2][-]{subsection.3.5}{Pressure vessel design problem}{section.3}% 13
 \BOOKMARK [2][-]{subsection.3.6}{Gear train design problem}{section.3}% 14
 \BOOKMARK [2][-]{subsection.3.7}{Multiple disk clutch brake design problem}{section.3}% 15
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 16
+\BOOKMARK [2][-]{subsection.3.8}{Best Solutions}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 17

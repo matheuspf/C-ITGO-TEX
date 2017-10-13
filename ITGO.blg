@@ -3,46 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ITGO.aux
 The style file: BibStyle/model5-names.bst
 Database file #1: ITGO.bib.bib
+Warning--I didn't find a database entry for "GIT"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 44 entries,
+You've used 46 entries,
             3390 wiz_defined-function locations,
-            969 strings with 12635 characters,
-and the built_in function-call counts, 29657 in all, are:
-= -- 2267
-> -- 1045
-< -- 37
-+ -- 867
-- -- 297
-* -- 3076
-:= -- 3914
-add.period$ -- 136
-call.type$ -- 44
-change.case$ -- 321
-chr.to.int$ -- 43
-cite$ -- 44
-duplicate$ -- 2248
-empty$ -- 2244
-format.name$ -- 427
-if$ -- 5618
+            984 strings with 13080 characters,
+and the built_in function-call counts, 31228 in all, are:
+= -- 2388
+> -- 1088
+< -- 39
++ -- 899
+- -- 309
+* -- 3218
+:= -- 4114
+add.period$ -- 143
+call.type$ -- 46
+change.case$ -- 350
+chr.to.int$ -- 48
+cite$ -- 46
+duplicate$ -- 2361
+empty$ -- 2402
+format.name$ -- 449
+if$ -- 5938
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 389
-newline$ -- 239
-num.names$ -- 176
-pop$ -- 963
+missing$ -- 411
+newline$ -- 250
+num.names$ -- 184
+pop$ -- 1035
 preamble$ -- 1
-purify$ -- 275
+purify$ -- 287
 quote$ -- 0
-skip$ -- 849
+skip$ -- 896
 stack$ -- 0
-substring$ -- 1363
-swap$ -- 1561
-text.length$ -- 8
+substring$ -- 1435
+swap$ -- 1626
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 387
+type$ -- 399
 warning$ -- 0
-while$ -- 187
+while$ -- 199
 width$ -- 0
-write$ -- 628
+write$ -- 657
+(There was 1 warning)

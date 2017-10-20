@@ -1,5 +1,18 @@
 \section{Conclusion} \label{sec:Conclusion}
 
-This work presents a modified iterative topographical global optimization algorithm, denominated C-ITGO, specialized in solving constrained optimization problems. The method developed in this paper uses a custom topographical heuristic, based on a stochastic application of the three step criteria comparison, along with a space reduction procedure. In addition to being very simple conceptually, the C-ITGO algorithm is very generic in the sense that any local search procedure can be used to tackle a specific problem, be it continuous or discrete.
+This work presents a modified iterative topographical global optimization algorithm, denominated C-ITGO, specialized in solving constrained optimization problems. The method developed in this paper uses a custom topographical heuristic, based on a stochastic application of the three step criteria comparison, along with a space reduction procedure. In addition to being very simple conceptually, the C-ITGO algorithm is very generic in the sense that any local search procedure can be used to tackle a specific problem, being it continuous or discrete.
 
 The C-ITGO method was compared against several algorithms found in literature, some presenting state of the art results, in eight difficult constrained engineering optimization problems. In all tests performed, the C-ITGO outperforms any competing method regarding the number of function evaluations to converge to the best-known solution found, with performance gain in some problems being of an order of magnitude over the best performing methods compared.
+
+As future work, we sugest the following possibilities:
+
+\begin{itemize}
+
+    \item use new, possibly even more complex optimization problems to test the performance of C-ITGO.
+
+    \item propose an adaptive method to auto adjust the parameters that can influence on C-ITGO performance.
+
+    \item develop a parallel version aiming a faster execution time, even this is not being the main measure of performance.
+
+
+\end{itemize}

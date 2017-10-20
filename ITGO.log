@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  12 OCT 2017 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  19 OCT 2017 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2170,14 +2170,18 @@ File: Imgs/TC.png Graphic file (type png)
  <use Imgs/TC.png>
 Package pdftex.def Info: Imgs/TC.png used on input line 49.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
- [18 <./Imgs/TC.png>] (./Tables/TC.tex) [19] <Imgs/TB.png, id=487, 333.245pt x 
-242.9075pt>
-File: Imgs/TB.png Graphic file (type png)
 
-<use Imgs/TB.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./Tables/TC.tex) [18] [19 <./Imgs/TC.png>]
+<Imgs/TB.png, id=487, 333.245pt x 242.9075pt>
+File: Imgs/TB.png Graphic file (type png)
+ <use Imgs/TB.png>
 Package pdftex.def Info: Imgs/TB.png used on input line 78.
 (pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
- (./Tables/TB.tex) [20 <./Imgs/TB.png>]
+
+(./Tables/TB.tex) [20 <./Imgs/TB.png>]
 <Imgs/SR.jpg, id=500, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
  <use Imgs/SR.jpg>
@@ -2210,7 +2214,7 @@ Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 [][] 
  []
 
-)) (./Conclusion.tex) [26] (./Acknowledgment.tex) (./ITGO.bbl
+)) (./Conclusion.tex [26]) (./Acknowledgment.tex) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 29.
  [27] [28]
@@ -2229,12 +2233,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 Package rerunfilecheck Info: File `ITGO.out' has not changed.
-(rerunfilecheck)             Checksum: 24E8010D2A79B583427EAA834569EC5A;1146.
+(rerunfilecheck)             Checksum: 020D757705748C53B316EAB8877C3CC4;1199.
  ) 
 Here is how much of TeX's memory you used:
  34708 strings out of 493029
  650383 string characters out of 6136233
- 761263 words of memory out of 5000000
+ 761340 words of memory out of 5000000
  37439 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2263,7 +2267,7 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb
 share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (31 pages, 2556567 bytes).
+Output written on ITGO.pdf (31 pages, 2556938 bytes).
 PDF statistics:
  695 PDF objects out of 1000 (max. 8388607)
  584 compressed objects within 6 object streams

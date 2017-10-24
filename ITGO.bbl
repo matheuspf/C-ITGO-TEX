@@ -137,14 +137,6 @@
   algorithm}.
 \newblock {\it \bibinfo{journal}{ACM Transactions on Mathematical Software}\/},
    {\it \bibinfo{volume}{37}\/}, \bibinfo{pages}{44:1--44:15}.
-%Type = Article
-\bibitem[{Liag et~al.(2017)Liag, Wan \& Fang}]{IABC}
-\bibinfo{author}{Liag, Y.}, \bibinfo{author}{Wan, Z.}, \&
-  \bibinfo{author}{Fang, D.} (\bibinfo{year}{2017}).
-\newblock \bibinfo{title}{An improved artificial bee colony algorithm for
-  solving constrained optimization problems}.
-\newblock {\it \bibinfo{journal}{International Journal of Machine Learning and
-  Cybernetics}\/},  {\it \bibinfo{volume}{8}\/}, \bibinfo{pages}{739--754}.
 %Type = Inproceedings
 \bibitem[{Liang et~al.(2010)Liang, Shang \& Li}]{PSO1}
 \bibinfo{author}{Liang, J.~J.}, \bibinfo{author}{Shang, Z.}, \&
@@ -153,6 +145,14 @@
   optimizer}.
 \newblock In {\it \bibinfo{booktitle}{IEEE Congress on Evolutionary
   Computation}\/} (pp. \bibinfo{pages}{1505--1512}).
+%Type = Article
+\bibitem[{Liang et~al.(2017)Liang, Wan \& Fang}]{IABC}
+\bibinfo{author}{Liang, Y.}, \bibinfo{author}{Wan, Z.}, \&
+  \bibinfo{author}{Fang, D.} (\bibinfo{year}{2017}).
+\newblock \bibinfo{title}{An improved artificial bee colony algorithm for
+  solving constrained optimization problems}.
+\newblock {\it \bibinfo{journal}{International Journal of Machine Learning and
+  Cybernetics}\/},  {\it \bibinfo{volume}{8}\/}, \bibinfo{pages}{739--754}.
 %Type = Article
 \bibitem[{Lio et~al.(2010)Lio, Cai \& Wang}]{PSO-DE}
 \bibinfo{author}{Lio, H.}, \bibinfo{author}{Cai, Z.}, \& \bibinfo{author}{Wang,
@@ -172,9 +172,9 @@
 \newblock {\it \bibinfo{journal}{Soft Computing}\/},  (pp.
   \bibinfo{pages}{1--22}).
 %Type = Article
-\bibitem[{Machado-Coelho et~al.(2017)Machado-Coelho, Jaulin, Ekel, Pedrycz \&
-  Soares}]{IPSO}
-\bibinfo{author}{Machado-Coelho, A. M.~C., M. T. abd~Machado},
+\bibitem[{Machado-Coelho et~al.(2017)Machado-Coelho, Machado, Jaulin, Ekel,
+  Pedrycz \& Soares}]{IPSO}
+\bibinfo{author}{Machado-Coelho, T.~M.}, \bibinfo{author}{Machado, A. M.~C.},
   \bibinfo{author}{Jaulin, L.}, \bibinfo{author}{Ekel, P.},
   \bibinfo{author}{Pedrycz, W.}, \& \bibinfo{author}{Soares, G.~L.}
   (\bibinfo{year}{2017}).
@@ -276,7 +276,8 @@
   (\bibinfo{year}{2017}).
 \newblock \bibinfo{title}{A self-adaptive multi-population based jaya algorithm
   for engineering optimization}.
-\newblock \bibinfo{note}{In press}.
+\newblock \bibinfo{note}{In press, corrected proof, {A}vailable online 4 {M}ay
+  2017}.
 %Type = Inproceedings
 \bibitem[{Rueda \& Erlich(2016)}]{MVMO}
 \bibinfo{author}{Rueda, J.~L.}, \& \bibinfo{author}{Erlich, I.}

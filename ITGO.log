@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  19 OCT 2017 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  23 OCT 2017 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2189,24 +2189,24 @@ Package pdftex.def Info: Imgs/SR.jpg used on input line 104.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
 
 (./Tables/SP1.tex) [21 <./Imgs/SR.jpg>] (./Tables/SP2.tex) [22]
-<Imgs/PV.png, id=521, 333.245pt x 158.5925pt>
+<Imgs/PV.png, id=518, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
  <use Imgs/PV.png>
-Package pdftex.def Info: Imgs/PV.png used on input line 133.
+Package pdftex.def Info: Imgs/PV.png used on input line 135.
 (pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
 
 (./Tables/PV.tex) [23 <./Imgs/PV.png>]
 <Imgs/GT.jpg, id=531, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
  <use Imgs/GT.jpg>
-Package pdftex.def Info: Imgs/GT.jpg used on input line 157.
+Package pdftex.def Info: Imgs/GT.jpg used on input line 161.
 (pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
 
 (./Tables/GT.tex) [24 <./Imgs/GT.jpg>]
 <Imgs/MD.jpg, id=542, 216.81pt x 168.84319pt>
 File: Imgs/MD.jpg Graphic file (type jpg)
  <use Imgs/MD.jpg>
-Package pdftex.def Info: Imgs/MD.jpg used on input line 180.
+Package pdftex.def Info: Imgs/MD.jpg used on input line 184.
 (pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
 
 (./Tables/MD.tex) [25 <./Imgs/MD.jpg>] (./Tables/BestResults.tex
@@ -2238,7 +2238,7 @@ Package rerunfilecheck Info: File `ITGO.out' has not changed.
 Here is how much of TeX's memory you used:
  34708 strings out of 493029
  650383 string characters out of 6136233
- 761340 words of memory out of 5000000
+ 760349 words of memory out of 5000000
  37439 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2267,7 +2267,7 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb
 share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (31 pages, 2556938 bytes).
+Output written on ITGO.pdf (31 pages, 2557116 bytes).
 PDF statistics:
  695 PDF objects out of 1000 (max. 8388607)
  584 compressed objects within 6 object streams

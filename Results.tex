@@ -8,7 +8,7 @@ In all tests, given the stochastic characteristic of C-ITGO, we run it 25 times,
 
 Also, a maximum number of function evaluations (NFEs) was set for each problem. If the value of NFEs exceeds the maximum, the algorithm immediately stops, and the best solution found is returned. At the end, the mean number of function evaluations (MNFEs) is reported for all runs. This value is also problem dependent, and is based on the results reported by other methods.
 
-In our tests, all solutions reported by C-ITGO are completely feasible, for all problems, so we exclude from comparison methods that violate any constraint (infeasible).
+In our tests, all solutions reported by C-ITGO are completely feasible, for all problems. So, unless specified, we exclude from comparison methods that violate any constraint (infeasible).
 
 We compare 19 different optimization methods against C-ITGO. The most common meta-heuristic for solving the problems considered in this work is the Particle Swarm Optimization (PSO), including: PSO-DE \citep{PSO-DE}, a hybrid PSO method combined with Differential Evolution (DE); the HPSO \citep{HPSO}, another hybridized particle swarm method in combination with simulated annealing; a co-evolutionary PSO denominated CPSO \citep{CPSO}; the hybridized PSO with Nelder-Mead simplex (NM-PSO) \citep{NM-PSO}; the Unified PSO (UPSO) \citep{UPSO}, a PSO variant that balances exploration and exploitation; the APSO, standing for Accelerated PSO  \citep{APSO}; the Gaussian Quantum-Behaved Particle Swarm Optimization methods, named QPSO and G-QPSO \citep{QPSO}; and the IPSO \citep{IPSO}, which incorporates an interval reducing procedure. More recently, and among the best state of the art PSO methods for constrained global optimization, we can cite the Improved Accelerated PSO algorithm (IAPSO) \citep{IAPSO}, which proposes some modifications and improves the APSO method.
 
@@ -107,11 +107,13 @@ In this problem, the total weight of the speed reducer (Figure \ref{fig:SR}) is 
 \caption{Schematic view of the speed reducer design problem}\label{fig:SR}
 \end{figure}
 
-For SRI, we compare C-ITGO results against 5 optimization methods, namely CPSO, LCA, IPSO and IAPSO, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, so we do not include it in our comparison. The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the global optimum solution and having very low standard deviation. The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
+For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, LCA, IPSO, SAMP-Jaya and IAPSO, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included so as to show that even in harder situations the C-ITGO algorithm can outperform any competing methods compared here.
+
+The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation. The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
 
 \input{Tables/SP1}
 
-The first four methods take more than 20,000 iterations to converge to good quality solutions, while IAPSO takes only 6,000 NFEs. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls in average, while maintaining negligible higher standard deviation than IAPSO and IPSO.
+The first three methods take more than 20,000 iterations to converge to good quality solutions, while IAPSO and SAMP-Jaya take only 6,000 and 3744.66 NFEs respectively. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls in average, while maintaining negligible higher standard deviation than IAPSO and IPSO.
 
 For this problem, we used considerable greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO takes 3 full iterations to converge, while converging in the first iteration in most runs.
 
@@ -137,13 +139,15 @@ In the pressure vessel design problem, the objective is to minimize the total ma
 \end{figure}
 
 
-Some methods in literature optimized the pressure vessel design problem without taking into account the integer constraints at the first and second variables. So, to compare the C-ITGO performance, we will only consider methods that respect the integer constraints.
+%Some methods in literature optimized the pressure vessel design problem without taking into account the integer constraints at the first and second variables. So, to compare the C-ITGO performance, we will only consider methods that respect the integer constraints.
 
 \input{Tables/PV}
 
-We compare C-ITGO against the  QPSO, G-QPSO, CB-ABC, IABC-MAL and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. The algorithms CB-ABC, IABC-MAl, IAPSO and C-ITGO are the only who found the optimal solution, and also the ones with smaller mean fitness value. All other methods presented relatively poor performance, with much higher NFEs in average.
+We compare C-ITGO against the  QPSO, G-QPSO, CB-ABC, IABC-MAL, SAMP-Jaya and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. It seems that SAMP-Jaya algorithm reports infeasible results, maybe because the integer constraints are not taken into account. Nevertheless, we still use the results reported by SAMP-Jaya to prove the superior convergence of C-ITGO, even in constrained mixed integer problems.
 
-C-ITGO takes less than six times the number of function evaluations to converge than the best competing method, IAPSO, which reported a result of 7,500 NFEs. Also, C-ITGO achieves a small standard deviation of $9.8E-13$, many orders of magnitude smaller than IAPSO. All runs of C-ITGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison for this problem.
+The algorithms CB-ABC, IABC-MAl, IAPSO and C-ITGO are the only who found the integer constrained optimal solution, and also the ones with smaller mean fitness value. All other methods presented relatively poor performance, with much higher NFEs in average.
+
+C-ITGO takes less than five times the number of function evaluations to converge than the best competing method, SAMP-Jaya, which reported a result of 6,513.33 NFEs. Also, C-ITGO achieves the smallest standard deviation among all methods. All runs of C-ITGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison for this problem.
 
 
 
@@ -157,7 +161,7 @@ In this problem, the objective is to minimize the cost of the gear ratio of the 
 \includegraphics[scale=0.6]{Imgs/GT.jpg}
 \end{center}
 \captionsetup{justification=centering}
-\caption{Pressure vessel design problem structure.}\label{fig:GT}
+\caption{Gear train design problem structure.}\label{fig:GT}
 \end{figure}
 
 

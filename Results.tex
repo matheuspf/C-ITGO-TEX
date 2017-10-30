@@ -31,7 +31,7 @@ The welded beam design \citep{WB} is the problem of minimizing the fabrication c
 \caption{Schematic view of the welded beam design problem.}\label{fig:WB}
 \end{figure}
 
-We compare the results obtained by C-ITGO against a number of state of the art methods used to solve this problem, including PSO-DE, HPSO, MBA, CPSO, LCA, NM-PSO, IABC-MAL, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the statistical results obtained by all cited methods to solve the welded beam design problem. All the methods, with exception of SAMP-Jaya and C-ITGO, took more than 10,000 iterations to achieve good quality solutions. C-ITGO achieved optimal solutions with a very small standard deviation of $3.65E \!-\! 12$ with ten times fewer function evaluations in average than most of the methods.
+We compare the results obtained by C-ITGO against a number of state of the art methods used to solve this problem, including PSO-DE, HPSO, MBA, CMA-ES, MVDE, CPSO, LCA, NM-PSO, APSO, WCA, IABC-MAL, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the statistical results obtained by all cited methods to solve the welded beam design problem. All the methods, with exception of CMA-ES, SAMP-Jaya and C-ITGO, took more than 10,000 iterations to achieve good quality solutions. C-ITGO achieved optimal solutions with a very small standard deviation of $3.65E \!-\! 12$ with ten times fewer function evaluations in average than most of the methods.
 
 \input{Tables/WB}
 
@@ -53,14 +53,14 @@ This problem was introduced by \cite{TC}, and the objective is the minimization 
 \end{figure}
 
 
-A variety of methods were used in literature to solve the tension / compression spring design problem. Between them, we can cite NM-PSO, MBA, PSO-DE, CB-ABC, QPSO, G-QPSO, DELC, IAPSO, IABC-MAL and SAMP-Jaya. Table \ref{tab:TC} shows the statistical results of all methods, along with the number of function evaluations taken to achieve such results.
+A variety of methods were used in literature to solve the tension / compression spring design problem. Between them, we can cite HPSO, NM-PSO, MBA, PSO-DE, LCA, CB-ABC, QPSO, G-QPSO, APSO, CMA-ES, MVDE, DELC, IAPSO, IABC-MAL and SAMP-Jaya. Table \ref{tab:TC} shows the statistical results of all methods, along with the number of function evaluations taken to achieve such results.
 
 \input{Tables/TC}
 
 
 The methods vary greatly in the number of function evaluations required to converge to good quality solutions. Only three of the methods (QPSO, G-QPSO and IAPSO) achieved convergence with 2,000 function evaluations, while some methods required more than 100,000. The best solution achieved by all methods have the same fitness value up to 3 decimal places.
  
-The best solution reported by NM-PSO is again infeasible, so we do not compare it against other methods. The SAMP-Jaya method also seems to report a slightly infeasible best solution found, differing from the optimal value reported by other methods. However, the result differs only at the sixth decimal place, and the difference may be due to wrong rounding. We cannot state this for sure since we do not have access to the solution vector found by the method. Given the differences in rounding between the methods, we consider $f(\bm{x}) = 0.012665$ to be the best solution found.
+The best solution reported by NM-PSO is again infeasible, so we do not compare it against other methods. The SAMP-Jaya method also seems to report a slightly infeasible best solution found, differing from the optimal value reported by other methods. However, the result differs only at the sixth decimal place, and the difference may be due to wrong rounding. We cannot state this for sure since we do not have access to the solution vector found by the method. Given the differences between the precision in the solutions reported by the methods, we consider $f(\bm{x}) = 0.012665$ to be the best solution found.
 
 The C-ITGO method performed remarkably well on this problem, converging to the best solution found in 535.08 function evaluations on average, almost four times less than the second competing method. Also, the standard deviation is very small, in the order of $2.81E-9$. 
 
@@ -107,9 +107,11 @@ In this problem, the total weight of the speed reducer (Figure \ref{fig:SR}) is 
 \caption{Schematic view of the speed reducer design problem}\label{fig:SR}
 \end{figure}
 
-For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, LCA, IPSO, SAMP-Jaya and IAPSO, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included so as to show that even in harder situations the C-ITGO algorithm can outperform any competing methods compared here.
+For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, LCA, IPSO, APSO, IAPSO and SAMP-Jaya, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included so as to show that even in harder situations the C-ITGO algorithm can outperform any competing methods compared here.
 
-The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation. The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
+The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation.
+
+%The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
 
 \input{Tables/SP1}
 
@@ -117,7 +119,7 @@ The first three methods take more than 20,000 iterations to converge to good qua
 
 For this problem, we used considerable greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO takes 3 full iterations to converge, while converging in the first iteration in most runs.
 
-For SRII, the methods used for comparison were PSO-DE, MBA, DELC, CB-ABC, CMA-ES, IABC-MAL, IPSO and IAPSO. From Table \ref{tab:SP2}, we can see that DELC, CMA-ES, IAPSO and C-ITGO are the only methods that converged to the optimum in every run, having very small standard deviation. Although similar results are observed regarding the quality of the solutions, C-ITGO converges much faster than any competing method, using twelve times fewer function evaluations than IAPSO. The standard deviation achieved by C-ITGO is also the smallest among all compared methods.
+For SRII, the methods used for comparison were PSO-DE, MBA, WCA, DELC, CB-ABC, CMA-ES, MVDE, LCA, IABC-MAL, APSO, MBA, IPSO and IAPSO. From Table \ref{tab:SP2}, we can see that DELC, CMA-ES, MVDE, LCA, IAPSO and C-ITGO are the only methods that converged to the optimum in every run, having very small standard deviation. Although similar results are observed regarding the quality of the solutions, C-ITGO converges much faster than any competing method, using twelve times fewer function evaluations than IAPSO. The standard deviation achieved by C-ITGO is also the smallest among all compared methods.
 
 \input{Tables/SP2}
 
@@ -143,11 +145,10 @@ In the pressure vessel design problem, the objective is to minimize the total ma
 
 \input{Tables/PV}
 
-We compare C-ITGO against the  QPSO, G-QPSO, CB-ABC, IABC-MAL, SAMP-Jaya and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. It seems that SAMP-Jaya algorithm reports infeasible results, maybe because the integer constraints are not taken into account. Nevertheless, we still use the results reported by SAMP-Jaya to prove the superior convergence of C-ITGO, even in constrained mixed integer problems.
+We compare C-ITGO against the  QPSO, G-QPSO, CMA-ES, MVDE, CB-ABC, HPSO, WCA, LCA, APSO, MBA, IABC-MAL, SAMP-Jaya and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. Some of the methods used to solve this problem report unfeasible results (WCA, MBA and SAMP-Jaya), probably because the integer constraints are ignored. Nevertheless, we still use the results of these methods to prove the superior convergence of C-ITGO, even in constrained mixed integer problems.
 
-The algorithms CB-ABC, IABC-MAl, IAPSO and C-ITGO are the only who found the integer constrained optimal solution, and also the ones with smaller mean fitness value. All other methods presented relatively poor performance, with much higher NFEs in average.
 
-C-ITGO takes less than five times the number of function evaluations to converge than the best competing method, SAMP-Jaya, which reported a result of 6,513.33 NFEs. Also, C-ITGO achieves the smallest standard deviation among all methods. All runs of C-ITGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison for this problem.
+The algorithms CMA-ES, CB-ABC, HPSO, IABC-MAl, IAPSO and C-ITGO are the only who found the feasible optimal solution. All other methods presented relatively poor performance, with much higher NFEs in average. C-ITGO takes less than five times the number of function evaluations to converge than the best competing method, SAMP-Jaya, which reported a result of 6,513.33 NFEs. Also, C-ITGO achieves the smallest standard deviation among all methods. All runs of C-ITGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison for this problem.
 
 
 
@@ -187,7 +188,7 @@ This is also an example of a problem where all variables are discrete. The Multi
 \caption{Schematic view of the multiple disk clutch brake design problem.}\label{fig:MD}
 \end{figure}
 
-To compare the results, we used only methods who achieved close performance to the obtained by C-ITGO, since some methods in literature have very diverging results. The WCA, IPSO and IAPSO methods achieved good performance in this problem, finding the optimal solution and having very small variance, as shown in Table \ref{tab:MD}. The WCA and IAPSO took very few function evaluations to converge, respectively 500 and 400. IPSO took long more, with 20,000 function evaluations. However, the reported standard deviation for IPSO was 0.0.
+To compare the results, we used only methods who achieved close performance to the obtained by C-ITGO, since some methods in literature have very diverging results. The WCA, IPSO, APSO and IAPSO methods achieved good performance in this problem, finding the optimal solution and having very small variance, as shown in Table \ref{tab:MD}. The WCA and IAPSO took very few function evaluations to converge, respectively 500 and 400. IPSO took long more, with 20,000 function evaluations. However, the reported standard deviation for IPSO was 0.0.
 
 \input{Tables/MD}
 

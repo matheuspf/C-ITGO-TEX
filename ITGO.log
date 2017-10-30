@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  30 OCT 2017 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  30 OCT 2017 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2175,28 +2175,14 @@ Package pdftex.def Info: Imgs/TC.png used on input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./Tables/TC.tex
-
-./Tables/TC.tex:21: Package inputenc Error: Unicode char − (U+2212)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...66527 & 0.01266732 & 0.01271906 & 2.45E−
-                                                  06 & 10,000 \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [18] [19 <./Imgs/TC.png>] <Imgs/TB.png, id=487, 333.245pt x 242.9075pt>
+(./Tables/TC.tex) [18] [19 <./Imgs/TC.png>]
+<Imgs/TB.png, id=487, 333.245pt x 242.9075pt>
 File: Imgs/TB.png Graphic file (type png)
-
-<use Imgs/TB.png>
+ <use Imgs/TB.png>
 Package pdftex.def Info: Imgs/TB.png used on input line 78.
 (pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
- (./Tables/TB.tex) [20 <./Imgs/TB.png>]
+
+(./Tables/TB.tex) [20 <./Imgs/TB.png>]
 <Imgs/SR.jpg, id=500, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
  <use Imgs/SR.jpg>
@@ -2251,10 +2237,10 @@ Package rerunfilecheck Info: File `ITGO.out' has not changed.
 (rerunfilecheck)             Checksum: 020D757705748C53B316EAB8877C3CC4;1199.
  ) 
 Here is how much of TeX's memory you used:
- 34710 strings out of 493029
- 650507 string characters out of 6136233
+ 34709 strings out of 493029
+ 650501 string characters out of 6136233
  765349 words of memory out of 5000000
- 37440 multiletter control sequences out of 15000+600000
+ 37439 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  56i,15n,77p,10416b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2282,7 +2268,7 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb
 share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (31 pages, 2557955 bytes).
+Output written on ITGO.pdf (31 pages, 2558037 bytes).
 PDF statistics:
  695 PDF objects out of 1000 (max. 8388607)
  584 compressed objects within 6 object streams

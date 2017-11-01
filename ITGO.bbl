@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{49}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -246,6 +246,15 @@
   constrained engineering optimization problems}.
 \newblock In {\it \bibinfo{booktitle}{International Conference on Natural
   Computation}\/} (pp. \bibinfo{pages}{582--591}).
+%Type = Manual
+\bibitem[{{R Development Core Team}(2008)}]{R}
+\bibinfo{author}{{R Development Core Team}} (\bibinfo{year}{2008}).
+\newblock {\it \bibinfo{title}{R: A Language and Environment for Statistical
+  Computing}\/}.
+\newblock \bibinfo{organization}{R Foundation for Statistical Computing}
+  \bibinfo{address}{Vienna, Austria}.
+\newblock \URLprefix \url{http://www.R-project.org} \bibinfo{note}{{ISBN}
+  3-900051-07-0}.
 %Type = Article
 \bibitem[{Ragsdell \& Phillips(1973)}]{TB}
 \bibinfo{author}{Ragsdell, K.}, \& \bibinfo{author}{Phillips, D.}
@@ -328,6 +337,14 @@
 \newblock {\it \bibinfo{journal}{IEEE Transactions on Evolutionary
   Computation}\/},  {\it \bibinfo{volume}{18}\/}, \bibinfo{pages}{689--707}.
 %Type = Article
+\bibitem[{Skillings \& Mack(1981)}]{Skillings}
+\bibinfo{author}{Skillings, J.~H.}, \& \bibinfo{author}{Mack, G.~A.}
+  (\bibinfo{year}{1981}).
+\newblock \bibinfo{title}{On the use of a friedman-type statistic in balanced
+  and unbalanced block designs}.
+\newblock {\it \bibinfo{journal}{Technometrics}\/},  {\it
+  \bibinfo{volume}{23(2)}\/}, \bibinfo{pages}{171--177}.
+%Type = Article
 \bibitem[{Sobol(1967)}]{Sobol}
 \bibinfo{author}{Sobol, I.} (\bibinfo{year}{1967}).
 \newblock \bibinfo{title}{The distribution of points in a cube and the
@@ -335,6 +352,13 @@
 \newblock {\it \bibinfo{journal}{USSR Computational Mathematics and
   Mathematical Physics}\/},  {\it \bibinfo{volume}{7}\/},
   \bibinfo{pages}{86--112}.
+%Type = Manual
+\bibitem[{Srisuradetchai(2015)}]{SkillMack}
+\bibinfo{author}{Srisuradetchai, P.} (\bibinfo{year}{2015}).
+\newblock {\it \bibinfo{title}{Skillings.Mack: The Skillings-Mack Test
+  Statistic for Block Designs with Missing Observations}\/}.
+\newblock \URLprefix \url{https://CRAN.R-project.org/package=Skillings.Mack}
+  \bibinfo{note}{r package version 1.10}.
 %Type = Inproceedings
 \bibitem[{Takahama \& Sakai(2010)}]{DE2}
 \bibinfo{author}{Takahama, T.}, \& \bibinfo{author}{Sakai, S.}

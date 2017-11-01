@@ -4,9 +4,13 @@ The C-ITGO has been implemented using Matlab, and the experiments were accomplis
 
 To evaluate the performance of the developed method to solve real world problems, we use eight difficult constrained engineering optimization problems from the literature, whose objective functions and constraints are diverse (quadratic, cubic, polynomial and nonlinear) with many numbers and types of design variables (continuous, mixed and integer). 
 
-In all tests, given the stochastic characteristic of C-ITGO, we run it 25 times, saving the Best and Worst feasible solutions, as well as the mean value (Mean) and standard deviation (SD) of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of C-ITGO as soon as the best solution found in a run is considerable close to the optimum (the optimum solution for each of the eight engineering design problems considered is known). That is, the condition for stopping C-ITGO, when the fitness reaches a certain value, is problem dependent.
+In all tests, given the stochastic characteristic of C-ITGO, we run it 25 times, saving the Best and Worst feasible solutions, as well as the mean value (Mean) and standard deviation (SD) of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of C-ITGO as soon as the best solution found in a run is considerable close to the optimum (the optimum solution for each of the eight engineering design problems considered is known). That is, the condition for stopping C-ITGO, when the fitness reaches a certain value, is problem dependent. At the end, the mean number of function evaluations (MNFEs) is reported for all runs.
 
-Also, a maximum number of function evaluations (NFEs) was set for each problem. If the value of NFEs exceeds the maximum, the algorithm immediately stops, and the best solution found is returned. At the end, the mean number of function evaluations (MNFEs) is reported for all runs. This value is also problem dependent, and is based on the results reported by other methods.
+Table \ref{tab:GAP} shows the values that determine the convergence of C-ITGO for each problem. The values in row \textit{GAP} represent the minimum distance to the optimum that the fitness of a solution needs to be to stop the execution of C-ITGO. The Gear Train (GT) was the only problem where we specified a maximum number of function evaluations. For this problem, if the NFEs reaches 800, we stop immediately and return the best solution found. All other problems converged to at least \textit{GAP} from the optimum without the need to specify a maximum NFEs.
+
+
+\input{Tables/GAP}
+
 
 In our tests, all solutions reported by C-ITGO are completely feasible, for all problems. So, unless specified, we exclude from comparison methods that violate any constraint (infeasible).
 
@@ -31,7 +35,7 @@ The welded beam design \citep{WB} is the problem of minimizing the fabrication c
 \caption{Schematic view of the welded beam design problem.}\label{fig:WB}
 \end{figure}
 
-We compare the results obtained by C-ITGO against a number of state of the art methods used to solve this problem, including PSO-DE, HPSO, MBA, CMA-ES, MVDE, CPSO, LCA, NM-PSO, APSO, WCA, IABC-MAL, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the statistical results obtained by all cited methods to solve the welded beam design problem. All the methods, with exception of CMA-ES, SAMP-Jaya and C-ITGO, took more than 10,000 iterations to achieve good quality solutions. C-ITGO achieved optimal solutions with a very small standard deviation of $3.65E \!-\! 12$ with ten times fewer function evaluations in average than most of the methods.
+We compare the results obtained by C-ITGO against a number of state of the art methods used to solve this problem, including PSO-DE, HPSO, MBA, CMA-ES, MVDE, CPSO, LCA, NM-PSO, APSO, WCA, IABC-MAL, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the statistical results obtained by all cited methods to solve the welded beam design problem. All the methods, with exception of CMA-ES, SAMP-Jaya and C-ITGO, took more than 10,000 iterations to achieve good quality solutions. C-ITGO achieved optimal solutions with a very small standard deviation of 3.65E-12 with ten times fewer function evaluations in average than most of the methods.
 
 \input{Tables/WB}
 
@@ -62,7 +66,7 @@ The methods vary greatly in the number of function evaluations required to conve
  
 The best solution reported by NM-PSO is again infeasible, so we do not compare it against other methods. The SAMP-Jaya method also seems to report a slightly infeasible best solution found, differing from the optimal value reported by other methods. However, the result differs only at the sixth decimal place, and the difference may be due to wrong rounding. We cannot state this for sure since we do not have access to the solution vector found by the method. Given the differences between the precision in the solutions reported by the methods, we consider $f(\bm{x}) = 0.012665$ to be the best solution found.
 
-The C-ITGO method performed remarkably well on this problem, converging to the best solution found in 535.08 function evaluations on average, almost four times less than the second competing method. Also, the standard deviation is very small, in the order of $2.81E-9$. 
+The C-ITGO method performed remarkably well on this problem, converging to the best solution found in 535.08 function evaluations on average, almost four times less than the second competing method. Also, the standard deviation is very small, in the order of 2.81E-9. 
 
 Given the relatively small domain of the problem, we believe that the C-ITGO method was able to cover the space efficiently, providing hot starting points for the local search method, which proved to be very effective in this case.
 
@@ -88,7 +92,7 @@ Here we present only the five best-performing methods used to solve this problem
 
 From Table \ref{tab:TB} is possible to note that all methods have very similar results, differing mainly in the number of function calls. This is not surprising, given that the problem is simpler, has fewer variables and has a smaller domain than any other engineering design problem considered in this work.
 
-C-ITGO achieved convergence quickly, taking 136.48 function evaluations in average. In this problem, we have set a small population, as well as a small number of function calls allowed in the local search procedure. Thus, we obtained the lowest NFEs than any of the competing techniques, at least ten times lower. It seems that the solutions found by the topographical heuristic were already close to the optimum, so the local search converged in very few iterations. However, the C-ITGO method has a slightly worse standard (less than 0.01\%) deviation than DELC and IABC-MAL.
+C-ITGO achieved convergence quickly, taking 136.48 function evaluations in average. In this problem, we have set a small population, as well as a small number of function calls allowed in the local search procedure. Thus, we obtained the lowest MNFEs than any of the competing techniques, at least ten times lower. It seems that the solutions found by the topographical heuristic were already close to the optimum, so the local search converged in very few iterations. However, the C-ITGO method has a slightly worse standard (less than 0.01\%) deviation than DELC and IABC-MAL.
 
 
 
@@ -107,15 +111,15 @@ In this problem, the total weight of the speed reducer (Figure \ref{fig:SR}) is 
 \caption{Schematic view of the speed reducer design problem}\label{fig:SR}
 \end{figure}
 
-For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, LCA, IPSO, APSO, IAPSO and SAMP-Jaya, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included so as to show that even in harder situations the C-ITGO algorithm can outperform any competing methods compared here.
+For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, LCA, IPSO, APSO, IABC-MAL, IAPSO and SAMP-Jaya, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included so as to show that even in harder situations the C-ITGO algorithm can outperform any competing methods compared here.
 
-The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation.
+The LCA, IPSO, IABC-MAL, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation.
 
 %The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
 
 \input{Tables/SP1}
 
-The first three methods take more than 20,000 iterations to converge to good quality solutions, while IAPSO and SAMP-Jaya take only 6,000 and 3744.66 NFEs respectively. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls in average, while maintaining negligible higher standard deviation than IAPSO and IPSO.
+The first five methods take more than 15,000 iterations to converge to good quality solutions, while IAPSO and SAMP-Jaya take only 6,000 and 3744.66 MNFEs respectively. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls in average, while maintaining negligible higher standard deviation than IAPSO and IPSO.
 
 For this problem, we used considerable greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO takes 3 full iterations to converge, while converging in the first iteration in most runs.
 
@@ -148,7 +152,7 @@ In the pressure vessel design problem, the objective is to minimize the total ma
 We compare C-ITGO against the  QPSO, G-QPSO, CMA-ES, MVDE, CB-ABC, HPSO, WCA, LCA, APSO, MBA, IABC-MAL, SAMP-Jaya and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. Some of the methods used to solve this problem report unfeasible results (WCA, MBA and SAMP-Jaya), probably because the integer constraints are ignored. Nevertheless, we still use the results of these methods to prove the superior convergence of C-ITGO, even in constrained mixed integer problems.
 
 
-The algorithms CMA-ES, CB-ABC, HPSO, IABC-MAl, IAPSO and C-ITGO are the only who found the feasible optimal solution. All other methods presented relatively poor performance, with much higher NFEs in average. C-ITGO takes less than five times the number of function evaluations to converge than the best competing method, SAMP-Jaya, which reported a result of 6,513.33 NFEs. Also, C-ITGO achieves the smallest standard deviation among all methods. All runs of C-ITGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison for this problem.
+The algorithms CMA-ES, CB-ABC, HPSO, IABC-MAl, IAPSO and C-ITGO are the only who found the feasible optimal solution. All other methods presented relatively poor performance, with much higher NFEs in average. C-ITGO takes less than five times the number of function evaluations to converge than the best competing method, SAMP-Jaya, which reported a result of 6,513.33 MNFEs. Also, C-ITGO achieves the smallest standard deviation among all methods. All runs of C-ITGO converged quickly to the global optimum, showing unarguably better results than any other method used for comparison for this problem.
 
 
 
@@ -172,7 +176,7 @@ The main difference relies on the number of function calls, varying from 100,00 
 \input{Tables/GT}
 
 
-Since this is an integer optimization problem, we used the mixed integer local search based on the NOMAD solver. In this problem, the solver had some difficulty in some runs, achieving $6.85E \! - \! 09$ of standard deviation, more than IAPSO, CS and MBA. The mean fitness value, however, is just worse than the CS method, which takes 5,000 function calls to converge. Besides this drawbacks, C-ITGO converges faster than the other methods compared here, taking only 773.0 function calls on average.
+Since this is an integer optimization problem, we used the mixed integer local search based on the NOMAD solver. In this problem, the solver had some difficulty in some runs, achieving 6.85E-09 of standard deviation, more than IAPSO, CS and MBA. The mean fitness value, however, is just worse than the CS method, which takes 5,000 function calls to converge. Besides this drawbacks, C-ITGO converges faster than the other methods compared here, taking only 773.0 function calls on average.
 
 
 
@@ -192,7 +196,7 @@ To compare the results, we used only methods who achieved close performance to t
 
 \input{Tables/MD}
 
-The C-ITGO clearly outperforms the other methods, having a standard deviation of $1.13E-16$, while converging with only 286.48 function evaluations on average. For this problem, we also have used a very small populations of size 20 and 5. The number of function evaluations in the first step was 100, and most runs converged in much less, enjoying the quality of initial solutions provided by the topographical heuristic step. Some runs, however, took more than 1,500 function evaluations, bringing the mean NFEs up.
+The C-ITGO clearly outperforms the other methods, having a standard deviation of 1.13E-16, while converging with only 286.48 function evaluations on average. For this problem, we also have used a very small populations of size 20 and 5. The number of function evaluations in the first step was 100, and most runs converged in much less, enjoying the quality of initial solutions provided by the topographical heuristic step. Some runs, however, took more than 1,500 function evaluations, bringing the mean NFEs up.
 
 
 
@@ -201,6 +205,54 @@ The C-ITGO clearly outperforms the other methods, having a standard deviation of
 Table \ref{tab:BestResults} shows the fitness value, the values of the variables and the values of the constraints for the best solution found by C-ITGO for all problems. The precision for the results of each problem was set to match the results reported by the competing methods cited in this work. However, to the best of our knowledge, the best solution found by C-ITGO for each problem is equal to, or negligibly worse (up to several decimal places) than the best solutions reported by state of the art methods.
 
 \input{Tables/BestResults}
+
+
+\subsection{Statistical tests}
+
+We now prove the significant improvement of the developed method over the competing methods by means of a nonparametric statistical test, where no assumptions are made regarding the underlying distribution of the data. Since no algorithm other than C-ITGO solves all the eight engineering design problems presented in this paper, we cannot apply typical statistical methods, such as the Kruskal-Wallis \citep{Kruskal} or the Friedman test \citep{Friedman}.
+
+Instead, we use the Skillings-Mack test \citep{Skillings}, which is a Friedman\allowbreak-type statistical test that can be used when there is missing data, and that reduces to the Friedman test when the data has no missing entries. Just as in the Friedman test, the algorithm finds the rank of the algorithms for each problem and then calculate the mean or average rank. The lower the average rank, the better is the algorithm.
+
+The method also reports a \textit{p-value}, the probability that, when the null hypothesis is assumed to be true (in this case, no difference between the performance of the methods), the results observed by the experiments at hand are at least of the same magnitude that the true values that would be observed in the limit of an infinite number of samples. Thus, a small p-value, say less than 0.05, represents a high chance that the null hypothesis is false.
+
+In this work, the mean number of function evaluations (MNFEs) is used as the comparing metric. We used the \textit{Skillings.Mack} package \citep{SkillMack} of the \textit{R} language \citep{R} to report the following results.
+
+In Table \ref{tab:SkillMack_3} we show the results of applying the statistical test to all the methods that solved at least three of the eight engineering design problems considered in this work. The mean rank of C-ITGO is 1.0, given that it has the smallest MNFEs for all problems. That is much less than the second method, IAPSO, which has a mean rank of 2.6875. The mean rank is also shown in the form of a bar plot for all methods in Figure \ref{fig:SkillMack_3}.
+
+
+\input{Tables/SkillMack_3}
+
+
+For this case, the p-value has a very small magnitude of 7E-06, which strongly implies that the null hypothesis does not hold true. That is, there is at least one method that is significantly better than the others. 
+
+
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[scale=0.6]{Imgs/SkillMack_3-crop.pdf}
+    \end{center}
+    \captionsetup{justification=centering}
+    \vspace*{-4mm}
+    \caption{Mean rank plot for all methods that solve at least three problems.}\label{fig:SkillMack_3}
+\end{figure}
+
+
+
+We also show in Table \ref{tab:SkillMack_5} the results of applying the Skillings-Mack test to the methods that solved at least five problems. The difference between the results reported in table \ref{tab:SkillMack_3} is mainly due to the reduction of the number of methods, and the exclusion of some methods that performed well, but in four or fewer problems, such as SAMP-Jaya.
+
+\input{Tables/SkillMack_5}
+
+We see again that C-ITGO has a mean rank of 1.0, far less than IAPSO with 2.25, standing in second place. The plot for the mean rank is shown in Figure \ref{fig:SkillMack_5} The p-value for this case is also very small, having a magnitude of 8.3E-05, which proves the superiority of C-ITGO above all competing methods compared in this work.
+
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[scale=0.6]{Imgs/SkillMack_5-crop.pdf}
+    \end{center}
+    \captionsetup{justification=centering}
+    \vspace*{-4mm}
+    \caption{Mean rank plot for all methods that solve at least five problems.}\label{fig:SkillMack_5}
+\end{figure}
 
 
 

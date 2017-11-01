@@ -507,6 +507,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/bera/fveb8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bera/fveb8r.tfm
 INPUT Results.tex
 INPUT Results.tex
+INPUT Tables/GAP.tex
+INPUT Tables/GAP.tex
 INPUT ./Imgs/WB.jpg
 INPUT ./Imgs/WB.jpg
 INPUT ./Imgs/WB.jpg
@@ -553,6 +555,18 @@ INPUT Tables/MD.tex
 INPUT Tables/MD.tex
 INPUT Tables/BestResults.tex
 INPUT Tables/BestResults.tex
+INPUT Tables/SkillMack_3.tex
+INPUT Tables/SkillMack_3.tex
+INPUT ./Imgs/SkillMack_3-crop.pdf
+INPUT ./Imgs/SkillMack_3-crop.pdf
+INPUT ./Imgs/SkillMack_3-crop.pdf
+INPUT ./Imgs/SkillMack_3-crop.pdf
+INPUT Tables/SkillMack_5.tex
+INPUT Tables/SkillMack_5.tex
+INPUT ./Imgs/SkillMack_5-crop.pdf
+INPUT ./Imgs/SkillMack_5-crop.pdf
+INPUT ./Imgs/SkillMack_5-crop.pdf
+INPUT ./Imgs/SkillMack_5-crop.pdf
 INPUT Conclusion.tex
 INPUT Conclusion.tex
 INPUT Acknowledgment.tex

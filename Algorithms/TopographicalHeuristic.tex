@@ -7,7 +7,7 @@
 
 \State $M \gets |Population|;$
 \State $\bm{best} \gets Population(0);$
-\State $\bm{KNN}_K \gets Build\_KNN(Population, K);$
+\State $KNN_K \gets Build\_KNN(Population, K);$
 \State $\bm{R} \gets random([0, 1]^{M \times M});$
 \State $TopoBest \gets \{\};$
 %\State $\bm{Dist}_{i, j} \gets \{|Population(i) - Population(j)|, \ i, j \in \{1, ..., |Population|\}\};$ 
@@ -16,7 +16,7 @@
 
 \State $insert = \bm{True};$
 
-\For{$j \in \{1, ..., |Population|\} \ \cap \ \{\bm{x}_j \in \bm{KNN}_K(\bm{x}_i)\}$}
+\For{$j \in \{1, ..., |Population|\} \ \cap \ \{\bm{x}_j \in KNN_K(\bm{x}_i)\}$}
 	\If{$\bm{R}_{i, j} < \alpha$}
 		\State $insert \gets insert$ \& $Compare(f(\cdot), v(\cdot), \bm{x}_i, \bm{x}_j);$
 	\Else

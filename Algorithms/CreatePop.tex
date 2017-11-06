@@ -1,11 +1,11 @@
 \begin{breakablealgorithm}
-\caption{CreatePop($\bm{x}$, $\bm{l}$, $\bm{u}$, $popSize$, $\phi$)}
+\caption{CreatePop($\bm{x}_b$, $\bm{l}$, $\bm{u}$, $popSize$, $\phi$)}
 \label{alg:CreatePop}
 \begin{algorithmic}[1]
 
-\State $\bm{l}' \gets max(\bm{l}, \bm{x} - (0.5 * \phi) * (\bm{u} - \bm{l}));$
-\State $\bm{u}' \gets min(\bm{u}, \bm{x} + (0.5 * \phi) * (\bm{u} - \bm{l}));$
-\State $Population \gets \{\bm{x} = \bm{x}^1, ..., \bm{x}^{popSize} : \bm{x} \in random(\bm{l}', \bm{u}')\};$
+\State $\bm{l}' \gets max(\bm{l}, \bm{x}_b - (0.5 * \phi) * (\bm{u} - \bm{l}));$
+\State $\bm{u}' \gets min(\bm{u}, \bm{x}_b + (0.5 * \phi) * (\bm{u} - \bm{l}));$
+\State $Population \gets \{\bm{x}_b\} \cup \{\bm{x} = \bm{x}^1, ..., \bm{x}^{popSize-1} : \bm{x} \in random(\bm{l}', \bm{u}')\};$
 
 \State \Return $Population;$
 

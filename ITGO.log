@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  1 NOV 2017 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  6 NOV 2017 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2042,26 +2042,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
  []
 
 
-Overfull \hbox (17.05367pt too wide) in paragraph at lines 35--36
-[]\T1/fve/m/n/10.95 The to-po-graphic heuris-tic is based on se-lect-ing ev-ery
- in-di-vid-ual $\OML/cmm/b/it/10.95 x[]$ \T1/fve/m/n/10.95 such that $[][] \OML
-/cmm/m/it/10.95 A[] \OT1/cmr/m/n/10.95 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 <fig_1.pdf, id=200, 462.52798pt x 346.89601pt>
 File: fig_1.pdf Graphic file (type pdf)
  <use fig_1.pdf>
-Package pdftex.def Info: fig_1.pdf used on input line 80.
+Package pdftex.def Info: fig_1.pdf used on input line 79.
 (pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
  [6]
 Package epstopdf Info: Source file: <fig_2.eps>
@@ -2072,17 +2065,17 @@ Package epstopdf Info: Source file: <fig_2.eps>
 (epstopdf)                    size: 447579 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig_2-eps-converted-to.pdf
  fig_2.eps>
-(epstopdf)             \includegraphics on input line 99.
+(epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig_2-eps-converted-to.pdf, id=212, 462.72874pt x 348.30125pt>
 File: fig_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_2-eps-converted-to.pdf>
-Package pdftex.def Info: fig_2-eps-converted-to.pdf used on input line 99.
+Package pdftex.def Info: fig_2-eps-converted-to.pdf used on input line 98.
 (pdftex.def)             Requested size: 236.50385pt x 178.01926pt.
 
-Overfull \hbox (21.50154pt too wide) in paragraph at lines 99--100
+Overfull \hbox (21.50154pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
@@ -2094,27 +2087,28 @@ Package epstopdf Info: Source file: <fig_3.eps>
 (epstopdf)                    size: 449348 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig_3-eps-converted-to.pdf
  fig_3.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 <fig_3-eps-converted-to.pdf, id=213, 462.72874pt x 348.30125pt>
 File: fig_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_3-eps-converted-to.pdf>
-Package pdftex.def Info: fig_3-eps-converted-to.pdf used on input line 105.
+Package pdftex.def Info: fig_3-eps-converted-to.pdf used on input line 104.
 (pdftex.def)             Requested size: 236.50385pt x 178.01926pt.
 
-Overfull \hbox (21.50154pt too wide) in paragraph at lines 105--106
+Overfull \hbox (21.50154pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+fve on input line 124.
+[7 <./fig_1.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+fve on input line 123.
 
-(/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
 )
 LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 124.
- [7 <./fig_1.pdf>]
+(Font)              scaled to size 9.85492pt on input line 123.
+
 [8 <./fig_2-eps-converted-to.pdf> <./fig_3-eps-converted-to.pdf>]
 (./Algorithms/ITGO.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
@@ -2124,12 +2118,12 @@ LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
 (Font)              scaled to size 4.49997pt on input line 13.
  [9])
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-(./Algorithms/CreatePop.tex) [10] (./Algorithms/TopographicalHeuristic.tex
-[11]) [12] [13] (./Tables/Parameters.tex
+(./Algorithms/CreatePop.tex) [10] [11] (./Algorithms/TopographicalHeuristic.tex
+) [12] [13] (./Tables/Parameters.tex
 Overfull \hbox (4.70404pt too wide) in paragraph at lines 7--7
  \OML/cmm/b/it/6 Param$| 
  []
@@ -2154,110 +2148,93 @@ Overfull \hbox (2.13766pt too wide) in paragraph at lines 15--16
  []|\T1/fve/b/n/6 BONMIN| 
  []
 
-)) [14] (./Results.tex
-
-Package natbib Warning: Citation `GIT' on page 15 undefined on input line 3.
-
-[15] (./Tables/GAP.tex) [16] <Imgs/WB.jpg, id=457, 202.73973pt x 146.45868pt>
+) [14]) (./Results.tex [15] (./Tables/GAP.tex) [16] [17]
+<Imgs/WB.jpg, id=471, 202.73973pt x 146.45868pt>
 File: Imgs/WB.jpg Graphic file (type jpg)
-
-<use Imgs/WB.jpg>
-Package pdftex.def Info: Imgs/WB.jpg used on input line 32.
+ <use Imgs/WB.jpg>
+Package pdftex.def Info: Imgs/WB.jpg used on input line 34.
 (pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[17] (./Tables/WB.tex) [18 <./Imgs/WB.jpg>]
+(./Tables/WB.tex) [18 <./Imgs/WB.jpg>]
 <Imgs/TC.png, id=482, 389.455pt x 116.435pt>
 File: Imgs/TC.png Graphic file (type png)
  <use Imgs/TC.png>
-Package pdftex.def Info: Imgs/TC.png used on input line 53.
+Package pdftex.def Info: Imgs/TC.png used on input line 57.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
- (./Tables/TC.tex) [19 <./Imgs/TC.png>] <Imgs/TB.png, id=493, 333.245pt x 242.9
+ (./Tables/TC.tex) [19 <./Imgs/TC.png>] <Imgs/TB.png, id=495, 333.245pt x 242.9
 075pt>
 File: Imgs/TB.png Graphic file (type png)
 
 <use Imgs/TB.png>
-Package pdftex.def Info: Imgs/TB.png used on input line 82.
+Package pdftex.def Info: Imgs/TB.png used on input line 86.
 (pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
- (./Tables/TB.tex) [20 <./Imgs/TB.png>]
-<Imgs/SR.jpg, id=506, 333.20947pt x 120.87637pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./Tables/TB.tex) [20] <Imgs/SR.jpg, id=508, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
- <use Imgs/SR.jpg>
-Package pdftex.def Info: Imgs/SR.jpg used on input line 108.
+
+<use Imgs/SR.jpg>
+Package pdftex.def Info: Imgs/SR.jpg used on input line 110.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
- [21 <./Imgs/SR.jpg>] (./Tables/SP1.tex) (./Tables/SP2.tex) [22]
-<Imgs/PV.png, id=524, 333.245pt x 158.5925pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./Imgs/TB.png>] (./Tables/SP1.tex) [22 <./Imgs/SR.jpg>] (./Tables/SP2.tex)
+<Imgs/PV.png, id=526, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
  <use Imgs/PV.png>
-Package pdftex.def Info: Imgs/PV.png used on input line 141.
+Package pdftex.def Info: Imgs/PV.png used on input line 143.
 (pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
 
 (./Tables/PV.tex) [23 <./Imgs/PV.png>]
-<Imgs/GT.jpg, id=537, 251.3461pt x 113.84123pt>
+Overfull \hbox (4.04684pt too wide) in paragraph at lines 157--158
+\T1/fve/m/n/10.95 to the known global op-ti-mum, show-ing unar-guably bet-ter r
+e-sults than any other method
+ []
+
+<Imgs/GT.jpg, id=538, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
  <use Imgs/GT.jpg>
-Package pdftex.def Info: Imgs/GT.jpg used on input line 166.
+Package pdftex.def Info: Imgs/GT.jpg used on input line 168.
 (pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
 
-(./Tables/GT.tex) [24 <./Imgs/GT.jpg>]
-<Imgs/MD.jpg, id=547, 216.81pt x 168.84319pt>
-File: Imgs/MD.jpg Graphic file (type jpg)
- <use Imgs/MD.jpg>
-Package pdftex.def Info: Imgs/MD.jpg used on input line 189.
-(pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
 
-(./Tables/MD.tex [25 <./Imgs/MD.jpg>]) (./Tables/BestResults.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./Tables/GT.tex) [24] <Imgs/MD.jpg, id=549, 216.81pt x 168.84319pt>
+File: Imgs/MD.jpg Graphic file (type jpg)
+
+<use Imgs/MD.jpg>
+Package pdftex.def Info: Imgs/MD.jpg used on input line 190.
+(pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
+ [25 <./Imgs/GT.jpg> <./Imgs/MD.jpg>] (./Tables/MD.tex)
+(./Tables/BestResults.tex
 Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 [][] 
  []
 
-)
-
-Package natbib Warning: Citation `Kruskal' on page 26 undefined on input line 2
-12.
-
-
-Package natbib Warning: Citation `Friedman' on page 26 undefined on input line 
-212.
-
-[26] (./Tables/SkillMack_3.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) <Imgs/SkillMack_3-crop.pdf, id=573, 669.50125pt x 254.9525pt>
+) [26] (./Tables/SkillMack_3.tex [27])
+<Imgs/SkillMack_3-crop.pdf, id=590, 669.50125pt x 254.9525pt>
 File: Imgs/SkillMack_3-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_3-crop.pdf>
-Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf used on input line 232.
+Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf used on input line 233.
 (pdftex.def)             Requested size: 401.70384pt x 152.97266pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[27] (./Tables/SkillMack_5.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) <Imgs/SkillMack_5-crop.pdf, id=588, 398.48875pt x 234.8775pt>
+ (./Tables/SkillMack_5.tex) [28 <./Imgs/SkillMack_3-crop.pdf>] <Imgs/SkillMack_
+5-crop.pdf, id=646, 398.48875pt x 234.8775pt>
 File: Imgs/SkillMack_5-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_5-crop.pdf>
-Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf used on input line 250.
+Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf used on input line 251.
 (pdftex.def)             Requested size: 239.0951pt x 140.92758pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./Conclusion.tex [28 <./Imgs/SkillMack_3-crop.pdf>] [29 <./Imgs/SkillMack_5-
-crop.pdf>]) (./Acknowledgment.tex) (./ITGO.bbl
+) (./Conclusion.tex [29 <./Imgs/SkillMack_5-crop.pdf>]) (./Acknowledgment.tex) 
+(./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 29.
  [30] [31] [32] [33] [34])
-
-Package natbib Warning: There were undefined citations.
-
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 145.
 See the caption package documentation for explanation.
@@ -2272,10 +2249,10 @@ Package rerunfilecheck Info: File `ITGO.out' has not changed.
 (rerunfilecheck)             Checksum: 85562F8BD92249F0F9674A36F900C1AF;1266.
  ) 
 Here is how much of TeX's memory you used:
- 34757 strings out of 493029
- 651214 string characters out of 6136233
- 767935 words of memory out of 5000000
- 37466 multiletter control sequences out of 15000+600000
+ 34762 strings out of 493029
+ 651308 string characters out of 6136233
+ 766995 words of memory out of 5000000
+ 37469 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  56i,15n,77p,10376b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2303,10 +2280,10 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb
 share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (35 pages, 2587428 bytes).
+Output written on ITGO.pdf (35 pages, 2588489 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 643 compressed objects within 7 object streams
- 139 named destinations out of 1000 (max. 500000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 651 compressed objects within 7 object streams
+ 141 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

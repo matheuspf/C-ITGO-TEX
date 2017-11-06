@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{51}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -56,6 +56,16 @@
   algorithms}.
 \newblock {\it \bibinfo{journal}{Computer Methods in Applied Mechanics and
   Engineering}\/},  {\it \bibinfo{volume}{186}\/}, \bibinfo{pages}{311–338}.
+%Type = Article
+\bibitem[{Derrac et~al.(2011)Derrac, García, Molina \& Herrera}]{Friedman}
+\bibinfo{author}{Derrac, J.}, \bibinfo{author}{García, S.},
+  \bibinfo{author}{Molina, D.}, \& \bibinfo{author}{Herrera, F.}
+  (\bibinfo{year}{2011}).
+\newblock \bibinfo{title}{A practical tutorial on the use of nonparametric
+  statistical tests as a methodology for comparing evolutionary and swarm
+  intelligence algorithms}.
+\newblock {\it \bibinfo{journal}{Swarm and Evolutionary Computation}\/},  {\it
+  \bibinfo{volume}{1}\/}, \bibinfo{pages}{3--18}.
 %Type = Article
 \bibitem[{Eskandar et~al.(2012)Eskandar, Sadollah, Bahreininejad \&
   Hamdi}]{WCA}
@@ -198,6 +208,14 @@
   uniform pseudo-random number generator}.
 \newblock {\it \bibinfo{journal}{{ACM} Transactions on Modeling and Computer
   Simulation}\/},  {\it \bibinfo{volume}{8}\/}, \bibinfo{pages}{3--30}.
+%Type = Inbook
+\bibitem[{McKight \& Najab(2010)}]{Kruskal}
+\bibinfo{author}{McKight, P.~E.}, \& \bibinfo{author}{Najab, J.}
+  (\bibinfo{year}{2010}).
+\newblock \bibinfo{title}{Kruskal-wallis test}.
+\newblock In {\it \bibinfo{booktitle}{The Corsini Encyclopedia of
+  Psychology}\/}.
+\newblock \bibinfo{publisher}{John Wiley \& Sons, Inc.}
 %Type = Article
 \bibitem[{Melo \& Carosio(2013)}]{MVDE}
 \bibinfo{author}{Melo, V.~V.}, \& \bibinfo{author}{Carosio, G. L.~C.}
@@ -247,8 +265,8 @@
 \newblock In {\it \bibinfo{booktitle}{International Conference on Natural
   Computation}\/} (pp. \bibinfo{pages}{582--591}).
 %Type = Manual
-\bibitem[{{R Development Core Team}(2008)}]{R}
-\bibinfo{author}{{R Development Core Team}} (\bibinfo{year}{2008}).
+\bibitem[{{R Dev. Core Team}(2008)}]{R}
+\bibinfo{author}{{R Dev. Core Team}} (\bibinfo{year}{2008}).
 \newblock {\it \bibinfo{title}{R: A Language and Environment for Statistical
   Computing}\/}.
 \newblock \bibinfo{organization}{R Foundation for Statistical Computing}
@@ -358,7 +376,7 @@
 \newblock {\it \bibinfo{title}{Skillings.Mack: The Skillings-Mack Test
   Statistic for Block Designs with Missing Observations}\/}.
 \newblock \URLprefix \url{https://CRAN.R-project.org/package=Skillings.Mack}
-  \bibinfo{note}{r package version 1.10}.
+  \bibinfo{note}{. {R} package version 1.10}.
 %Type = Inproceedings
 \bibitem[{Takahama \& Sakai(2010)}]{DE2}
 \bibinfo{author}{Takahama, T.}, \& \bibinfo{author}{Sakai, S.}

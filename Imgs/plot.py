@@ -5,7 +5,7 @@ import matplotlib.patches as mpatches
 import os
 
 
-"""
+
 size = 7, 4
 
 width = 0.4
@@ -13,27 +13,27 @@ name = 'SkillMack_5.pdf'
 
 n = 8
 
-mean_rank = (1.0000, 2.2500, 3.8125, 4.0000, 4.0000, 3.5625, 3.6875, 5.6875)
+mean_rank = (1.0000, 2.2500, 3.8750, 3.9375, 4.0000, 3.5000, 3.7500, 5.6875)
 
 names = ("C-ITGO", "IAPSO", "IABC-MAL", "MBA", "LCA", "CMA-ES", "MVDE", "APSO")
-"""
+
          
 
-
+"""
 size = 12, 4.2
 width = 0.3
 name = 'SkillMack_3.pdf'
 
 n = 15
 
-mean_rank = (1.0000, 2.6875, 3.0625, 5.0000, 6.6875,
-             6.8125, 5.1250, 5.3750, 4.5625, 5.8125,
-             4.5625, 4.8125, 5.3750, 5.2500, 7.9375)
+mean_rank = (1.0000, 2.6875, 3.1250, 4.8125, 6.8750,
+             6.9375, 5.1875, 5.3750, 4.6250, 5.9375,
+             4.5000, 4.8750, 5.5625, 5.4375, 8.0625)
 
 names = ("C-ITGO", "IAPSO", "SAMP-\nJaya", "IABC-\nMAL", "PSO-DE", 
          "HPSO", "MBA", "LCA", "CB-ABC", "DELC",
          "CMA-ES", "MVDE", "IPSO", "WCA", "APSO")
-
+"""
 
 
 

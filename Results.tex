@@ -1,12 +1,12 @@
 \section{Computational Results} \label{sec:Results}
 
-The C-ITGO has been implemented using Matlab, and the experiments were accomplished on a machine with the Intel i3-3110M CPU @2.40GHz processor with 4GB of RAM, running Windows 7. Also, we provide a free library for using C-ITGO for optimizing any user defined function, being it constrained or not. The library uses by default the Matlab \textit{fmincon} solver for continuous problems and the OPTI toolbox (currently only readily available for Windows, but can be compiled for Linux and Mac as well) for mixed integer problems. Also, the user has the option to easily incorporate other local search algorithms, if desired.
+The C-ITGO has been implemented using Matlab, and the experiments were accomplished on a machine with the Intel i3-3110M CPU @2.40GHz processor with 4GB of RAM, running Windows 7. Also, we provide a free library for using C-ITGO for optimizing any user-defined function, being it constrained or not. The library uses by default the Matlab \textit{fmincon} solver for continuous problems and the OPTI toolbox (currently only readily available for Windows, but can be compiled for Linux and Mac as well) for mixed integer problems. Also, the user has the option to easily incorporate other local search algorithms, if desired.
 
 %The source code for the reported results in this work can be found and downloaded for free at \cite{GIT}.
 
-To evaluate the performance of the developed method to solve real world problems, we use eight difficult constrained engineering optimization problems from the literature, whose objective functions and constraints are diverse (quadratic, cubic, polynomial and nonlinear) with many numbers and types of design variables (continuous, mixed and integer). 
+To evaluate the performance of the developed method to solve real-world problems, we use eight difficult constrained engineering optimization problems from the literature, whose objective functions and constraints are diverse (quadratic, cubic, polynomial and nonlinear) with many numbers and types of design variables (continuous, mixed and integer). 
 
-In all tests, given the stochastic characteristic of C-ITGO, we run it 25 times, saving the Best and Worst feasible solutions, as well as the mean value (Mean) and standard deviation (SD) of the fitness after all runs. Given the great variability between the results found in literature for most problems, we stop the execution of C-ITGO as soon as the best solution found in a run is considerable close to the optimum (the optimum solution for each of the eight engineering design problems considered is known). That is, the condition for stopping C-ITGO, when the fitness reaches a certain value, is problem dependent. At the end, the mean number of function evaluations (MNFEs) is reported for all runs.
+In all tests, given the stochastic characteristic of C-ITGO, we run it 25 times, saving the Best and Worst feasible solutions, as well as the mean value (Mean) and standard deviation (SD) of the fitness after all runs. Given the great variability between the results found in the literature for most problems, we stop the execution of C-ITGO as soon as the best solution found in a run is considerably close to the optimum (the optimum solution for each of the eight engineering design problems considered is known). That is, the condition for stopping C-ITGO, when the fitness reaches a certain value, is problem dependent. At the end, the mean number of function evaluations (MNFEs) is reported for all runs.
 
 Table \ref{tab:GAP} shows the values that determine the convergence of C-ITGO for each problem. The values in row \textit{GAP} represent the minimum distance to the optimum that the fitness of a solution needs to be to stop the execution of C-ITGO. The Gear Train (GT) was the only problem where we specified a maximum number of function evaluations. For this problem, if the NFEs reaches 800, we stop immediately and return the best solution found. All other problems converged to at least \textit{GAP} from the optimum without the need to specify a maximum NFEs.
 
@@ -16,12 +16,12 @@ Table \ref{tab:GAP} shows the values that determine the convergence of C-ITGO fo
 
 In our tests, all solutions reported by C-ITGO are completely feasible, for all problems. So, unless specified, we exclude from comparison methods that violate any constraint (infeasible).
 
-We compare 20 different optimization methods against C-ITGO. The most common meta-heuristic for solving the problems considered in this work is the Particle Swarm Optimization (PSO), including: PSO-DE \citep{PSO-DE}, a hybrid PSO method combined with Differential Evolution (DE); the HPSO \citep{HPSO}, another hybridized particle swarm method in combination with simulated annealing; a co-evolutionary PSO denominated CPSO \citep{CPSO}; the hybridized PSO with Nelder-Mead simplex (NM-PSO) \citep{NM-PSO}; the Unified PSO (UPSO) \citep{UPSO}, a PSO variant that balances exploration and exploitation; the APSO, standing for Accelerated PSO  \citep{APSO}; the Gaussian Quantum-Behaved Particle Swarm Optimization methods, named QPSO and G-QPSO \citep{QPSO}; and the IPSO \citep{IPSO}, which incorporates an interval reducing procedure. More recently, and among the best PSO methods for constrained global optimization, we can cite the Improved Accelerated PSO algorithm (IAPSO) \citep{IAPSO}, which proposes some modifications and improves the APSO method.
+We compare 20 different optimization methods against C-ITGO. The most common meta-heuristic for solving the problems considered in this work is the Particle Swarm Optimization (PSO), including PSO-DE \citep{PSO-DE}, a hybrid PSO method combined with Differential Evolution (DE); the HPSO \citep{HPSO}, another hybridized particle swarm method in combination with simulated annealing; a co-evolutionary PSO denominated CPSO \citep{CPSO}; the hybridized PSO with Nelder-Mead simplex (NM-PSO) \citep{NM-PSO}; the Unified PSO (UPSO) \citep{UPSO}, a PSO variant that balances exploration and exploitation; the APSO, standing for Accelerated PSO  \citep{APSO}; the Gaussian Quantum-Behaved Particle Swarm Optimization methods, named QPSO and G-QPSO \citep{QPSO}; and the IPSO \citep{IPSO}, which incorporates an interval reducing procedure. More recently, and among the best PSO methods for constrained global optimization, we can cite the Improved Accelerated PSO algorithm (IAPSO) \citep{IAPSO}, which proposes some modifications and improves the APSO method.
 
-Many other different optimization methods were also used for comparison in this work: the Mine Blast Algorithm (MBA) \citep{MBA}, a population-based optimization method based on mine bomb explosion concept; the League Championship Algorithm (LCA) \citep{LCA}, which models a league championship environment with artificial teams; the Crossover-Based Artificial Bee Colony (CB-ABC) \citep{CB-ABC}, applying modified search operators over the regular ABC algorithm; the Differential Evolution with Level Comparison (DELC) \citep{DELC}, which converts a constrained problem into a unconstrained one by means of a level comparison mechanism; a Multi-View Differential Evolution (MVDE) \citep{MVDE}, which uses several different mutation strategies at every iteration; the Covariance Matrix Adaptation Evolution Strategy (CMA-ES) method \citep{CMA-ES}, which builds a distribution model of the population; the Water Cycle Algorithm (WCA) \citep{WCA}, a nature inspired method based on the water cycle process; and the Cuckoo Search algorithm (CS) \citep{CS}, another nature inspired method based on the cuckoo bird specie behavior. Recently, and reporting state-of-the-art results for some problems, we can cite the Improved Artificial Bee Colony with Modified Augmented Lagrangian (IABC-MAL) \citep{IABC-Mal}, which integrates the Modified Augmented Lagrangian method to handle constraints with the Improved ABC algorithm \citep{IABC}, and the Self-Adaptive Multi-Population based Jaya (SAMP-Jaya) algorithm \citep{SAMP-Jaya}, a multi-population scheme of the Jaya method \citep{Jaya}.
+Many other different optimization methods were also used for comparison in this work: the Mine Blast Algorithm (MBA) \citep{MBA}, a population-based optimization method based on mine bomb explosion concept; the League Championship Algorithm (LCA) \citep{LCA}, which models a league championship environment with artificial teams; the Crossover-Based Artificial Bee Colony (CB-ABC) \citep{CB-ABC}, applying modified search operators over the regular ABC algorithm; the Differential Evolution with Level Comparison (DELC) \citep{DELC}, which converts a constrained problem into a unconstrained one by means of a level comparison mechanism; a Multi-View Differential Evolution (MVDE) \citep{MVDE}, which uses several different mutation strategies at every iteration; the Covariance Matrix Adaptation Evolution Strategy (CMA-ES) method \citep{CMA-ES}, which builds a distribution model of the population; the Water Cycle Algorithm (WCA) \citep{WCA}, a nature-inspired method based on the water cycle process; and the Cuckoo Search algorithm (CS) \citep{CS}, another nature-inspired method based on the cuckoo bird species behavior. Recently, and reporting state-of-the-art results for some problems, we can cite the Improved Artificial Bee Colony with Modified Augmented Lagrangian (IABC-MAL) \citep{IABC-Mal}, which integrates the Modified Augmented Lagrangian method to handle constraints with the Improved ABC algorithm \citep{IABC}, and the Self-Adaptive Multi-Population based Jaya (SAMP-Jaya) algorithm \citep{SAMP-Jaya}, a multi-population scheme of the Jaya method \citep{Jaya}.
 
 
-Following, will be briefly explained the engineering optimization problems that will be tackled in this work as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. For the sake of space, the mathematical formulations, the project variables, and their specific values will not be presented here. Further information on the Welded Beam (WB), Tension / Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. Three-Bar truss (TB) and additional information on Welded Beam (WB), Tension / Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
+Following will be briefly explained the engineering optimization problems that will be tackled in this work as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. For the sake of space, the mathematical formulations, the project variables, and their specific values will not be presented here. Further information on the Welded Beam (WB), Tension / Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. Three-Bar truss (TB) and additional information on Welded Beam (WB), Tension / Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
 
 
 
@@ -43,14 +43,14 @@ We write the statistics for the C-ITGO method in bold simply to highlight the re
 
 \input{Tables/WB}
 
-The results for C-ITGO and SAMP-Jaya are very similar, with the former having slightly worse standard deviation, but converging in less than one-third of the number of function evaluations. We note here that the best solution achieved by NM-PSO is slightly infeasible, so it should not be directly compared to the other methods.
+The results for C-ITGO and SAMP-Jaya are very similar, with the former having a slightly worse standard deviation, but converging in less than one-third of the number of function evaluations. We note here that the best solution achieved by NM-PSO is slightly infeasible, so it should not be directly compared to the other methods.
 
 
 
 
-\subsection{Tension / compression spring design problem}
+\subsection{Tension/compression spring design problem}
 
-This problem was introduced by \cite{TC}, and the objective is the minimization of the weight of a tension / compression spring (Figure \ref{fig:TC}). The problem has three continuous design variables, being them the diameter of spring wire, the diameter of spring mean coil and the number of active coils. It is subject to three nonlinear and one linear inequality constraints.
+This problem was introduced by \cite{TC}, and the objective is the minimization of the weight of a tension/compression spring (Figure \ref{fig:TC}). The problem has three continuous design variables, being them the diameter of spring wire, the diameter of spring mean coil and the number of active coils. It is subject to three nonlinear and one linear inequality constraints.
 
 \begin{figure}[h]
 \begin{center}
@@ -61,7 +61,7 @@ This problem was introduced by \cite{TC}, and the objective is the minimization 
 \end{figure}
 
 
-A variety of methods were used in literature to solve the tension / compression spring design problem. Between them, we can cite HPSO, NM-PSO, MBA, PSO-DE, LCA, CB-ABC, QPSO, G-QPSO, APSO, CMA-ES, MVDE, DELC, IAPSO, IABC-MAL and SAMP-Jaya. Table \ref{tab:TC} shows the statistical results of all methods, along with the number of function evaluations taken to achieve such results.
+A variety of methods were used in literature to solve the tension/compression spring design problem. Between them, we can cite HPSO, NM-PSO, MBA, PSO-DE, LCA, CB-ABC, QPSO, G-QPSO, APSO, CMA-ES, MVDE, DELC, IAPSO, IABC-MAL and SAMP-Jaya. Table \ref{tab:TC} shows the statistical results of all methods, along with the number of function evaluations taken to achieve such results.
 
 \input{Tables/TC}
 
@@ -90,7 +90,7 @@ The three-bar truss design problem \citep{TB} consists in minimizing the volume 
 \end{figure}
 
 
-Here we present only the five best-performing methods used to solve this problem, since the solutions found in literature have very small variance from each other. These methods are CMA-ES, MVDE, DELC, MBA, and IABC-MAL. We present the statistical results for this problem in Table \ref{tab:TB}.
+Here we present only the five best-performing methods used to solve this problem since the solutions found in the literature have very small variance from each other. These methods are CMA-ES, MVDE, DELC, MBA, and IABC-MAL. We present the statistical results for this problem in Table \ref{tab:TB}.
 
 \input{Tables/TB}
 
@@ -117,19 +117,19 @@ For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, 
 
 The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation.
 
-%The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
+%The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having a significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
 
 \input{Tables/SP1}
 
-The first four methods take at least 20,000 iterations to converge to good quality solutions, while IAPSO and SAMP-Jaya take only 6,000 and 3744.66 MNFEs respectively. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls in average, while maintaining negligible higher standard deviation than IAPSO and IPSO.
+The first four methods take at least 20,000 iterations to converge to good quality solutions, while IAPSO and SAMP-Jaya take only 6,000 and 3744.66 MNFEs respectively. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls in average while maintaining negligible higher standard deviation than IAPSO and IPSO.
 
-For this problem, we used considerable greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO took 3 full iterations to converge, while in most cases it converged in the first iteration.
+For this problem, we used considerably greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO took 3 full iterations to converge, while in most cases it converged in the first iteration.
 
 For SRII, the methods used for comparison were PSO-DE, MBA, WCA, DELC, CB-ABC, CMA-ES, MVDE, IABC-MAL, LCA, APSO, MBA, IPSO and IAPSO. From Table \ref{tab:SP2}, we can see that DELC, CMA-ES, MVDE, IABC-MAL, LCA, IAPSO and C-ITGO are the only methods that converged to the optimum in every run, having very small standard deviation. Although similar results are observed regarding the quality of the solutions, C-ITGO converges much faster than any competing method, using twelve times fewer function evaluations than IAPSO. The standard deviation achieved by C-ITGO is also only worse than the standard deviation reported by IABC-MAL (the difference is in the order of 1E-13), which took 15,000 function evaluations to converge.
 
 \input{Tables/SP2}
 
-For this specific problem, we used the SQP algorithm as local search, and rounded the value of the third variable. In this case, this approach proved to converge much faster than using a mixed integer local search. Also, the first population size is considerable smaller than the one used in SRI (100 in this problem).
+For this specific problem, we used the SQP algorithm as local search and rounded the value of the third variable. In this case, this approach proved to converge much faster than using a mixed integer local search. Also, the first population size is considerably smaller than the one used in SRI (100 in this problem).
 
 
 

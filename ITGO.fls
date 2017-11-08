@@ -567,6 +567,10 @@ INPUT ./Imgs/SkillMack_5-crop.pdf
 INPUT ./Imgs/SkillMack_5-crop.pdf
 INPUT ./Imgs/SkillMack_5-crop.pdf
 INPUT ./Imgs/SkillMack_5-crop.pdf
+INPUT Tables/SignedTest.tex
+INPUT Tables/SignedTest.tex
+INPUT Tables/Wilcoxon.tex
+INPUT Tables/Wilcoxon.tex
 INPUT Conclusion.tex
 INPUT Conclusion.tex
 INPUT Acknowledgment.tex

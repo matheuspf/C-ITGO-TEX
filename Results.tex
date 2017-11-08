@@ -105,17 +105,17 @@ C-ITGO achieved convergence quickly, taking 136.48 function evaluations in avera
 In this problem, the total weight of the speed reducer (Figure \ref{fig:SR}) is to be minimized. The problem has seven design variables: face width, teeth module, number of teeth on the pinion, first and second length of shafts between bearings and first and second shafts diameter \citep{SR}. The problem has 11 nonlinear constraints, and the third variable is constrained to be an integer. We use two versions of this problem, where the only difference is in the bounds of the fifth variable. We will call this problems SRI and SRII, respectively.
 
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.6]{Imgs/SR.jpg}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Schematic view of the speed reducer design problem}\label{fig:SR}
-\end{figure}
-
 For SRI, we compare C-ITGO results against 6 optimization methods, namely CPSO, LCA, IPSO, APSO, IAPSO and SAMP-Jaya, shown in Table \ref{tab:SP1}. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included to show that even in harder situations the C-ITGO algorithm can still produce state-of-the-art results.
 
 The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation.
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[scale=0.6]{Imgs/SR.jpg}
+    \end{center}
+    \captionsetup{justification=centering}
+    \caption{Schematic view of the speed reducer design problem}\label{fig:SR}
+\end{figure}
 
 %The SiC-PSO and CPSO methods present inferior results, with higher average fitness. Besides having a significant difference between the best from the mean fitness value, the SiC-PSO reports a standard deviation of 0.
 
@@ -243,7 +243,8 @@ We also show in Table \ref{tab:SkillMack_5} the results of applying the Skilling
 
 \input{Tables/SkillMack_5}
 
-We see again that C-ITGO has a mean rank of 1.0, far less than IAPSO with 2.25, standing in second place. The plot for the mean rank is shown in Figure \ref{fig:SkillMack_5} The p-value for this case is also very small, having a magnitude of 8.3E-05, which proves the superiority of C-ITGO above all competing methods compared in this work.
+We see again that C-ITGO has a mean rank of 1.0, far less than IAPSO with 2.25, standing in second place. The plot for the mean rank is shown in Figure \ref{fig:SkillMack_5} The p-value for this case is also very small, having a magnitude of 8.3E-05, far less than the usual cutting value of 0.05.
+%, which proves the superiority of C-ITGO above all competing methods compared in this work.
 
 
 \begin{figure}[h]
@@ -256,24 +257,17 @@ We see again that C-ITGO has a mean rank of 1.0, far less than IAPSO with 2.25, 
 \end{figure}
 
 
+We also present in Table \ref{tab:SignedTest} the results of applying the pairwise signed test, comparing C-ITGO against the same methods presented in table \ref{tab:SkillMack_5} and considering the same performance metric. Here, a "+" represents that C-ITGO outperforms the corresponding method, a "=" represents a tie, and a "-" represents a loss (C-ITGO has worse performance than the corresponding method). If a method does not solve a certain problem, that entry is ignored. The last row shows the final sum of the number of "+", "=" and "-" for all methods.
+
+\input{Tables/SignedTest}
+
+As we can see from Table \ref{tab:SignedTest}, C-ITGO always has a better MNFEs than any method for all problems, so there are only "+" entries. Following the guidelines presented in \cite{Friedman}, we can conclude that C-ITGO always achieves a p-value of at least 0.05 when compared to the methods of Table \ref{tab:SignedTest}.
 
 
+To prove the superior convergence of C-ITGO, we present one more nonparametric statistical test, the Wilcoxon signed rank test, also described in \cite{Friedman}. The results shown in Table \ref{tab:Wilcoxon} were also generated using the R package \textit{wilcoxon.test}. Again, empty entries (problems not solved by some method) are ignored by default. Methods that solve fewer problems have a higher uncertainty regarding its distribution, consequently having a higher p-value.
 
 
-\iffalse
+Given that C-ITGO always had the best MNFEs, the p-value for all methods was considerably low. The IABC-MAL, LCA, CMA-ES and MVDE methods solve five engineering problems, having a p-value of 0.03125 when compared to C-ITGO using the Wilcoxon signed rank test. The MBA method solves six problems, having a p-value of 0.01563. IAPSO and APSO both solve seven problems, having a even smaller p-value of 0.007813.
 
-\input{Problems/WB}
 
-\input{Problems/PV}
-
-\input{Problems/SR1}
-
-\input{Problems/TC}
-
-\input{Problems/GT}
-
-\input{Problems/MD}
-
-\input{Problems/TB}
-
-\fi
+\input{Tables/Wilcoxon}

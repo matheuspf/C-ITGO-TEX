@@ -6,16 +6,16 @@ import os
 
 
 
-size = 7, 4
+size = 9, 4
 
 width = 0.4
 name = 'SkillMack_5.pdf'
 
-n = 8
+mean_rank = (1.0000, 2.3750, 4.3125, 7.5625, 5.1250, 4.8750, 5.9375, 4.1875, 4.2500, 5.4375, 4.9375, 7.7500)
 
-mean_rank = (1.0000, 2.2500, 3.8750, 3.9375, 4.0000, 3.5000, 3.7500, 5.6875)
+n = len(mean_rank)
 
-names = ("C-ITGO", "IAPSO", "IABC-MAL", "MBA", "LCA", "CMA-ES", "MVDE", "APSO")
+names = ("C-ITGO", "IAPSO", "IABC-MAL", "PSO-DE", "MBA", "LCA", "DELC", "CMA-ES", "MVDE", "IPSO", "WCA", "APSO")
 
          
 
@@ -24,15 +24,14 @@ size = 12, 4.2
 width = 0.3
 name = 'SkillMack_3.pdf'
 
-n = 15
+mean_rank = (1.0000, 2.7500, 2.7500, 5.1250, 8.6250, 7.9375, 5.8750, 8.9375, 5.8125,
+             4.8750, 7.0000, 5.0000, 5.0625, 6.5000, 5.8750, 8.5625, 9.2500)
 
-mean_rank = (1.0000, 2.6875, 3.1250, 4.8125, 6.8750,
-             6.9375, 5.1875, 5.3750, 4.6250, 5.9375,
-             4.5000, 4.8750, 5.5625, 5.4375, 8.0625)
+n = len(mean_rank)
 
 names = ("C-ITGO", "IAPSO", "SAMP-\nJaya", "IABC-\nMAL", "PSO-DE", 
-         "HPSO", "MBA", "LCA", "CB-ABC", "DELC",
-         "CMA-ES", "MVDE", "IPSO", "WCA", "APSO")
+         "HPSO", "MBA", "CPSO", "LCA", "CB-ABC", "DELC",
+         "CMA-ES", "MVDE", "IPSO", "WCA", "UPSO", "APSO")
 """
 
 

@@ -52,8 +52,7 @@ for(i in 2:dim(M)[1])
 
 	#(You can suppress the warning (due to ties) by specifying the argument exact=FALSE) 
 	#explicacao na pagina 120 do livro
-    #res <- wilcox.test(y, x, paired = TRUE, alternative = "greater",exact = FALSE)
-	res <- wilcox.test(y, x, alternative="greater", exact = FALSE)
+    res <- wilcox.test(y, x, paired = TRUE, alternative = "greater",exact = FALSE)
 	
     print(names[i])
     print(res)

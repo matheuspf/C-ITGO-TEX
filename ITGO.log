@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  14 NOV 2017 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.20)  14 NOV 2017 15:53
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex
-(/home/matheus/Algoritmos/LaTeX/ITGO_ENG/ITGO.tex
+**ITGO.tex
+(./ITGO.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
@@ -2257,7 +2256,7 @@ Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
  []|\T1/fve/m/n/6 0.0007229| 
  []
 
-)) [31] (./Conclusion.tex) (./Acknowledgment.tex [32]) (./ITGO.bbl
+)) (./Conclusion.tex [31]) (./Acknowledgment.tex [32]) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 29.
  [33]
@@ -2276,13 +2275,13 @@ Package rerunfilecheck Info: File `ITGO.out' has not changed.
 (rerunfilecheck)             Checksum: B160BF1A4E53155A3A6D7057AF3A7D03;1329.
  ) 
 Here is how much of TeX's memory you used:
- 34775 strings out of 493029
- 651604 string characters out of 6136233
+ 34774 strings out of 493029
+ 651486 string characters out of 6136233
  770301 words of memory out of 5000000
  37471 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 56i,15n,77p,10416b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,77p,10376b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/
@@ -2307,7 +2306,7 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb
 share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (37 pages, 2596277 bytes).
+Output written on ITGO.pdf (37 pages, 2596020 bytes).
 PDF statistics:
  864 PDF objects out of 1000 (max. 8388607)
  673 compressed objects within 7 object streams

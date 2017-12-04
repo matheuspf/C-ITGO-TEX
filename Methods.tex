@@ -37,7 +37,7 @@ As there is no guarantee that the individuals selected are really local optimal 
 
 The last step of the TGO method consists in applying some sort of local search in every local optimal point based on the topographic heuristic. Regarding the local search, many procedures used in the TGO are found in the literature, such as pattern search algorithms \citep{ITGO2}, derivative-based \citep{ITGO3} and derivative-free \citep{ITGO4} optimization methods. The local search algorithm depends directly on the properties of the function to be optimized and is of significative impact in the overall performance of the method.
 
-We consider now a simple example. Let the function $f(\cdot)$ defined by $f(x, y) = sin(x^2) + cos(y^2)$, the population $P$ composed by the 10 elements: \\[-4em]
+We consider now a simple example. Let the function $f(\cdot)$ defined by $f(x, y) = sin(x^2) + sin(y^2)$, the population $P$ composed by the 10 elements: \\[-4em]
 
 \begin{equation*}
   \begin{aligned}
@@ -53,15 +53,15 @@ and the $KNN$ set determined by the $K = 3$ closest neighbors. Figure \ref{fig:G
 \[
 A=
   \left(\begin{array}{cccccccccc?c}
-    1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ \bm{3} \\
-    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \ \bm{0} \\
+    0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ \bm{3} \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ \bm{1} \\
     0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \ \bm{0} \\
     0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & \ \bm{2} \\
     0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & \ \bm{3} \\
-    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ \bm{1} \\
-    0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & \ \bm{2} \\
+    0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ \bm{2} \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & \ \bm{2} \\
     0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & \ \bm{3} \\
-    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \ \bm{0} \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ \bm{1} \\
     0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \ \bm{0} \\
   \end{array} \right)
 \]
@@ -79,7 +79,7 @@ Even after the application of local search, there is no guarantee that the globa
 \end{center}
 \captionsetup{justification=centering}
 \vspace*{-7mm} 
-\caption{Contour plot of the function $f(x, y) = sin(x^2) + cos(y^2)$, and the graph based on the population.}\label{fig:Graph}
+\caption{Contour plot of the function $f(x, y) = sin(x^2) + sin(y^2)$, and the graph based on the population.}\label{fig:Graph}
 \end{figure*}
 
 
@@ -87,7 +87,7 @@ Even after the application of local search, there is no guarantee that the globa
 
 In \cite{ITGO4} a heuristic for space reduction is proposed for the ITGO. After the individual selection step, a sub-space is created around every element, with space reduced in each dimension by $\phi \in (0, 1)$. A new population is generated for every space created, and new elements are selected, for each population. The process is repeated for a defined number of iterations until the execution of local search on selected elements of the last space reduction.
 
-An example involving the application of this heuristic is presented in Figure \ref{fig:SpaceReduction}, again for the function $f(x, y) = sin(x^2) + cos(y^2)$, in the domain $[-1, 3]^2$, with the first population composed by the same 10 points described previously. The Figure \ref{fig:SpaceReduction-a} shows the selection of the points $\bm{x}_1$, $\bm{x}_5$ and $\bm{x}_8$, with a space reduced by $\phi = 0.25$. In the Figure \ref{fig:SpaceReduction-b} we can observe the generation of populations for each new subspace. The red points are the individuals considered local optimum based on the topographic heuristic. It is worth noting that the local optimal points of the previous population are kept in the next population.
+An example involving the application of this heuristic is presented in Figure \ref{fig:SpaceReduction}, again for the function $f(x, y) = sin(x^2) + sin(y^2)$, in the domain $[-1, 3]^2$, with the first population composed by the same 10 points described previously. The Figure \ref{fig:SpaceReduction-a} shows the selection of the points $\bm{x}_1$, $\bm{x}_5$ and $\bm{x}_8$, with a space reduced by $\phi = 0.25$. In the Figure \ref{fig:SpaceReduction-b} we can observe the generation of populations for each new subspace. The red points are the individuals considered local optimum based on the topographic heuristic. It is worth noting that the local optimal points of the previous population are kept in the next population.
 
 
 \begin{figure}[tp]

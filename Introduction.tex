@@ -12,13 +12,13 @@ The objective is to find the best solution in a search space that satisfies some
     \begin{aligned}
     \underset{\bm{x}}{\text{\fnt{10} arg\,min}} \ \ & f(\bm{x}) \\
     \text{s.t.} \quad & g_j(\bm{x}) \leq 0, \qquad j = 1, ..., p  \\
-                      & h_k(\bm{x}) = 0, \qquad k = 1, ..., q  \\
+                      & h_k(\bm{x}) = 0, \qquad k = 1, ..., q  \\ 
                       & l_i \leq x_i \leq u_i, \qquad i = 1, ..., n 
     \end{aligned}
 \end{equation}
 
 \noindent
-where $f(\cdot)$ is the objective function or fitness function, $\bm{x} = (x_1, ..., x_n)$ is a solution vector containing $n$ continuous or discrete values, $g_j(\cdot), \ j = 1, ..., p$, and $h_k(\cdot), \ k = 1, ..., q$, are the inequality and equality constraints respectively, where both can be linear or nonlinear. The vectors $\bm{l}$ and $\bm{u}$ define the lower and upper bounds of the solution space. We also define the sum of constraint violation as: \\[-3em]
+where $f(\cdot)$ is the objective function or fitness function, $\bm{x} = (x_1, ..., x_n)$ is a solution vector containing $n$ continuous or discrete values, $g_j(\cdot), \ j = 1, ..., p$, and $h_k(\cdot), \ k = 1, ..., q$, are the inequality and equality constraints respectively, where both can be nonlinear. The vectors $\bm{l}$ and $\bm{u}$ define the lower and upper bounds of the solution space. We also define the sum of constraint violation as: \\[-3em]
 
 \begin{equation}\label{eq:viol}
     v(\bm{x}) = \sum_{j=1}^p max\{g_j(\bm{x}), 0\} + \sum_{k=1}^q |h_k(\bm{x})|
@@ -29,4 +29,4 @@ so a solution $\bm{x}$ is feasible only when $v(\bm{x}) = 0$.
 
 In this work, we develop some modifications over a successful meta-heuristic for continuous optimization, know as Iterative Topographical Global Optimization (ITGO) \citep{ITGO0}. The modifications consist of adapting ITGO to work with constrained optimization issues, calling this new algorithm as Constrained version of ITGO (C-ITGO). We compare the results obtained on eight complex constrained engineering design problems, used as a benchmark against several state-of-the-art methods. We show that C-ITGO outperforms the best competing techniques of literature, mainly relative to the number of function evaluations that characterize the execution effort of the technique.
 
-The structure of the paper is as follows. Section \ref{sec:Methods} presents the C-ITGO method, the details of its implementation and the parameters used in the tests. We compared the developed algorithm against the competing methods in Section \ref{sec:Results}, and make the final conclusions in Section \ref{sec:Conclusion}.
+The structure of the paper is as follows. Section \ref{sec:Methods} presents the C-ITGO method, the details of its implementation and the parameters used in the tests. We compare the developed algorithm against the competing methods in Section \ref{sec:Results}, and make the final conclusions in Section \ref{sec:Conclusion}.

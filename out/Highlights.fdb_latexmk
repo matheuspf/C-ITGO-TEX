@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1512390579 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" "out/Highlights.pdf" "Highlights" 1512390579
+["pdflatex"] 1512390579 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" "out/Highlights.pdf" "Highlights" 1512486995
   "/etc/texmf/web2c/texmf.cnf" 1482280374 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" 1512390579 525 2bd1527d8230e9b49ed4f54d87359729 ""
+  "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" 1512392365 525 2bd1527d8230e9b49ed4f54d87359729 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -40,10 +40,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1465929555 31343 f2e32048345d99cc298f1946c940b7dd ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1510872985 1888002 bbd21e0eec351ffb20562c5a7c949e0c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1510873141 3869770 b77901c94b256622e0700fca4638b801 ""
-  "Highlights.tex" 1512390579 525 2bd1527d8230e9b49ed4f54d87359729 ""
-  "out/Highlights.aux" 1512390579 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Highlights.tex" 1512392365 525 2bd1527d8230e9b49ed4f54d87359729 ""
+  "out/Highlights.aux" 1512392366 8 a94a2480d3289e625eea47cd1b285758 ""
   (generated)
   "out/Highlights.spl"
+  "out/Highlights.log"
   "out/Highlights.pdf"
   "out/Highlights.aux"
-  "out/Highlights.log"

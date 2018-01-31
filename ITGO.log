@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.16)  5 DEC 2017 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.16)  31 JAN 2018 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2027,39 +2027,43 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 13.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+(Font)              scaled to size 8.99994pt on input line 15.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-[2]) (./Methods.tex [3] <scatter-crop.pdf, id=167, 346.29375pt x 242.9075pt>
+) (./Methods.tex [3] <scatter-crop.pdf, id=196, 346.29375pt x 242.9075pt>
 File: scatter-crop.pdf Graphic file (type pdf)
 
 <use scatter-crop.pdf>
 Package pdftex.def Info: scatter-crop.pdf used on input line 10.
 (pdftex.def)             Requested size: 277.03537pt x 194.32625pt.
- [4 <./scatter-crop.pdf>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
-
+[4] [5 <./scatter-crop.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
-<fig_1.pdf, id=200, 462.52798pt x 346.89601pt>
+<fig_1.pdf, id=229, 462.52798pt x 346.89601pt>
 File: fig_1.pdf Graphic file (type pdf)
  <use fig_1.pdf>
 Package pdftex.def Info: fig_1.pdf used on input line 78.
@@ -2076,7 +2080,7 @@ Package epstopdf Info: Source file: <fig_2.eps>
 (epstopdf)             \includegraphics on input line 97.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig_2-eps-converted-to.pdf, id=212, 462.72874pt x 348.30125pt>
+<fig_2-eps-converted-to.pdf, id=242, 462.72874pt x 348.30125pt>
 File: fig_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_2-eps-converted-to.pdf>
@@ -2097,7 +2101,7 @@ Package epstopdf Info: Source file: <fig_3.eps>
  fig_3.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<fig_3-eps-converted-to.pdf, id=213, 462.72874pt x 348.30125pt>
+<fig_3-eps-converted-to.pdf, id=243, 462.72874pt x 348.30125pt>
 File: fig_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig_3-eps-converted-to.pdf>
@@ -2130,7 +2134,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-(./Algorithms/CreatePop.tex) [10] [11] (./Algorithms/TopographicalHeuristic.tex
+[10] (./Algorithms/CreatePop.tex) [11] (./Algorithms/TopographicalHeuristic.tex
 ) [12] [13] (./Tables/Parameters.tex
 Overfull \hbox (4.70404pt too wide) in paragraph at lines 7--7
  \OML/cmm/b/it/6 Param$| 
@@ -2156,25 +2160,21 @@ Overfull \hbox (2.13766pt too wide) in paragraph at lines 15--16
  []|\T1/fve/b/n/6 BONMIN| 
  []
 
-) [14]) (./Results.tex [15] (./Tables/GAP.tex) [16] [17]
-<Imgs/WB.jpg, id=472, 202.73973pt x 146.45868pt>
+) [14] [15]) (./Results.tex [16] (./Tables/GAP.tex) [17] [18]
+<Imgs/WB.jpg, id=507, 202.73973pt x 146.45868pt>
 File: Imgs/WB.jpg Graphic file (type jpg)
  <use Imgs/WB.jpg>
 Package pdftex.def Info: Imgs/WB.jpg used on input line 34.
 (pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
 
-(./Tables/WB.tex) <Imgs/TC.png, id=477, 389.455pt x 116.435pt>
+(./Tables/WB.tex) <Imgs/TC.png, id=512, 389.455pt x 116.435pt>
 File: Imgs/TC.png Graphic file (type png)
 
 <use Imgs/TC.png>
 Package pdftex.def Info: Imgs/TC.png used on input line 57.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18 <./Imgs/WB.jpg>] (./Tables/TC.tex) [19 <./Imgs/TC.png>]
-<Imgs/TB.png, id=496, 333.245pt x 242.9075pt>
+ [19 <./Imgs/WB.jpg>] (./Tables/TC.tex) [20 <./Imgs/TC.png>]
+<Imgs/TB.png, id=531, 333.245pt x 242.9075pt>
 File: Imgs/TB.png Graphic file (type png)
  <use Imgs/TB.png>
 Package pdftex.def Info: Imgs/TB.png used on input line 86.
@@ -2183,15 +2183,15 @@ Package pdftex.def Info: Imgs/TB.png used on input line 86.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./Tables/TB.tex) [20] [21 <./Imgs/TB.png>]
-<Imgs/SR.jpg, id=516, 333.20947pt x 120.87637pt>
+(./Tables/TB.tex) [21] [22 <./Imgs/TB.png>]
+<Imgs/SR.jpg, id=551, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
  <use Imgs/SR.jpg>
 Package pdftex.def Info: Imgs/SR.jpg used on input line 114.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
 
-(./Tables/SP1.tex) [22 <./Imgs/SR.jpg>] (./Tables/SP2.tex)
-<Imgs/PV.png, id=527, 333.245pt x 158.5925pt>
+(./Tables/SP1.tex) [23 <./Imgs/SR.jpg>] (./Tables/SP2.tex)
+<Imgs/PV.png, id=562, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
  <use Imgs/PV.png>
 Package pdftex.def Info: Imgs/PV.png used on input line 144.
@@ -2200,18 +2200,14 @@ Package pdftex.def Info: Imgs/PV.png used on input line 144.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./Tables/PV.tex) [23] <Imgs/GT.jpg, id=540, 251.3461pt x 113.84123pt>
+(./Tables/PV.tex) [24] <Imgs/GT.jpg, id=575, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
 
 <use Imgs/GT.jpg>
 Package pdftex.def Info: Imgs/GT.jpg used on input line 167.
 (pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[24 <./Imgs/PV.png>] (./Tables/GT.tex)
-<Imgs/MD.jpg, id=550, 216.81pt x 168.84319pt>
+ [25 <./Imgs/PV.png>] (./Tables/GT.tex)
+<Imgs/MD.jpg, id=586, 216.81pt x 168.84319pt>
 File: Imgs/MD.jpg Graphic file (type jpg)
  <use Imgs/MD.jpg>
 Package pdftex.def Info: Imgs/MD.jpg used on input line 189.
@@ -2220,13 +2216,13 @@ Package pdftex.def Info: Imgs/MD.jpg used on input line 189.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./Imgs/GT.jpg>] (./Tables/MD.tex) (./Tables/BestResults.tex
+[26 <./Imgs/GT.jpg>] (./Tables/MD.tex) (./Tables/BestResults.tex
 Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 [][] 
  []
 
-) [26 <./Imgs/MD.jpg>] [27] (./Tables/SkillMack_3.tex)
-<Imgs/SkillMack_3-crop.pdf, id=588, 669.50125pt x 254.9525pt>
+) [27 <./Imgs/MD.jpg>] [28] (./Tables/SkillMack_3.tex)
+<Imgs/SkillMack_3-crop.pdf, id=623, 669.50125pt x 254.9525pt>
 File: Imgs/SkillMack_3-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_3-crop.pdf>
@@ -2236,17 +2232,17 @@ Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf used on input line 232.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28] (./Tables/SkillMack_5.tex
+[29] (./Tables/SkillMack_5.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) <Imgs/SkillMack_5-crop.pdf, id=597, 506.89375pt x 234.8775pt>
+) <Imgs/SkillMack_5-crop.pdf, id=632, 506.89375pt x 234.8775pt>
 File: Imgs/SkillMack_5-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_5-crop.pdf>
 Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf used on input line 247.
 (pdftex.def)             Requested size: 304.1386pt x 140.92758pt.
- [29 <./Imgs/SkillMack_3-crop.pdf> <./Imgs/SkillMack_5-crop.pdf
+ [30 <./Imgs/SkillMack_3-crop.pdf> <./Imgs/SkillMack_5-crop.pdf
 
 pdfTeX warning: pdflatex (file ./Imgs/SkillMack_5-crop.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
@@ -2263,69 +2259,245 @@ Overfull \hbox (2.40657pt too wide) in paragraph at lines 34--35
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [30] (./Tables/Wilcoxon.tex
+) [31] (./Tables/Wilcoxon.tex
 Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
  []|\T1/fve/m/n/6 0.0007229| 
  []
 
-)) (./Conclusion.tex [31]) (./Acknowledgment.tex [32]) (./ITGO.bbl
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 29.
- [33]
-[34] [35] [36])
+)) (./Conclusion.tex [32]) (./Acknowledgment.tex [33]) (./ITGO.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 15.
+
+) (./Appendix.tex (./Problems/WB.tex [34]
+Overfull \vbox (68.87791pt too high) has occurred while \output is active []
+
+
+[35]))
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 145.
 See the caption package documentation for explanation.
 
-[37]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
- (./ITGO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
+(./ITGO.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `ITGO.out' has not changed.
 (rerunfilecheck)             Checksum: B160BF1A4E53155A3A6D7057AF3A7D03;1329.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 34884 strings out of 493014
- 654365 string characters out of 6135689
- 772931 words of memory out of 5000000
- 37579 multiletter control sequences out of 15000+600000
- 63771 words of font info for 100 fonts, out of 8000000 for 9000
+ 34790 strings out of 493014
+ 652744 string characters out of 6135689
+ 773345 words of memory out of 5000000
+ 37472 multiletter control sequences out of 15000+600000
+ 63151 words of font info for 98 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 56i,15n,77p,10376b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (37 pages, 2595782 bytes).
+ 56i,15n,77p,10376b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.R} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.SkillMack} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Skillings} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Friedman} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.MD} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.PV} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.SR} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.TB} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.TC} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.WB} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.Jaya} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.SAMP-Jaya} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.IABC} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.CMA-ES} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DELC} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.LCA} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.QPSO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.APSO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.UPSO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.NM-PSO} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.CPSO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.HPSO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.PSO-DE} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.NOMAD} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.BONMIN} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.OPTI} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.MVMO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Nocedal} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.fmincon} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DE3} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ConHandling} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ITGO4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ITGO2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.mt19937} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ITGO3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Sobol} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ITGO1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ITGO0} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.MBA} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.WCA} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.CS} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{cite.GA1} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.MVDE} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DE2} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DE1} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.IABC-Mal} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.CB-ABC} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.PSO1} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.IAPSO} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.IPSO} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.SIMP} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.GEO} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ADC2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ADC} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DIRECTL} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DIRECT} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.NAT} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{cite.BOOKS2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.BOOKS1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ITGO.pdf (35 pages, 2591997 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 672 compressed objects within 7 object streams
- 145 named destinations out of 1000 (max. 500000)
+ 877 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
+ 153 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{59}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -78,6 +78,21 @@
 \newblock {\it \bibinfo{journal}{Computers and Structures}\/},  {\it
   \bibinfo{volume}{110-111}\/}, \bibinfo{pages}{151--166}.
 %Type = Article
+\bibitem[{Fok et~al.(2017)Fok, An \& Wang}]{GEO}
+\bibinfo{author}{Fok, R.}, \bibinfo{author}{An, A.}, \& \bibinfo{author}{Wang,
+  X.} (\bibinfo{year}{2017}).
+\newblock \bibinfo{title}{Geodesic and contour optimization using conformal
+  mapping}.
+\newblock {\it \bibinfo{journal}{Journal of Global Optimization}\/},  {\it
+  \bibinfo{volume}{69}\/}, \bibinfo{pages}{23--44}.
+%Type = Article
+\bibitem[{Gablonsky \& Kelley(2001)}]{DIRECTL}
+\bibinfo{author}{Gablonsky, J.~M.}, \& \bibinfo{author}{Kelley, C.~T.}
+  (\bibinfo{year}{2001}).
+\newblock \bibinfo{title}{A locally-biased form of the direct algorithm}.
+\newblock {\it \bibinfo{journal}{Journal of Global Optimization}\/},  {\it
+  \bibinfo{volume}{21}\/}, \bibinfo{pages}{27--37}.
+%Type = Article
 \bibitem[{Gandomi et~al.(2013)Gandomi, Yang \& Alavi}]{CS}
 \bibinfo{author}{Gandomi, A.~H.}, \bibinfo{author}{Yang, X.~S.}, \&
   \bibinfo{author}{Alavi, A.~H.} (\bibinfo{year}{2013}).
@@ -133,6 +148,14 @@
   space reduction}.
 \newblock In {\it \bibinfo{booktitle}{SENAI CIMATEC, Salvador, BA}\/}.
 %Type = Article
+\bibitem[{Jones et~al.(1993)Jones, Perttunen \& Stuckman}]{DIRECT}
+\bibinfo{author}{Jones, D.~R.}, \bibinfo{author}{Perttunen, C.~D.}, \&
+  \bibinfo{author}{Stuckman, B.~E.} (\bibinfo{year}{1993}).
+\newblock \bibinfo{title}{Lipschitzian optimization without the lipschitz
+  constant}.
+\newblock {\it \bibinfo{journal}{Journal of Optimization Theory and
+  Applications}\/},  {\it \bibinfo{volume}{79}\/}, \bibinfo{pages}{157--181}.
+%Type = Article
 \bibitem[{Kashan(2011)}]{LCA}
 \bibinfo{author}{Kashan, A.~H.} (\bibinfo{year}{2011}).
 \newblock \bibinfo{title}{An efficient algorithm for constrained global
@@ -140,6 +163,14 @@
   {C}hampionship {A}lgorithm ({LCA})}.
 \newblock {\it \bibinfo{journal}{Computer-Aided Design}\/},  {\it
   \bibinfo{volume}{43}\/}, \bibinfo{pages}{1769--1792}.
+%Type = Article
+\bibitem[{Kvasov \& Sergeyev(2012)}]{ADC2}
+\bibinfo{author}{Kvasov, D.~E.}, \& \bibinfo{author}{Sergeyev, Y.~D.}
+  (\bibinfo{year}{2012}).
+\newblock \bibinfo{title}{Lipschitz gradients for global optimization in a
+  one-point-based partitioning scheme}.
+\newblock {\it \bibinfo{journal}{Journal of Computational and Applied
+  Mathematics}\/},  {\it \bibinfo{volume}{236}\/}, \bibinfo{pages}{4042--4054}.
 %Type = Article
 \bibitem[{Le~Digabel(2011)}]{NOMAD}
 \bibinfo{author}{Le~Digabel, S.} (\bibinfo{year}{2011}).
@@ -208,14 +239,6 @@
   uniform pseudo-random number generator}.
 \newblock {\it \bibinfo{journal}{{ACM} Transactions on Modeling and Computer
   Simulation}\/},  {\it \bibinfo{volume}{8}\/}, \bibinfo{pages}{3--30}.
-%Type = Inbook
-\bibitem[{McKight \& Najab(2010)}]{Kruskal}
-\bibinfo{author}{McKight, P.~E.}, \& \bibinfo{author}{Najab, J.}
-  (\bibinfo{year}{2010}).
-\newblock \bibinfo{title}{Kruskal-wallis test}.
-\newblock In {\it \bibinfo{booktitle}{The Corsini Encyclopedia of
-  Psychology}\/}.
-\newblock \bibinfo{publisher}{John Wiley \& Sons, Inc.}
 %Type = Article
 \bibitem[{Melo \& Carosio(2013)}]{MVDE}
 \bibinfo{author}{Melo, V.~V.}, \& \bibinfo{author}{Carosio, G. L.~C.}
@@ -264,6 +287,20 @@
   constrained engineering optimization problems}.
 \newblock In {\it \bibinfo{booktitle}{International Conference on Natural
   Computation}\/} (pp. \bibinfo{pages}{582--591}).
+%Type = Book
+\bibitem[{Paulavičius \& Žilinskas(2014)}]{BOOKS2}
+\bibinfo{author}{Paulavičius, R.}, \& \bibinfo{author}{Žilinskas, J.}
+  (\bibinfo{year}{2014}).
+\newblock \bibinfo{publisher}{SpringerBriefs in Optimization, Springer, New
+  York}.
+%Type = Article
+\bibitem[{Paulavičius \& Žilinskas(2016)}]{SIMP}
+\bibinfo{author}{Paulavičius, R.}, \& \bibinfo{author}{Žilinskas, J.}
+  (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{Advantages of simplicial partitioning for lipschitz
+  optimization problems with linear constraints}.
+\newblock {\it \bibinfo{journal}{Optimization Letters}\/},  {\it
+  \bibinfo{volume}{10}\/}, \bibinfo{pages}{237--246}.
 %Type = Manual
 \bibitem[{{R Dev. Core Team}(2008)}]{R}
 \bibinfo{author}{{R Dev. Core Team}} (\bibinfo{year}{2008}).
@@ -354,6 +391,27 @@
   selection for optimization problems}.
 \newblock {\it \bibinfo{journal}{IEEE Transactions on Evolutionary
   Computation}\/},  {\it \bibinfo{volume}{18}\/}, \bibinfo{pages}{689--707}.
+%Type = Article
+\bibitem[{Sergeyev \& Kvasov(2006)}]{ADC}
+\bibinfo{author}{Sergeyev, Y.~D.}, \& \bibinfo{author}{Kvasov, D.~E.}
+  (\bibinfo{year}{2006}).
+\newblock \bibinfo{title}{Global search based on efficient diagonal partitions
+  and a set of lipschitz constants}.
+\newblock {\it \bibinfo{journal}{SIAM Journal on Optimization}\/},  {\it
+  \bibinfo{volume}{16}\/}, \bibinfo{pages}{910--937}.
+%Type = Techreport
+\bibitem[{Sergeyev et~al.(2018)Sergeyev, Kvasov \& Mukhametzhanov}]{NAT}
+\bibinfo{author}{Sergeyev, Y.~D.}, \bibinfo{author}{Kvasov, D.~E.}, \&
+  \bibinfo{author}{Mukhametzhanov, M.~S.} (\bibinfo{year}{2018}).
+\newblock {\it \bibinfo{title}{On the efficiency of nature-inspired
+  metaheuristics in expensive global optimization with limited budget}\/}.
+\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{8:453}.
+%Type = Book
+\bibitem[{Sergeyev et~al.(2013)Sergeyev, Strongin \& Lera}]{BOOKS1}
+\bibinfo{author}{Sergeyev, Y.~D.}, \bibinfo{author}{Strongin, R.~G.}, \&
+  \bibinfo{author}{Lera, D.} (\bibinfo{year}{2013}).
+\newblock \bibinfo{publisher}{SpringerBriefs in Optimization, Springer, New
+  York}.
 %Type = Article
 \bibitem[{Skillings \& Mack(1981)}]{Skillings}
 \bibinfo{author}{Skillings, J.~H.}, \& \bibinfo{author}{Mack, G.~A.}

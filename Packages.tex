@@ -217,3 +217,15 @@
 \input{#1}
 \vspace{0.5cm}
 }
+
+
+
+\newbox\inabsbox
+\makeatletter
+    \patchcmd{\abstract}{\absbox}{\inabsbox}{}{\@latex@error{Failed to patch abstract}}%save contents to inabsbox
+    \patchcmd{\abstract}{\hsize}{\ifdim\wd\absbox>0pt\bigskip\fi\hsize}{}{\@latex@error{Failed to patch \string\abstract for pre-spacing}}%add spacing before this abstract if this is not the first
+    \patchcmd{\abstract}{Abstract}{\abstractname}{}{\@latex@error{Failed to patch \string\abstract for \string\abstractname}}
+    \apptocmd{\endabstract}{%
+        \global\setbox\absbox=\vbox{\unvbox\absbox\unvbox\inabsbox}%combine boxes
+        }{}{\@latex@error{Failed to patch \string\endabstract}}
+\makeatother

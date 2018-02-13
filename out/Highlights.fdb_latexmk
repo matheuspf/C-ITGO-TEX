@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1517828961 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" "out/Highlights.pdf" "Highlights" 1518498399
+["pdflatex"] 1517828961 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" "out/Highlights.pdf" "Highlights" 1518530945
   "/etc/texmf/web2c/texmf.cnf" 1482280374 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" 1517407401 494 e53c5ec9eb5068b44f4a6defb49ba46d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -15,5 +15,5 @@
   "out/Highlights.aux" 1518497619 8 a94a2480d3289e625eea47cd1b285758 ""
   (generated)
   "out/Highlights.log"
-  "out/Highlights.aux"
   "out/Highlights.pdf"
+  "out/Highlights.aux"

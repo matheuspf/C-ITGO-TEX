@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ITGO.aux
 The style file: BibStyle/model5-names.bst
+A level-1 auxiliary file: Appendix/Tables/Wilcoxon2.aux
 Database file #1: ITGO.bib.bib
 Warning--I didn't find a database entry for "SGEO"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
@@ -11,7 +12,7 @@ Warning--missing institution in NAT
 Warning--empty title in BOOKS1
 You've used 60 entries,
             3390 wiz_defined-function locations,
-            1079 strings with 15632 characters,
+            1080 strings with 15661 characters,
 and the built_in function-call counts, 40695 in all, are:
 = -- 3087
 > -- 1459

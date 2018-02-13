@@ -42,10 +42,15 @@ The parameters used in C-ITGO are presented in Table \ref{tab:ITGO}. Because the
 Table \ref{tab:Results} shows the results comparing the mean number of function/gradient evaluations necessary to achieve condition \ref{eq:Convergence}. We use the same notation as in \cite{NAT}, where “$>$m(i)” states that \textit{i} problems were not solved under $10^6$ function evaluations.
 
 
-\input{Appendix/Tables/GKLS_Results.tex}
+\input{Appendix/Tables/GKLS_Results}
 
 We see from the results presented in Table \ref{tab:Results} that C-ITGO has promising results, having a smaller mean number of function/gradient evaluations than most methods in most cases. It seems that the radius of the attraction region is the parameter which impacts most on the C-ITGO performance.
 
-However, the DIRECT-KS is the clear winner, having the best statistics in all cases. We would like to explore further the effectiveness of C-ITGO for the unconstrained case in a future work, possibly improving the current results.
+However, the DIRECT-KS presents the best statistics in all cases. We decided to execute a nonparametric statistical test, the Wilcoxon test \citep{Friedman}, to check if there is any significant difference between the C-ITGO and the DIRECT-KS method.
 
-\vspace{0.5cm}
+Table \ref{tab:Wilcoxon2} shows the results generated using the R package \textit{wilcoxon.test}, considering DIRECT-KS against the other methods. 
+
+We would like to explore further the effectiveness of C-ITGO for the unconstrained case in a future work, possibly improving the current results.
+
+
+\include{Appendix/Tables/Wilcoxon2}

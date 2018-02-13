@@ -25,7 +25,7 @@ We compare 20 different optimization methods against C-ITGO. The most common met
 Many other different optimization methods were also used for comparison in this work: the Mine Blast Algorithm (MBA) \citep{MBA}, a population-based optimization method based on the mine bomb explosion concept; the League Championship Algorithm (LCA) \citep{LCA}, which models a league championship environment with artificial teams; the Crossover-Based Artificial Bee Colony (CB-ABC) \citep{CB-ABC}, applying modified search operators over the regular ABC algorithm; the Differential Evolution with Level Comparison (DELC) \citep{DELC}, which converts a constrained problem into an unconstrained one by means of a level comparison mechanism; a Multi-View Differential Evolution (MVDE) \citep{MVDE}, which uses several different mutation strategies at every iteration; the Covariance Matrix Adaptation Evolution Strategy (CMA-ES) method \citep{CMA-ES}, which builds a distribution model of the population; the Water Cycle Algorithm (WCA) \citep{WCA}, a nature-inspired method based on the water cycle process; and the Cuckoo Search algorithm (CS) \citep{CS}, another nature-inspired method based on the cuckoo bird species behavior. Recently, reporting state-of-the-art results for some problems, we can cite the Improved Artificial Bee Colony with Modified Augmented Lagrangian (IABC-MAL) \citep{IABC-Mal}, which integrates the Modified Augmented Lagrangian method to handle constraints with the Improved ABC algorithm \citep{IABC}, and the Self-Adaptive Multi-Population based Jaya (SAMP-Jaya) algorithm \citep{SAMP-Jaya}, a multi-population scheme of the Jaya method \citep{Jaya}.
 
 
-Following, the engineering optimization problems that will be tackled in this work will be briefly explained, as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. For the sake of space, the mathematical formulations, the project variables, and their specific values will be presented in the appendix. Further information on the Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. The Three-Bar truss (TB) problem and additional information on Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
+Following, the engineering optimization problems that will be tackled in this work will be briefly explained, as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. Further information on the Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. The Three-Bar truss (TB) problem and additional information on Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
 
 
 We also decided to add in the appendix the initial results of applying the developed method to the GKLS class of problems \citep{GKLS}. We plan to improve C-ITGO further in a future work to better tackle unconstrained smooth optimization problems, comparing the results against a number of efficient deterministic global optimization methods.
@@ -33,15 +33,9 @@ We also decided to add in the appendix the initial results of applying the devel
 
 \subsection{Welded beam design problem}
 
-The welded beam design \citep{WB} is the problem of minimizing the fabrication cost of a welded beam, subject to seven inequality constraints, being two linear and five nonlinear. The constraints include shear stress, bending stress in the beam, buckling load on the bar and end deflection on the beam. The four design variables are continuous. Figure \ref{fig:WB} presents the schematic of the welded beam design problem. We included in the appendix the full statement of the problem, for sake of illustration.
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.7]{Imgs/WB.jpg}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Schematic view of the welded beam design problem.}\label{fig:WB}
-\end{figure}
+\input{Appendix/WB}
+
 
 We compare the results obtained by C-ITGO against a number of state-of-the-art methods used to solve this problem, including PSO-DE, HPSO, UPSO, MBA, CMA-ES, MVDE, CPSO, LCA, IPSO, CB-ABC, DELC, IABC-MAL, NM-PSO, APSO, WCA, IAPSO and SAMP-Jaya. Table \ref{tab:WB} shows the comparison of the statistical results obtained by all cited methods to solve the welded beam design problem. All the methods, with exception of CMA-ES, SAMP-Jaya and C-ITGO, took more than 10,000 iterations to achieve good quality solutions. C-ITGO achieved optimal solutions with a very small standard deviation of 3.65E-12, using ten times fewer function evaluations on average than most of the methods.
 
@@ -56,15 +50,8 @@ The results for C-ITGO and SAMP-Jaya are very similar, with the former having a 
 
 \subsection{Tension/compression spring design problem}
 
-This problem was introduced by \cite{TC}, and the objective is the minimization of the weight of a tension/compression spring (Figure \ref{fig:TC}). The problem has three continuous design variables, being them the diameter of spring wire, the diameter of spring mean coil and the number of active coils. It is subject to three nonlinear and one linear inequality constraints.
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.6]{Imgs/TC.png}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Schematic view of the tension/compression spring design problem.}\label{fig:TC}
-\end{figure}
+\input{Appendix/TC}
 
 
 A variety of methods were used in literature to solve the tension/compression spring design problem. Between them, we can cite CPSO, HPSO, NM-PSO, MBA, UPSO, PSO-DE, LCA, CB-ABC, QPSO, G-QPSO, APSO, CMA-ES, MVDE, DELC, WCA, IPSO, IAPSO, IABC-MAL and SAMP-Jaya. Table \ref{tab:TC} shows the statistical results of all methods, along with the number of function evaluations taken to achieve such results.
@@ -85,15 +72,7 @@ Given the relatively small domain of the problem, we believe that the C-ITGO met
 
 \subsection{Three-bar truss design problem}
 
-The three-bar truss design problem \citep{TB} consists in minimizing the volume of a statically loaded three-bar truss. There are two continuous design variables and three nonlinear inequality constraints, based on the stress on each of the truss members. Figure \ref{fig:TB} shows the schematic view of the problem.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.5]{Imgs/TB.png}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Schematic view of the three-bar truss design problem.}\label{fig:TB}
-\end{figure}
+\input{Appendix/TB}
 
 
 Here we present only the five best-performing methods used to solve this problem since the solutions found in the literature have very small variance from each other. These methods are PSO-DE, CMA-ES, MVDE, DELC, MBA and IABC-MAL. We present the statistical results for this problem in Table \ref{tab:TB}.
@@ -108,20 +87,12 @@ C-ITGO achieved convergence quickly, taking 136.48 function evaluations on avera
 
 \subsection{Speed reducer design problem}
 
-In this problem, the total weight of the speed reducer (Figure \ref{fig:SR}) is to be minimized. The problem has seven design variables: face width, teeth module, number of teeth on the pinion, first and second length of shafts between bearings and first and second shafts diameter \citep{SR}. The problem has 11 nonlinear constraints, and the third variable is constrained to be an integer. We use two versions of this problem, where the only difference is in the bounds of the fifth variable. We will call these problems SRI and SRII, respectively.
+\input{Appendix/SR}
 
 
 For SRI, we compare C-ITGO results against four optimization methods, namely LCA, IPSO, APSO and IAPSO, shown in Table \ref{tab:SP1}.
 
 The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constrained global optimum solution and having very low standard deviation.
-
-\begin{figure}[h]
-    \begin{center}
-    \includegraphics[scale=0.6]{Imgs/SR.jpg}
-    \end{center}
-    \captionsetup{justification=centering}
-    \caption{Schematic view of the speed reducer design problem.}\label{fig:SR}
-\end{figure}
 
 
 \input{Tables/SP1}
@@ -142,16 +113,7 @@ For this specific problem, we used the SQP algorithm as local search and rounded
 
 \subsection{Pressure vessel design problem}
 
-In the pressure vessel design problem, the objective is to minimize the total manufacturing cost, including the cost of the material, forming and welding costs \citep{PV}. The problem is subject to three linear and one nonlinear inequality constraint, and its structure is shown in Figure \ref{fig:PV}. The four variables are the thickness of the shell, the thickness of the head, the inner radius, and the length of the cylindrical section of the vessel. This is an example of a mixed integer problem, where the first and second variables are constrained to be integers.
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.6]{Imgs/PV.png}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Schematic view of pressure vessel design problem.}\label{fig:PV}
-\end{figure}
+\input{Appendix/PV}
 
 
 We compare C-ITGO against the UPSO, QPSO, G-QPSO, CMA-ES, MVDE, CB-ABC, PSO-DE, HPSO, WCA, LCA, APSO, CPSO, MBA, IPSO, DELC, IABC-MAL, SAMP-Jaya and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. Some of the methods used to solve this problem report unfeasible results (PSO-DE, WCA, MBA and SAMP-Jaya), probably either because the integer constraints are ignored or due to wrong rounding. Nevertheless, we still use the results of these methods to prove the superior convergence of C-ITGO, even in constrained mixed integer problems.
@@ -166,16 +128,7 @@ The algorithms CMA-ES, CB-ABC, HPSO, IABC-MAl, IPSO, DELC, IAPSO and C-ITGO are 
 
 \subsection{Gear train design problem}
 
-In this problem, the objective is to minimize the cost of the gear ratio of the gear train \citep{PV}. An example is shown in Figure \ref{fig:GT}. The problem has four variables, representing the number of teeth for the four gears. The only constraint of the problem is that all variables must be integers.
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.6]{Imgs/GT.jpg}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Gear train design problem structure.}\label{fig:GT}
-\end{figure}
+\input{Appendix/GT}
 
 
 We compare the C-ITGO results, shown in Table \ref{fig:GT}, against other five methods: MBA, UPSO, CS, APSO and IAPSO. In general, all methods compared achieved similar results, having found the global optimal solution for the problem. The main difference relies on the number of function calls, varying from 100,000 for UPSO to 800 for IAPSO.
@@ -189,15 +142,8 @@ Since this is an integer optimization problem, we used the mixed integer local s
 
 \subsection{Multiple disk clutch brake design problem}
 
-This is also an example of a problem where all variables are discrete. The Multiple disk clutch brake design problem aims at minimizing the mass of a multiple disk clutch brake \cite{MD}. There are five integer variables: the inner radius, outer radius, thickness of the disk, actuating force and number of friction surfaces (Figure \ref{fig:MD}). The problem is also constrained by nine nonlinear inequalities.
+\input{Appendix/MD}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.6]{Imgs/MD.jpg}
-\end{center}
-\captionsetup{justification=centering}
-\caption{Schematic view of the multiple disk clutch brake design problem.}\label{fig:MD}
-\end{figure}
 
 To compare the results, we used only methods who achieved close performance to the obtained by C-ITGO, since some methods in literature have very diverging results. The methods compared are WCA, IPSO, APSO and IAPSO. The WCA, IPSO, and IAPSO methods achieved good performance in this problem, finding the global optimal solution and having very small variance, as shown in Table \ref{tab:MD}. The WCA and IAPSO took very few function evaluations to converge, respectively 500 and 400. IPSO took long more, with 20,000 function evaluations. However, the reported standard deviation for IPSO was 0.0.
 

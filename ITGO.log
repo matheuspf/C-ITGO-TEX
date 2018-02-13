@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.16)  13 FEB 2018 01:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.16)  13 FEB 2018 02:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1849,7 +1849,32 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 LaTeX Warning: Unused global option(s):
     [A4].
 
-(./ITGO.aux)
+(./ITGO.aux
+
+LaTeX Warning: Label `tab:MD' multiply defined.
+
+
+LaTeX Warning: Label `fig:WB' multiply defined.
+
+
+LaTeX Warning: Label `fig:TC' multiply defined.
+
+
+LaTeX Warning: Label `fig:TB' multiply defined.
+
+
+LaTeX Warning: Label `fig:SR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PV' multiply defined.
+
+
+LaTeX Warning: Label `fig:GT' multiply defined.
+
+
+LaTeX Warning: Label `fig:MD' multiply defined.
+
+)
 \openout1 = `ITGO.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -2092,10 +2117,10 @@ Overfull \hbox (21.50154pt too wide) in paragraph at lines 98--99
  []
 
 Package epstopdf Info: Source file: <fig_3.eps>
-(epstopdf)                    date: 2018-02-09 08:37:38
+(epstopdf)                    date: 2018-02-13 01:53:39
 (epstopdf)                    size: 1391253 bytes
 (epstopdf)             Output file: <fig_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-02-09 08:37:45
+(epstopdf)                    date: 2018-02-13 01:53:39
 (epstopdf)                    size: 449259 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig_3-eps-converted-to.pdf
  fig_3.eps>
@@ -2164,61 +2189,64 @@ Overfull \hbox (2.13766pt too wide) in paragraph at lines 15--16
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [14] [15]) (./Results.tex [16] (./Tables/GAP.tex) [17] [18]
-<Imgs/WB.jpg, id=552, 202.73973pt x 146.45868pt>
+<Imgs/WB.jpg, id=554, 202.73973pt x 146.45868pt>
 File: Imgs/WB.jpg Graphic file (type jpg)
  <use Imgs/WB.jpg>
-Package pdftex.def Info: Imgs/WB.jpg used on input line 38.
+Package pdftex.def Info: Imgs/WB.jpg used on input line 40.
 (pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
-
-(./Tables/WB.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [19 <./Imgs/WB.jpg>] <Imgs/TC.png, id=565, 389.455pt x 116.435pt>
+ [19 <./Imgs/WB.jpg>] (./Tables/WB.tex) <Imgs/TC.png, id=570, 389.455pt x 116.4
+35pt>
 File: Imgs/TC.png Graphic file (type png)
 
 <use Imgs/TC.png>
-Package pdftex.def Info: Imgs/TC.png used on input line 61.
+Package pdftex.def Info: Imgs/TC.png used on input line 63.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
- (./Tables/TC.tex
+ [20 <./Imgs/TC.png>] (./Tables/TC.tex) [21]
+<Imgs/TB.png, id=587, 333.245pt x 242.9075pt>
+File: Imgs/TB.png Graphic file (type png)
+ <use Imgs/TB.png>
+Package pdftex.def Info: Imgs/TB.png used on input line 92.
+(pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
+
+(./Tables/TB.tex) [22 <./Imgs/TB.png>]
+<Imgs/SR.jpg, id=602, 333.20947pt x 120.87637pt>
+File: Imgs/SR.jpg Graphic file (type jpg)
+ <use Imgs/SR.jpg>
+Package pdftex.def Info: Imgs/SR.jpg used on input line 120.
+(pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
+
+(./Tables/SP1.tex) [23 <./Imgs/SR.jpg>] (./Tables/SP2.tex) [24]
+<Imgs/PV.png, id=620, 333.245pt x 158.5925pt>
+File: Imgs/PV.png Graphic file (type png)
+ <use Imgs/PV.png>
+Package pdftex.def Info: Imgs/PV.png used on input line 150.
+(pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
+
+(./Tables/PV.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [20 <./Imgs/TC.png>] [21] <Imgs/TB.png, id=582, 333.245pt x 242.9075pt>
-File: Imgs/TB.png Graphic file (type png)
-
-<use Imgs/TB.png>
-Package pdftex.def Info: Imgs/TB.png used on input line 90.
-(pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
- (./Tables/TB.tex) [22 <./Imgs/TB.png>]
-<Imgs/SR.jpg, id=595, 333.20947pt x 120.87637pt>
-File: Imgs/SR.jpg Graphic file (type jpg)
- <use Imgs/SR.jpg>
-Package pdftex.def Info: Imgs/SR.jpg used on input line 118.
-(pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
-
-(./Tables/SP1.tex) [23 <./Imgs/SR.jpg>] (./Tables/SP2.tex)
-<Imgs/PV.png, id=607, 333.245pt x 158.5925pt>
-File: Imgs/PV.png Graphic file (type png)
- <use Imgs/PV.png>
-Package pdftex.def Info: Imgs/PV.png used on input line 148.
-(pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
- [24]
-(./Tables/PV.tex) [25 <./Imgs/PV.png>]
-<Imgs/GT.jpg, id=627, 251.3461pt x 113.84123pt>
+) [25 <./Imgs/PV.png>] <Imgs/GT.jpg, id=636, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
- <use Imgs/GT.jpg>
-Package pdftex.def Info: Imgs/GT.jpg used on input line 172.
+
+<use Imgs/GT.jpg>
+Package pdftex.def Info: Imgs/GT.jpg used on input line 174.
 (pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
+ (./Tables/GT.tex
 
-(./Tables/GT.tex) [26 <./Imgs/GT.jpg>]
-<Imgs/MD.jpg, id=638, 216.81pt x 168.84319pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [26 <./Imgs/GT.jpg>] <Imgs/MD.jpg, id=647, 216.81pt x 168.84319pt>
 File: Imgs/MD.jpg Graphic file (type jpg)
- <use Imgs/MD.jpg>
-Package pdftex.def Info: Imgs/MD.jpg used on input line 194.
-(pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
 
-(./Tables/MD.tex) [27 <./Imgs/MD.jpg>] (./Tables/BestResults.tex
+<use Imgs/MD.jpg>
+Package pdftex.def Info: Imgs/MD.jpg used on input line 196.
+(pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
+ (./Tables/MD.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [27 <./Imgs/MD.jpg>] (./Tables/BestResults.tex
 Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 [][] 
  []
@@ -2227,27 +2255,27 @@ Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) <Imgs/SkillMack_3-crop.pdf, id=667, 669.50125pt x 254.9525pt>
+) <Imgs/SkillMack_3-crop.pdf, id=677, 669.50125pt x 254.9525pt>
 File: Imgs/SkillMack_3-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_3-crop.pdf>
-Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf used on input line 237.
+Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf used on input line 239.
 (pdftex.def)             Requested size: 401.70384pt x 152.97266pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./Tables/SkillMack_5.tex
+[29] (./Tables/SkillMack_5.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) <Imgs/SkillMack_5-crop.pdf, id=670, 506.89375pt x 234.8775pt>
+) <Imgs/SkillMack_5-crop.pdf, id=691, 506.89375pt x 234.8775pt>
 File: Imgs/SkillMack_5-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_5-crop.pdf>
-Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf used on input line 252.
+Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf used on input line 254.
 (pdftex.def)             Requested size: 304.1386pt x 140.92758pt.
- [29] (./Tables/SignedTest.tex
+ [30] (./Tables/SignedTest.tex
 Overfull \hbox (2.40657pt too wide) in paragraph at lines 17--18
  []|\T1/fve/m/n/6 120,000| 
  []
@@ -2260,7 +2288,11 @@ Overfull \hbox (2.40657pt too wide) in paragraph at lines 34--35
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [30] (./Tables/Wilcoxon.tex
+) [31 <./Imgs/SkillMack_3-crop.pdf> <./Imgs/SkillMack_5-crop.pdf
+
+pdfTeX warning: pdflatex (file ./Imgs/SkillMack_5-crop.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>] (./Tables/Wilcoxon.tex
 Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
  []|\T1/fve/m/n/6 0.0007229| 
  []
@@ -2268,21 +2300,97 @@ Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) (./Conclusion.tex [31 <./Imgs/SkillMack_3-crop.pdf> <./Imgs/SkillMack_5-crop
-.pdf
-
-pdfTeX warning: pdflatex (file ./Imgs/SkillMack_5-crop.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->] [32] [33]) (./Acknowledgment.tex) (./ITGO.bbl
+)) (./Conclusion.tex [32] [33]) (./Acknowledgment.tex) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 29.
- [34] [35] [36] [37] [38]
-[39]) (./Appendix.tex (./Problems/WB.tex [40]))
+ [34]
+[35] [36] [37] [38] [39]) (./Appendix.tex (./Appendix/GKLS.tex
+(./Appendix/Tables/GKLS_Params.tex) [40]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Package natbib Warning: Citation `SGEO' on page 41 undefined on input line 36.
+
+(./Appendix/Tables/ITGO.tex) (./Appendix/Tables/GKLS_Results.tex
+Overfull \hbox (0.52602pt too wide) in paragraph at lines 23--23
+ []|$\OML/cmm/m/it/6 >$\T1/fve/m/n/6 217215.58(16)| 
+ []
+
+
+Overfull \hbox (1.35982pt too wide) in paragraph at lines 23--23
+ []|$\OML/cmm/m/it/6 >$\T1/fve/m/n/6 269064.35(4)| 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [41]) (./Appendix/Problems.tex (./Appendix/WB.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+File: Imgs/WB.jpg Graphic file (type jpg)
+<use Imgs/WB.jpg>
+Package pdftex.def Info: Imgs/WB.jpg used on input line 11.
+(pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./Appendix/Problems/WB.tex [42] [43])) (./Appendix/TC.tex
+File: Imgs/TC.png Graphic file (type png)
+ <use Imgs/TC.png>
+Package pdftex.def Info: Imgs/TC.png used on input line 10.
+(pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
+
+(./Appendix/Problems/TC.tex [44])) (./Appendix/TB.tex
+File: Imgs/TB.png Graphic file (type png)
+ <use Imgs/TB.png>
+Package pdftex.def Info: Imgs/TB.png used on input line 9.
+(pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
+
+(./Appendix/Problems/TB.tex [45])) (./Appendix/SR.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+File: Imgs/SR.jpg Graphic file (type jpg)
+<use Imgs/SR.jpg>
+Package pdftex.def Info: Imgs/SR.jpg used on input line 10.
+(pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./Appendix/Problems/SR1.tex [46] [47])) (./Appendix/PV.tex
+File: Imgs/PV.png Graphic file (type png)
+ <use Imgs/PV.png>
+Package pdftex.def Info: Imgs/PV.png used on input line 9.
+(pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
+
+(./Appendix/Problems/PV.tex [48])) (./Appendix/GT.tex
+File: Imgs/GT.jpg Graphic file (type jpg)
+ <use Imgs/GT.jpg>
+Package pdftex.def Info: Imgs/GT.jpg used on input line 10.
+(pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
+
+(./Appendix/Problems/GT.tex [49])) (./Appendix/MD.tex
+File: Imgs/MD.jpg Graphic file (type jpg)
+ <use Imgs/MD.jpg>
+Package pdftex.def Info: Imgs/MD.jpg used on input line 9.
+(pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
+
+(./Appendix/Problems/MD.tex [50] [51]))))
+
+Package natbib Warning: There were undefined citations.
+
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 145.
 See the caption package documentation for explanation.
 
-[41]
+[52]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (./ITGO.aux)
@@ -2290,44 +2398,50 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `ITGO.out' has not changed.
 (rerunfilecheck)             Checksum: 56179257816D4CF32F07795F2ECFA182;1372.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 34931 strings out of 493014
- 654920 string characters out of 6135689
- 780388 words of memory out of 5000000
- 37606 multiletter control sequences out of 15000+600000
+ 35021 strings out of 493014
+ 656313 string characters out of 6135689
+ 776752 words of memory out of 5000000
+ 37614 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  56i,15n,77p,10376b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (41 pages, 2583431 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fveb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ITGO.pdf (52 pages, 2627452 bytes).
 PDF statistics:
- 963 PDF objects out of 1000 (max. 8388607)
- 735 compressed objects within 8 object streams
- 159 named destinations out of 1000 (max. 500000)
+ 1096 PDF objects out of 1200 (max. 8388607)
+ 854 compressed objects within 9 object streams
+ 197 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,50 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ITGO.aux
 The style file: BibStyle/model5-names.bst
 Database file #1: ITGO.bib.bib
+Warning--I didn't find a database entry for "SGEO"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty title in BOOKS2
 Warning--missing institution in NAT
 Warning--empty title in BOOKS1
-You've used 59 entries,
+You've used 60 entries,
             3390 wiz_defined-function locations,
-            1070 strings with 15409 characters,
-and the built_in function-call counts, 39857 in all, are:
-= -- 3024
-> -- 1416
+            1079 strings with 15632 characters,
+and the built_in function-call counts, 40695 in all, are:
+= -- 3087
+> -- 1459
 < -- 48
-+ -- 1171
-- -- 402
-* -- 4161
-:= -- 5245
-add.period$ -- 186
-call.type$ -- 59
-change.case$ -- 442
-chr.to.int$ -- 61
-cite$ -- 62
-duplicate$ -- 3016
-empty$ -- 3042
-format.name$ -- 589
-if$ -- 7552
++ -- 1211
+- -- 414
+* -- 4256
+:= -- 5351
+add.period$ -- 189
+call.type$ -- 60
+change.case$ -- 451
+chr.to.int$ -- 62
+cite$ -- 63
+duplicate$ -- 3071
+empty$ -- 3096
+format.name$ -- 604
+if$ -- 7706
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 536
-newline$ -- 319
-num.names$ -- 236
-pop$ -- 1339
+missing$ -- 547
+newline$ -- 324
+num.names$ -- 240
+pop$ -- 1367
 preamble$ -- 1
-purify$ -- 370
+purify$ -- 378
 quote$ -- 0
-skip$ -- 1127
+skip$ -- 1149
 stack$ -- 0
-substring$ -- 1739
-swap$ -- 2099
+substring$ -- 1775
+swap$ -- 2143
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 510
+type$ -- 519
 warning$ -- 3
-while$ -- 246
+while$ -- 251
 width$ -- 0
-write$ -- 845
-(There were 3 warnings)
+write$ -- 859
+(There were 4 warnings)

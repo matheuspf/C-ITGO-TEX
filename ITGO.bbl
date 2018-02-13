@@ -186,6 +186,8 @@
   optimizer}.
 \newblock In {\it \bibinfo{booktitle}{IEEE Congress on Evolutionary
   Computation}\/} (pp. \bibinfo{pages}{1505--1512}).
+\newblock \bibinfo{address}{{CCIB} - Centre Convencions Internacional
+  Barcelona, Rambla Pr Barcelona, Spain}.
 %Type = Article
 \bibitem[{Liang et~al.(2017)Liang, Wan \& Fang}]{IABC}
 \bibinfo{author}{Liang, Y.}, \bibinfo{author}{Wan, Z.}, \&
@@ -264,6 +266,8 @@
   optimization}.
 \newblock In {\it \bibinfo{booktitle}{IEEE Congress on Evolutionary
   Computation}\/}.
+\newblock \bibinfo{address}{Sheraton Vancouver Wall Center Vancouver, BC,
+  Canada}.
 %Type = Book
 \bibitem[{Nocedal \& Wright(2006)}]{Nocedal}
 \bibinfo{author}{Nocedal, J.}, \& \bibinfo{author}{Wright, S.~J.}
@@ -350,10 +354,11 @@
   optimization problems through mvmo-phm}.
 \newblock In {\it \bibinfo{booktitle}{IEEE Congress on Evolutionary
   Computation}\/}.
+\newblock \bibinfo{address}{Vancouver Convention Centre, Vancouver, Canada}.
 %Type = Article
-\bibitem[{Sacco et~al.(2014)Sacco, Henderson \& Rios~Coleho}]{ITGO2}
+\bibitem[{Sacco et~al.(2014)Sacco, Henderson \& Rios~Coelho}]{ITGO2}
 \bibinfo{author}{Sacco, W.~F.}, \bibinfo{author}{Henderson, N.}, \&
-  \bibinfo{author}{Rios~Coleho, A.~C.} (\bibinfo{year}{2014}).
+  \bibinfo{author}{Rios~Coelho, A.~C.} (\bibinfo{year}{2014}).
 \newblock \bibinfo{title}{Topographical global optimization applied to nuclear
   reactor core design: Some preliminary results}.
 \newblock {\it \bibinfo{journal}{Annals of Nuclear Energy}\/},  {\it
@@ -376,6 +381,8 @@
   for constrained optimization}.
 \newblock In {\it \bibinfo{booktitle}{IEEE Congress on Evolutionary
   Computation}\/} (pp. \bibinfo{pages}{2851--2858}).
+\newblock \bibinfo{address}{{CCIB} - Centre Convencions Internacional
+  Barcelona, Rambla Pr Barcelona, Spain}.
 %Type = Article
 \bibitem[{Sandgren(1990)}]{PV}
 \bibinfo{author}{Sandgren, E.} (\bibinfo{year}{1990}).
@@ -416,7 +423,7 @@
 \bibitem[{Skillings \& Mack(1981)}]{Skillings}
 \bibinfo{author}{Skillings, J.~H.}, \& \bibinfo{author}{Mack, G.~A.}
   (\bibinfo{year}{1981}).
-\newblock \bibinfo{title}{On the use of a friedman-type statistic in balanced
+\newblock \bibinfo{title}{On the use of a {F}riedman-type statistic in balanced
   and unbalanced block designs}.
 \newblock {\it \bibinfo{journal}{Technometrics}\/},  {\it
   \bibinfo{volume}{23(2)}\/}, \bibinfo{pages}{171--177}.
@@ -443,6 +450,8 @@
   differential evolution with an archive and gradient-based mutation}.
 \newblock In {\it \bibinfo{booktitle}{IEEE Congress on Evolutionary
   Computation}\/} (pp. \bibinfo{pages}{1680--1688}).
+\newblock \bibinfo{address}{{CCIB} - Centre Convencions Internacional
+  Barcelona, Rambla Pr Barcelona, Spain}.
 %Type = Book
 \bibitem[{Törn \& Viitanen(1992)}]{ITGO1}
 \bibinfo{author}{Törn, A.}, \& \bibinfo{author}{Viitanen, S.}

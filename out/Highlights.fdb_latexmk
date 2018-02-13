@@ -1,0 +1,19 @@
+# Fdb version 3
+["pdflatex"] 1517828961 "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" "out/Highlights.pdf" "Highlights" 1518497417
+  "/etc/texmf/web2c/texmf.cnf" 1482280374 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/home/matheus/Algoritmos/LaTeX/ITGO_ENG/Highlights.tex" 1517407401 494 e53c5ec9eb5068b44f4a6defb49ba46d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1459635588 19821 310da678527a7dfe2a02c88af38079b7 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd" 1454284088 2256 80ce1168fb4ce6a85583a9cf8972c013 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1459635588 8292 e897c12e1e886ce77fe26afc5d470886 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1465929555 31343 f2e32048345d99cc298f1946c940b7dd ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1465929555 31343 f2e32048345d99cc298f1946c940b7dd ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1510872985 1888002 bbd21e0eec351ffb20562c5a7c949e0c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1510873141 3869770 b77901c94b256622e0700fca4638b801 ""
+  "Highlights.tex" 1517407401 494 e53c5ec9eb5068b44f4a6defb49ba46d ""
+  "out/Highlights.aux" 1517828962 8 a94a2480d3289e625eea47cd1b285758 ""
+  (generated)
+  "out/Highlights.pdf"
+  "out/Highlights.log"
+  "out/Highlights.aux"

@@ -1,6 +1,6 @@
 \section{Computational Results} \label{sec:Results}
 
-The C-ITGO has been implemented using Matlab, and the experiments were accomplished on a machine with the Intel i3-3110M CPU @2.40GHz processor with 4GB of RAM, running Windows 7. Also, we provide a free library for using C-ITGO for optimizing any user-defined function, being it constrained or not. The library uses by default the Matlab \textit{fmincon} solver for continuous problems and the OPTI toolbox (currently only readily available for Windows, but can be compiled for Linux and Mac as well) for mixed integer problems. Also, the user has the option to easily incorporate other local search algorithms, if desired.
+The C-ITGO was implemented using Matlab, and the experiments were accomplished on a machine with the Intel i3-3110M CPU @2.40GHz processor with 4GB of RAM, running Windows 7. Also, we provide a free library for using C-ITGO for optimizing any user-defined function, being it constrained or not. The library uses by default the Matlab \textit{fmincon} solver for continuous problems and the OPTI toolbox (currently only readily available for Windows, but can be compiled for Linux and Mac as well) for mixed integer problems. Also, the user has the option to easily incorporate other local search algorithms, if desired.
 
 %The source code for the reported results in this work can be found and downloaded for free at \cite{GIT}.
 
@@ -8,20 +8,24 @@ To evaluate the performance of the developed method to solve real-world problems
 
 In all tests, given the stochastic characteristic of C-ITGO, we run it 25 times, saving the Best and Worst feasible solutions, as well as the mean value (Mean) and standard deviation (SD) of the fitness after all runs. Given the great variability between the results found in the literature for most problems, we stop the execution of C-ITGO as soon as the best solution found in a run is considerably close to the optimum (the optimum solution for each of the eight engineering design problems considered is known). That is, the condition for stopping C-ITGO, when the fitness reaches a certain value, is problem dependent. At the end, the mean number of function evaluations (MNFEs) is reported for all runs.
 
-Table \ref{tab:GAP} shows the values that determine the convergence of C-ITGO for each problem. The values in row \textit{GAP} represent the minimum distance to the optimum that the fitness of a solution needs to be to stop the execution of C-ITGO. The Gear Train (GT) was the only problem where we specified a maximum number of function evaluations. For this problem, if the NFEs reaches 800, we stop immediately and return the best solution found. All other problems converged to at least \textit{GAP} of the optimum without the requirement to specify a maximum NFEs.
-
+Table \ref{tab:GAP} shows the values that determine the convergence of C-ITGO for each problem. The values in row \textit{GAP} represent the minimum Euclidean distance to the optimum that the fitness of a solution needs to be in order to stop the execution of C-ITGO. These values were chosen based on the results found by the competing methods, considering the variability of the precision of the reported solutions.
 
 \input{Tables/GAP}
 
+The Gear Train (GT) was the only problem where we specified a maximum number of function evaluations. For this problem, if the NFEs reaches 800, we stop immediately and return the best solution found. It was necessary since the convergence requirements for this problem is very tight ($10E-10$). All other problems converged to at least \textit{GAP} of the optimum without the requirement to specify a maximum NFEs.
 
-In our tests, all solutions reported by C-ITGO are completely feasible for all problems. So, unless specified, we exclude from comparison methods that violate any constraint (infeasible).
+%The C-ITGO method finishes its execution when one or both of the two stop criteria is achieved: the convergence of the best individual or the maximum number of function calls is reached. Table \ref{tab:GAP} shows the values that determine the convergence of C-ITGO for each problem. The values in row GAP represent the minimum euclidean distance to the optimum that the fitness of a solution needs to be in order to stop the execution of C-ITGO. These values are chosen based on the results reported by the competing methods, considering the variability of the precision of the solutions among the problems.
+
+
+
+In our tests, all solutions reported by C-ITGO are completely feasible for all problems. So, unless specified, we exclude from comparison methods that violate any constraint (unfeasible).
 
 We compare 20 different optimization methods against C-ITGO. The most common meta-heuristic for solving the problems considered in this work is the Particle Swarm Optimization (PSO), including PSO-DE \citep{PSO-DE}, a hybrid PSO method combined with Differential Evolution (DE); the HPSO \citep{HPSO}, another hybridized particle swarm method in combination with simulated annealing; a co-evolutionary PSO denominated CPSO \citep{CPSO}; the hybridized PSO with Nelder-Mead simplex (NM-PSO) \citep{NM-PSO}; the Unified PSO (UPSO) \citep{UPSO}, a PSO variant that balances exploration and exploitation; the APSO, standing for Accelerated PSO  \citep{APSO}; the Gaussian Quantum-Behaved Particle Swarm Optimization methods, named QPSO and G-QPSO \citep{QPSO}; and the IPSO \citep{IPSO}, which incorporates an interval reducing procedure. More recently, and among the best PSO methods for constrained global optimization, we can cite the Improved Accelerated PSO algorithm (IAPSO) \citep{IAPSO}, which proposes some modifications and improves the APSO method.
 
 Many other different optimization methods were also used for comparison in this work: the Mine Blast Algorithm (MBA) \citep{MBA}, a population-based optimization method based on the mine bomb explosion concept; the League Championship Algorithm (LCA) \citep{LCA}, which models a league championship environment with artificial teams; the Crossover-Based Artificial Bee Colony (CB-ABC) \citep{CB-ABC}, applying modified search operators over the regular ABC algorithm; the Differential Evolution with Level Comparison (DELC) \citep{DELC}, which converts a constrained problem into an unconstrained one by means of a level comparison mechanism; a Multi-View Differential Evolution (MVDE) \citep{MVDE}, which uses several different mutation strategies at every iteration; the Covariance Matrix Adaptation Evolution Strategy (CMA-ES) method \citep{CMA-ES}, which builds a distribution model of the population; the Water Cycle Algorithm (WCA) \citep{WCA}, a nature-inspired method based on the water cycle process; and the Cuckoo Search algorithm (CS) \citep{CS}, another nature-inspired method based on the cuckoo bird species behavior. Recently, reporting state-of-the-art results for some problems, we can cite the Improved Artificial Bee Colony with Modified Augmented Lagrangian (IABC-MAL) \citep{IABC-Mal}, which integrates the Modified Augmented Lagrangian method to handle constraints with the Improved ABC algorithm \citep{IABC}, and the Self-Adaptive Multi-Population based Jaya (SAMP-Jaya) algorithm \citep{SAMP-Jaya}, a multi-population scheme of the Jaya method \citep{Jaya}.
 
 
-Following will be briefly explained the engineering optimization problems that will be tackled in this work as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. For the sake of space, the mathematical formulations, the project variables, and their specific values will not be presented here. Further information on the Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. Three-Bar truss (TB) and additional information on Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
+Following, the engineering optimization problems that will be tackled in this work will be briefly explained, as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. For the sake of space, the mathematical formulations, the project variables, and their specific values will not be presented here. Further information on the Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. The Three-Bar truss (TB) problem and additional information on Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
 
 
 
@@ -43,7 +47,7 @@ We write the statistics for the C-ITGO method in bold simply to highlight the re
 
 \input{Tables/WB}
 
-The results for C-ITGO and SAMP-Jaya are very similar, with the former having a slightly worse standard deviation, but converging in less than one-third of the number of function evaluations. We note here that the best solution achieved by NM-PSO is slightly infeasible, so it should not be directly compared to the other methods.
+The results for C-ITGO and SAMP-Jaya are very similar, with the former having a slightly worse standard deviation, but converging in less than one-third of the number of function evaluations. We note here that the best solution achieved by NM-PSO is slightly unfeasible, so it should not be directly compared to the other methods.
 
 
 
@@ -68,7 +72,7 @@ A variety of methods were used in literature to solve the tension/compression sp
 
 The methods vary greatly in the number of function evaluations required to converge to good quality solutions. Only three of the methods (QPSO, G-QPSO and IAPSO) achieved convergence with 2,000 function evaluations, while some methods required more than 100,000. The best solution achieved by all methods have the same fitness value up to five decimal places, with the exception of CPSO, UPSO, APSO and NM-PSO.
  
-The best solution reported by NM-PSO is again infeasible, so we do not compare it against other methods. The SAMP-Jaya method also seems to report a slightly infeasible best solution, differing from the optimal value reported by other methods. However, the result achieved by SAMP-Jaya differs only at the sixth decimal place, and the difference may be due to wrong rounding. We cannot state this for sure since we do not have access to the solution vector found by the method. Given the differences between the precision in the solutions reported by the methods, we consider $f(\bm{x}) = 0.012665$ to be the fitness at the global optimum.
+The best solution reported by NM-PSO is again unfeasible, so we do not compare it against other methods. The SAMP-Jaya method also seems to report a slightly unfeasible best solution, differing from the optimal value reported by other methods. However, the result achieved by SAMP-Jaya differs only at the sixth decimal place, and the difference may be due to wrong rounding. We cannot state this for sure since we do not have access to the solution vector found by the method. Given the differences between the precision in the solutions reported by the methods, we consider $f(\bm{x}) = 0.012665$ to be the fitness at the global optimum.
 
 The C-ITGO method performed remarkably well on this problem, converging to the best solution found in 535.08 function evaluations on average, almost four times less than the second best competing method. Also, the standard deviation is very small, in the order of 2.81E-9. 
 
@@ -122,7 +126,7 @@ The LCA, IPSO, IAPSO and C-ITGO present similar results, all finding the constra
 
 The first three methods take at least 20,000 iterations to converge to good quality solutions, while IAPSO takes only 6,000 NFEs. C-ITGO outperforms the other methods by a large margin, converging in 858.40 function calls on average while maintaining negligible higher standard deviation than IAPSO and IPSO.
 
-For this problem, we used considerably greater populations, of sizes 150 and 10, while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO took 3 full iterations to converge, while in most cases it converged in the first iteration.
+For this problem, we used considerably greater populations, of sizes 150 ($PS_1$) and 10 ($PS_2$), while maintaining the number of allowed function evaluations of the local search relatively small (100 and 200). For the worst case, C-ITGO took 3 full iterations to converge, while in most cases it converged in the first iteration.
 
 For SRII, the methods used for comparison were PSO-DE, WCA, DELC, CB-ABC, CMA-ES, MVDE, IABC-MAL, LCA, APSO, MBA, IPSO, IAPSO and SAMP-Jaya. The reported results for the SAMP-Jaya method seems to violate the integer constraint at variable three, but it is included to show that even in harder situations the C-ITGO algorithm can still produce state-of-the-art results.
 
@@ -148,9 +152,10 @@ In the pressure vessel design problem, the objective is to minimize the total ma
 \end{figure}
 
 
-\input{Tables/PV}
-
 We compare C-ITGO against the UPSO, QPSO, G-QPSO, CMA-ES, MVDE, CB-ABC, PSO-DE, HPSO, WCA, LCA, APSO, CPSO, MBA, IPSO, DELC, IABC-MAL, SAMP-Jaya and IAPSO methods. The statistical results are shown in Table \ref{tab:PV}. Some of the methods used to solve this problem report unfeasible results (PSO-DE, WCA, MBA and SAMP-Jaya), probably either because the integer constraints are ignored or due to wrong rounding. Nevertheless, we still use the results of these methods to prove the superior convergence of C-ITGO, even in constrained mixed integer problems.
+
+
+\input{Tables/PV}
 
 
 The algorithms CMA-ES, CB-ABC, HPSO, IABC-MAl, IPSO, DELC, IAPSO and C-ITGO are the only who found the feasible optimal solution. All other methods presented relatively poor performance, with much higher NFEs on average. C-ITGO takes less than five times the number of function evaluations to converge than the best competing method, SAMP-Jaya, which reported a result of 6513.33 MNFEs. Also, C-ITGO achieves the smallest standard deviation among all methods. All runs of C-ITGO converged quickly to the known global optimum, showing unarguably better results than any other method compared in this problem.
@@ -171,7 +176,7 @@ In this problem, the objective is to minimize the cost of the gear ratio of the 
 \end{figure}
 
 
-We compare the C-ITGO results, shown in Table \ref{fig:GT}, against other five methods: MBA, UPSO, CS, APSO and IAPSO. In general, all methods compared achieved similar results, having found the global optimal solution for the problem. The main difference relies on the number of function calls, varying from 100,00 for UPSO to 800 for IAPSO.
+We compare the C-ITGO results, shown in Table \ref{fig:GT}, against other five methods: MBA, UPSO, CS, APSO and IAPSO. In general, all methods compared achieved similar results, having found the global optimal solution for the problem. The main difference relies on the number of function calls, varying from 100,000 for UPSO to 800 for IAPSO.
 
 \input{Tables/GT}
 
@@ -196,7 +201,7 @@ To compare the results, we used only methods who achieved close performance to t
 
 \input{Tables/MD}
 
-The C-ITGO clearly outperforms the other methods, having a standard deviation of 1.13E-16, while converging with only 286.48 function evaluations on average. For this problem, we used very small populations, of sizes 20 and 5. The number of function evaluations in the first step was 100, and most runs converged in much less, enjoying the quality of initial solutions provided by the topographical heuristic step. Some runs, however, took more than 1,000 function evaluations, bringing the mean NFEs up.
+The C-ITGO clearly outperforms the other methods, having a standard deviation of 1.13E-16, while converging with only 286.48 function evaluations on average. For this problem, we used very small populations, of sizes 20 ($PS_1$) and 5 ($PS_2$). The number of function evaluations in the first step was 100, and most runs converged in much less, enjoying the quality of initial solutions provided by the topographical heuristic step. Some runs, however, took more than 1,000 function evaluations, bringing the mean NFEs up.
 
 
 
@@ -256,12 +261,14 @@ We see again that C-ITGO has a mean rank of 1.0, far less than IAPSO with 2.375,
 
 We also present in Table \ref{tab:SignedTest} the results of applying the pairwise signed test, comparing C-ITGO against the same methods presented in Table \ref{tab:SkillMack_5} and considering the same performance metric. Here, a "+" represents that C-ITGO outperforms the corresponding method, a "=" represents a tie, and a "-" represents a loss (C-ITGO has worse performance than the corresponding method). If a method does not solve a certain problem, that entry is ignored (marked with "*"). The last row shows the final sum of the number of "+", "=" and "-" for all methods.
 
-As we can see from Table \ref{tab:SignedTest}, C-ITGO always has a better MNFEs than any method for all problems, so there are only "+" entries. Following the guidelines presented in \cite{Friedman}, we can conclude that C-ITGO always achieves a p-value of at least 0.05 when compared to the methods of Table \ref{tab:SignedTest}.
-
 \input{Tables/SignedTest}
 
+As we can see from Table \ref{tab:SignedTest}, C-ITGO always has a better MNFEs than any method for all problems, so there are only "+" entries. Following the guidelines presented in \cite{Friedman}, we can conclude that C-ITGO always achieves a p-value of at least 0.05 when compared to the methods of Table \ref{tab:SignedTest}.
 
-To prove the superior convergence of C-ITGO, we present one more nonparametric statistical test, the Wilcoxon signed rank test, also described in \cite{Friedman}. This is a more robust approach to a pairwise statistical comparison than the previous test, that aims to detect a significant difference between the means of two competing techniques. The results shown in Table \ref{tab:Wilcoxon} were generated using the R package \textit{wilcoxon.test}, considering C-ITGO against the other algorithms. Empty entries (problems not solved by some method) are treated by default.
+
+To prove the superior convergence of C-ITGO, we present one more nonparametric statistical test, the Wilcoxon signed rank test, also described in \cite{Friedman}. This is a more robust approach to a pairwise statistical comparison than the previous test, that aims to detect a significant difference between the means of two competing techniques. 
+
+The results shown in Table \ref{tab:Wilcoxon} were generated using the R package \textit{wilcoxon.test}, considering C-ITGO against the other algorithms. Empty entries (problems not solved by some method) are treated by default.
 %Methods that solve fewer problems have a higher uncertainty regarding its distribution, consequently having a higher p-value.
 
 \input{Tables/Wilcoxon}

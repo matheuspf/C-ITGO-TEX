@@ -10,37 +10,37 @@ Warning--missing institution in NAT
 Warning--empty title in BOOKS1
 You've used 59 entries,
             3390 wiz_defined-function locations,
-            1067 strings with 15230 characters,
-and the built_in function-call counts, 39727 in all, are:
-= -- 3014
+            1070 strings with 15409 characters,
+and the built_in function-call counts, 39857 in all, are:
+= -- 3024
 > -- 1416
 < -- 48
 + -- 1171
 - -- 402
-* -- 4136
-:= -- 5235
-add.period$ -- 181
+* -- 4161
+:= -- 5245
+add.period$ -- 186
 call.type$ -- 59
 change.case$ -- 442
 chr.to.int$ -- 61
 cite$ -- 62
-duplicate$ -- 3006
-empty$ -- 3032
+duplicate$ -- 3016
+empty$ -- 3042
 format.name$ -- 589
-if$ -- 7527
+if$ -- 7552
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 531
-newline$ -- 314
+missing$ -- 536
+newline$ -- 319
 num.names$ -- 236
-pop$ -- 1344
+pop$ -- 1339
 preamble$ -- 1
 purify$ -- 370
 quote$ -- 0
 skip$ -- 1127
 stack$ -- 0
 substring$ -- 1739
-swap$ -- 2079
+swap$ -- 2099
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
@@ -48,5 +48,5 @@ type$ -- 510
 warning$ -- 3
 while$ -- 246
 width$ -- 0
-write$ -- 835
+write$ -- 845
 (There were 3 warnings)

@@ -28,7 +28,8 @@ Many other different optimization methods were also used for comparison in this 
 Following, the engineering optimization problems that will be tackled in this work will be briefly explained, as well as the solutions obtained by C-ITGO against the solutions of the best previously cited competing techniques of the literature. Further information on the Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI and SRII), Pressure Vessel (PV), Gear Train (GT) and Multiple Disk clutch brake (MD) problems can be found in the work of \cite{IAPSO}. The Three-Bar truss (TB) problem and additional information on Welded Beam (WB), Tension/Compression Spring (TC), Speed Reducer (SRI), Pressure Vessel (PV) and Gear Train (GT) can be seen in the work of \cite{MBA}.
 
 
-We also decided to add in the appendix the initial results of applying the developed method to the GKLS class of problems \citep{GKLS}. We plan to improve C-ITGO further in a future work to better tackle unconstrained smooth optimization problems, comparing the results against a number of efficient deterministic global optimization methods.
+We also decided to add in the appendix the initial results of applying the developed method to the GKLS class of problems \citep{GKLS}. We compared the results achieved by C-ITGO against a number of efficient deterministic global optimization methods, using the guidelines described in \cite{NAT} to compare deterministic and meta-heuristic methods. At the end, we executed a nonparametric statistical test to analyze the results. We plan to improve C-ITGO further in a future work to better tackle unconstrained smooth optimization problems.
+
 
 
 \subsection{Welded beam design problem}
@@ -222,4 +223,4 @@ The results shown in Table \ref{tab:Wilcoxon} were generated using the R package
 \input{Tables/Wilcoxon}
 
 
-Given that C-ITGO always had the best MNFEs when compared to all the other methods, as the Table 15 states, C-ITGO shows a improvement over IABC-MAL, MBA, LCA, CMA-ES, MVDE and APSO  with a level of significance $\alpha$ = 0.01, and over IAPSO with a level of significance $\alpha$ = 0.02.
+Given that C-ITGO always had the best MNFEs when compared to all the other methods, as the Table \ref{tab:Wilcoxon} states, C-ITGO shows a improvement over IABC-MAL, MBA, LCA, CMA-ES, MVDE and APSO  with a level of significance $\alpha$ = 0.01, and over IAPSO with a level of significance $\alpha$ = 0.02.

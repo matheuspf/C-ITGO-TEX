@@ -78,7 +78,7 @@
 \newblock {\it \bibinfo{journal}{Computers and Structures}\/},  {\it
   \bibinfo{volume}{110-111}\/}, \bibinfo{pages}{151--166}.
 %Type = Article
-\bibitem[{Fok et~al.(2017)Fok, An \& Wang}]{GEO}
+\bibitem[{Fok et~al.(2017)Fok, An \& Wang}]{SGEO}
 \bibinfo{author}{Fok, R.}, \bibinfo{author}{An, A.}, \& \bibinfo{author}{Wang,
   X.} (\bibinfo{year}{2017}).
 \newblock \bibinfo{title}{Geodesic and contour optimization using conformal

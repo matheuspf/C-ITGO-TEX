@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.16)  13 FEB 2018 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.16)  14 FEB 2018 08:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2249,28 +2249,30 @@ File: Imgs/TB.png Graphic file (type png)
  <use Imgs/TB.png>
 Package pdftex.def Info: Imgs/TB.png used on input line 16.
 (pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
-) [28 <./Imgs/TB.png>] (./Tables/TB.tex) (./Appendix/SR.tex (./Appendix/Problem
-s/SR1.tex
-[29]) <Imgs/SR.jpg, id=656, 333.20947pt x 120.87637pt>
+)
+(./Tables/TB.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [24 <./Imgs/TB.png>] (./Appendix/SR.tex (./Appendix/Problems/SR1.tex [25])
+<Imgs/SR.jpg, id=614, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
  <use Imgs/SR.jpg>
 Package pdftex.def Info: Imgs/SR.jpg used on input line 15.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
+) [26 <./Imgs/SR.jpg>] (./Tables/SP1.tex) (./Tables/SP2.tex
 
-[30]) (./Tables/SP1.tex) [31 <./Imgs/SR.jpg>] (./Tables/SP2.tex)
-(./Appendix/PV.tex (./Appendix/Problems/PV.tex [32])
-<Imgs/PV.png, id=680, 333.245pt x 158.5925pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./Appendix/PV.tex [27] (./Appendix/Problems/PV.tex [28])
+<Imgs/PV.png, id=638, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
  <use Imgs/PV.png>
 Package pdftex.def Info: Imgs/PV.png used on input line 15.
 (pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
 )
-(./Tables/PV.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [33 <./Imgs/PV.png>] (./Appendix/GT.tex (./Appendix/Problems/GT.tex)
-<Imgs/GT.jpg, id=690, 251.3461pt x 113.84123pt>
+(./Tables/PV.tex) [29 <./Imgs/PV.png>] (./Appendix/GT.tex
+(./Appendix/Problems/GT.tex) <Imgs/GT.jpg, id=648, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
  <use Imgs/GT.jpg>
 Package pdftex.def Info: Imgs/GT.jpg used on input line 14.
@@ -2296,7 +2298,8 @@ Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) <Imgs/SkillMack_3-crop.pdf, id=740, 669.50125pt x 254.9525pt>
+) [33] [34] (./Tables/SkillMack_3.tex)
+<Imgs/SkillMack_3-crop.pdf, id=701, 669.50125pt x 254.9525pt>
 File: Imgs/SkillMack_3-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_3-crop.pdf>
@@ -2307,13 +2310,21 @@ Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf used on input line 186.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) <Imgs/SkillMack_5-crop.pdf, id=798, 506.89375pt x 234.8775pt>
+[35] (./Tables/SkillMack_5.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) <Imgs/SkillMack_5-crop.pdf, id=710, 506.89375pt x 234.8775pt>
 File: Imgs/SkillMack_5-crop.pdf Graphic file (type pdf)
 
 <use Imgs/SkillMack_5-crop.pdf>
 Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf used on input line 201.
 (pdftex.def)             Requested size: 304.1386pt x 140.92758pt.
- [40] (./Tables/SignedTest.tex
+ [36 <./Imgs/SkillMack_3-crop.pdf> <./Imgs/SkillMack_5-crop.pdf
+
+pdfTeX warning: pdflatex (file ./Imgs/SkillMack_5-crop.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>] (./Tables/SignedTest.tex
 Overfull \hbox (2.40657pt too wide) in paragraph at lines 17--18
  []|\T1/fve/m/n/6 120,000| 
  []
@@ -2334,12 +2345,12 @@ Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [41] (./Conclusion.tex [42 <./Imgs/SkillMack_5-crop.pdf>])
-(./Acknowledgment.tex [43]) (./ITGO.bbl
+)) [37] (./Conclusion.tex [38]) (./Acknowledgment.tex [39]) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 29.
- [44] [45] [46] [47] [48] [49])
-(./Appendix.tex (./Appendix/GKLS.tex (./Appendix/Tables/GKLS_Params.tex)
+
+[40] [41] [42] [43] [44]) (./Appendix.tex (./Appendix/GKLS.tex [45]
+(./Appendix/Tables/GKLS_Params.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -2354,10 +2365,7 @@ Overfull \hbox (1.35982pt too wide) in paragraph at lines 23--23
  []|$\OML/cmm/m/it/6 >$\T1/fve/m/n/6 269064.35(4)| 
  []
 
-) [51] (./Appendix/Tables/Wilcoxon2.tex)))
-
-Package natbib Warning: There were undefined citations.
-
+) [47] (./Appendix/Tables/Wilcoxon2.tex)))
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 145.
 See the caption package documentation for explanation.
@@ -2376,10 +2384,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35024 strings out of 493014
- 656526 string characters out of 6135689
- 777884 words of memory out of 5000000
- 37616 multiletter control sequences out of 15000+600000
+ 34998 strings out of 493014
+ 656207 string characters out of 6135689
+ 776858 words of memory out of 5000000
+ 37614 multiletter control sequences out of 15000+600000
  63771 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  56i,15n,77p,10416b,1017s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2410,7 +2418,7 @@ usr/share/texlive/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on out/ITGO.pdf (52 pages, 2632019 bytes).
+Output written on out/ITGO.pdf (48 pages, 2624613 bytes).
 PDF statistics:
  1082 PDF objects out of 1200 (max. 8388607)
  840 compressed objects within 9 object streams

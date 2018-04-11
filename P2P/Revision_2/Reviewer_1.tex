@@ -1,0 +1,59 @@
+% !TEX root = ../../main.tex
+
+\section*{Reviewer \#1}
+
+\begin{revAns}{Some important points in the experimental part of the revised paper still however persist. They regard the adopted comparison strategy between deterministic and metaheuristic algorithms. When I said "(please take into account that the number of function evaluations is to be multiplied by the number of runs of a metaheuristic method - 25 in this paper)" this did not mean to use a particular "type of comparison" as authors replied. This just means that to obtain the reported numbers of function evaluations the authors needed to perform 25 (or 100 in new experiments) launches of their method for each test function and then to average the results. Thus, while the competitors used, let us say, a thousand evaluations, the authors claimed to use, in average, 500 evaluations (which is apparently better!) but, in fact, they used, in average, 25*500 (or 100*500) evaluations of a test function (which is much worse!). Thus, if we have a practical problem to solve, the competitors solve this problem in 1000 evaluations, while the authors' method can solve it in 10 evaluations in a particular run, in 500 evaluations in another run, or probably does not solve the problem at all. To have a higher possibility to solve the problem, a higher number of launches of the method is needed or a careful tuning of the multiple parameters of the method has to be done thus increasing the required computational costs.
+    
+Therefore, I still do not find the reported numerical results to be fair. As I could understand, the methodology reported in Sergeyev et al. (2018) aimed at considering all these worst, best, and average cases in a unique diagram. The authors instead have just taken results from this paper and mixed them with their own ones thus producing superficial and misleading conclusions. Maybe I am wrong but neither from the revised paper nor from the authors' brief reply I could see the opposite conclusion.}
+
+The methodology used to achieve the results presented in the paper may be not very clear, so we now make a thorough discussion about the methods used.
+
+
+\subsubsection*{Engineering Design Problems}
+
+We consider eight engineering design problems, consisting of continuous, integer and mixed-integer constrained optimization problems. We compared the results achieved by C-ITGO against 19 competitive meta-heuristic methods, with some of them reporting state of the art results for the problems considered.
+
+For each of the eight engineering design problems, we run the C-ITGO algorithm 25 times, saving all the statistics of each run. The choice of the number of runs for each problem is completely arbitrary. We chose the number 25 to match the results of one of the most competitive methods considered, the IAPSO \citep{IAPSO}. However, as the only statistic considered is the Mean Number of Function Evaluations (MNFEs), we can safely compare C-ITGO against the other meta-heuristics, even if they execute a different number of runs for each problem.
+
+For each of the 25 runs for a problem, we restarted the random number generator with a different seed, so as to couple with the stochastic nature of C-ITGO. If the same seed is used for each run, the exactly same results are achieved, which is obviously not wanted.
+
+However, the same sequence of seeds was used for all problems. Specifically, we started with the seed number $270001$ (this is an arbitrary value used by some authors \citep{BRKGABB}) for problem 1 and increased the seed value by 1 for each run. That is, for run 1, we used seed number 270001, for run 2, the seed number is 270002, and so on.
+
+Any other sequence of seeds could be used. In fact, we could choose a particular sequence of seeds for each problem that would give the best results on average. This, of course, would bias the results. This was not the case with C-ITGO, as we used the same arbitrary sequence of seeds for all the eight problems.
+
+The statistics current reported for each problem are: the function value of the best solution found among the 25 runs (\textbf{Best}), the mean function value of the 25 solutions found (\textbf{Mean}), the function value of the worst solution found among the 25 runs (\textbf{Worst}), the standard deviation of the function value of the 25 solutions (\textbf{SD}) and the mean number of function evaluations needed to achieve convergence (\textbf{MNFEs}), also calculated among the 25 runs.
+
+%We now included in the main text a table for each problem reporting more statistics regarding the number of function evaluations. The minimum, first quartile, mean, third quartile, maximum and standard deviation of the number of function evaluations required to achieve convergence are presented.
+
+The convergence criteria are discussed in the text and are specific to each problem (see page 23). We chose to adopt these criteria because the problems being solved present very different characteristics, like the results presented by the competing methods. Still, the C-ITGO algorithm achieves very small standard deviation for the function value in all problems considered (smaller than most competing methods for all problems).
+
+We also note, again, that all solutions found by C-ITGO for all the engineering problems are completely feasible (they respect all imposed constraints on all runs), as stated in page 23, paragraph 3. So, we can consider that every run of the C-ITGO method is successful, having no failed runs given the convergence criteria.
+
+Considering the methodology used, the authors consider that the comparison of the C-ITGO method against the competing meta-heuristics is completely clear, valid and fair. Of course, all the methodology presented here can be found in the main text.
+
+%Also, the complete log of the runs for all the eight engineering design problems can be found in the link to the source code, at the end of the point-to-point review.
+
+
+\subsubsection*{GKLS}
+
+For the GKLS class of problems, we used exactly the same methodology used in \cite{NAT} for meta-heuristics. We considered 100 different problems for each of the eight classes, ranging from 2 to 5 dimensions, each consisting of an easy and a hard case. For each problem, C-ITGO was executed 100 times, saving the statistic for all runs.
+
+The first thing to consider is that every single run of C-ITGO was successful. That is, none of the 80,000 runs (8 classes, 100 problems, 100 runs for each problem) required more than $10^6$ function evaluations to achieve convergence. That is, not even a single run has failed.
+
+For all classes, we fed the random number generator with the seed value 270001 for problem 1, 270002 for problem 2, and so on, up to 270100 for problem 100. For each problem, we save the number of function evaluations required to achieve convergence.
+
+Table 18 in the main text shows the mean number of function evaluations required to achieve convergence for all the eight classes. This table presents the same results as the Table 1 of \cite{NAT}, when comparing deterministic and meta-heuristics.
+
+According to the reviewer's opinion, the results presented in the main text are `misleading' and `superficial', even considering the fact that the results presented were achieved in the exactly same way as described in \cite{NAT}. So, the authors decided to include some more data for the comparison of the developed method.
+
+We added to the main text, in the appendix section, plots showing the \textit{Operational Zones} of the C-ITGO method, together with the \textit{Operational Characteristics} of the competing deterministic methods, for the easy and hard cases of the 5-dimensional class. 
+
+Also, a new table with some more statistics regarding the number of function evaluations was added. We included the minimum, maximum and the standard deviation for all the 10,000 runs for each class of problems and also after averaging all the 100 runs of the same problem (Table 19, page 54).
+
+%Again, all the logs of all runs are available in the link of the source code, along with the plots, tables, and images.
+
+We hope that all those additions to the text convince the reviewer that the methods and comparison that were used in this work are completely fair.
+
+
+
+\end{revAns}

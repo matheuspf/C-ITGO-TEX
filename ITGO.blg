@@ -1,52 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ITGO.aux
 The style file: BibStyle/model5-names.bst
 Database file #1: ITGO.bib.bib
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty title in BOOKS2
-Warning--missing institution in NAT
-Warning--empty title in BOOKS1
-You've used 60 entries,
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+You've used 61 entries,
             3390 wiz_defined-function locations,
-            1077 strings with 15626 characters,
-and the built_in function-call counts, 40695 in all, are:
-= -- 3087
-> -- 1459
+            1083 strings with 15894 characters,
+and the built_in function-call counts, 41674 in all, are:
+= -- 3169
+> -- 1502
 < -- 48
-+ -- 1211
-- -- 414
-* -- 4256
-:= -- 5351
-add.period$ -- 189
-call.type$ -- 60
-change.case$ -- 451
-chr.to.int$ -- 62
-cite$ -- 63
-duplicate$ -- 3071
-empty$ -- 3096
-format.name$ -- 604
-if$ -- 7706
++ -- 1251
+- -- 426
+* -- 4353
+:= -- 5471
+add.period$ -- 194
+call.type$ -- 61
+change.case$ -- 461
+chr.to.int$ -- 63
+cite$ -- 61
+duplicate$ -- 3140
+empty$ -- 3164
+format.name$ -- 619
+if$ -- 7907
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 547
-newline$ -- 324
-num.names$ -- 240
-pop$ -- 1367
+missing$ -- 556
+newline$ -- 331
+num.names$ -- 244
+pop$ -- 1384
 preamble$ -- 1
-purify$ -- 378
+purify$ -- 386
 quote$ -- 0
-skip$ -- 1149
+skip$ -- 1190
 stack$ -- 0
-substring$ -- 1775
-swap$ -- 2143
+substring$ -- 1822
+swap$ -- 2197
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 519
-warning$ -- 3
-while$ -- 251
+type$ -- 528
+warning$ -- 0
+while$ -- 256
 width$ -- 0
-write$ -- 859
-(There were 3 warnings)
+write$ -- 878

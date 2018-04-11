@@ -229,3 +229,9 @@
         \global\setbox\absbox=\vbox{\unvbox\absbox\unvbox\inabsbox}%combine boxes
         }{}{\@latex@error{Failed to patch \string\endabstract}}
 \makeatother
+
+
+
+\newenvironment{revAns}[1]
+{ \color{red} #1 \\ \color{black}}
+{ \vspace{1cm} }

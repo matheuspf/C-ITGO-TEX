@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{61}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -101,9 +101,9 @@
 \newblock {\it \bibinfo{journal}{Engineering with Computers}\/},  {\it
   \bibinfo{volume}{29}\/}, \bibinfo{pages}{17--35}.
 %Type = Article
-\bibitem[{Gaviano et~al.(2003)Gaviano, Kvasov, Lera \& D.}]{GKLS}
+\bibitem[{Gaviano et~al.(2003)Gaviano, Kvasov, Lera \& Sergeyev}]{GKLS}
 \bibinfo{author}{Gaviano, M.}, \bibinfo{author}{Kvasov, D.~E.},
-  \bibinfo{author}{Lera, D.}, \& \bibinfo{author}{D., S.~Y.}
+  \bibinfo{author}{Lera, D.}, \& \bibinfo{author}{Sergeyev, Y.~D.}
   (\bibinfo{year}{2003}).
 \newblock \bibinfo{title}{Software for generation of classes of test functions
   with known local and global minima for global optimization}.
@@ -160,7 +160,7 @@
 \bibitem[{Jones et~al.(1993)Jones, Perttunen \& Stuckman}]{DIRECT}
 \bibinfo{author}{Jones, D.~R.}, \bibinfo{author}{Perttunen, C.~D.}, \&
   \bibinfo{author}{Stuckman, B.~E.} (\bibinfo{year}{1993}).
-\newblock \bibinfo{title}{Lipschitzian optimization without the lipschitz
+\newblock \bibinfo{title}{{L}ipschitzian optimization without the {L}ipschitz
   constant}.
 \newblock {\it \bibinfo{journal}{Journal of Optimization Theory and
   Applications}\/},  {\it \bibinfo{volume}{79}\/}, \bibinfo{pages}{157--181}.
@@ -176,7 +176,7 @@
 \bibitem[{Kvasov \& Sergeyev(2012)}]{ADC2}
 \bibinfo{author}{Kvasov, D.~E.}, \& \bibinfo{author}{Sergeyev, Y.~D.}
   (\bibinfo{year}{2012}).
-\newblock \bibinfo{title}{Lipschitz gradients for global optimization in a
+\newblock \bibinfo{title}{{L}ipschitz gradients for global optimization in a
   one-point-based partitioning scheme}.
 \newblock {\it \bibinfo{journal}{Journal of Computational and Applied
   Mathematics}\/},  {\it \bibinfo{volume}{236}\/}, \bibinfo{pages}{4042--4054}.
@@ -304,13 +304,14 @@
 \bibitem[{Paulavičius \& Žilinskas(2014)}]{BOOKS2}
 \bibinfo{author}{Paulavičius, R.}, \& \bibinfo{author}{Žilinskas, J.}
   (\bibinfo{year}{2014}).
+\newblock {\it \bibinfo{title}{Simplicial Global Optimization}\/}.
 \newblock \bibinfo{publisher}{SpringerBriefs in Optimization, Springer, New
   York}.
 %Type = Article
 \bibitem[{Paulavičius \& Žilinskas(2016)}]{SIMP}
 \bibinfo{author}{Paulavičius, R.}, \& \bibinfo{author}{Žilinskas, J.}
   (\bibinfo{year}{2016}).
-\newblock \bibinfo{title}{Advantages of simplicial partitioning for lipschitz
+\newblock \bibinfo{title}{Advantages of simplicial partitioning for {L}ipschitz
   optimization problems with linear constraints}.
 \newblock {\it \bibinfo{journal}{Optimization Letters}\/},  {\it
   \bibinfo{volume}{10}\/}, \bibinfo{pages}{237--246}.
@@ -412,22 +413,35 @@
 \bibinfo{author}{Sergeyev, Y.~D.}, \& \bibinfo{author}{Kvasov, D.~E.}
   (\bibinfo{year}{2006}).
 \newblock \bibinfo{title}{Global search based on efficient diagonal partitions
-  and a set of lipschitz constants}.
+  and a set of {L}ipschitz constants}.
 \newblock {\it \bibinfo{journal}{SIAM Journal on Optimization}\/},  {\it
   \bibinfo{volume}{16}\/}, \bibinfo{pages}{910--937}.
-%Type = Techreport
+%Type = Article
 \bibitem[{Sergeyev et~al.(2018)Sergeyev, Kvasov \& Mukhametzhanov}]{NAT}
 \bibinfo{author}{Sergeyev, Y.~D.}, \bibinfo{author}{Kvasov, D.~E.}, \&
   \bibinfo{author}{Mukhametzhanov, M.~S.} (\bibinfo{year}{2018}).
-\newblock {\it \bibinfo{title}{On the efficiency of nature-inspired
-  metaheuristics in expensive global optimization with limited budget}\/}.
-\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{8:453}.
+\newblock \bibinfo{title}{On the efficiency of nature-inspired metaheuristics
+  in expensive global optimization with limited budget}.
+\newblock {\it \bibinfo{journal}{Scientific Reports}\/},  {\it
+  \bibinfo{volume}{8:453}\/}.
 %Type = Book
 \bibitem[{Sergeyev et~al.(2013)Sergeyev, Strongin \& Lera}]{BOOKS1}
 \bibinfo{author}{Sergeyev, Y.~D.}, \bibinfo{author}{Strongin, R.~G.}, \&
   \bibinfo{author}{Lera, D.} (\bibinfo{year}{2013}).
+\newblock {\it \bibinfo{title}{Introduction to Global Optimization Exploiting
+  Space-Filling Curves}\/}.
 \newblock \bibinfo{publisher}{SpringerBriefs in Optimization, Springer, New
   York}.
+%Type = Article
+\bibitem[{Silva et~al.(2013)Silva, Resende, Pardalos \& Fac\'o}]{BRKGABB}
+\bibinfo{author}{Silva, R. M.~A.}, \bibinfo{author}{Resende, M. G.~C.},
+  \bibinfo{author}{Pardalos, P.~M.}, \& \bibinfo{author}{Fac\'o, J. L.~D.}
+  (\bibinfo{year}{2013}).
+\newblock \bibinfo{title}{Biased random-key genetic algorithm for non-linearly
+  constrained global optimization}.
+\newblock {\it \bibinfo{journal}{Proc. of the 2013 IEEE Congress on
+  Evolutionary Computation (CEC), (GOW 2012)}\/},  (pp.
+  \bibinfo{pages}{2201--2206}).
 %Type = Article
 \bibitem[{Skillings \& Mack(1981)}]{Skillings}
 \bibinfo{author}{Skillings, J.~H.}, \& \bibinfo{author}{Mack, G.~A.}

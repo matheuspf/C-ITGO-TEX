@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.3.13)  10 APR 2018 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.3.13)  11 APR 2018 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2005,9 +2005,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \c__siunitx_mathtt_int=\count407
  (./Presentation.tex
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 74.
+(Font)              scaled to size 9.85492pt on input line 80.
 
-(./P2P/P2P.tex (./P2P/Revision_2/Reviewer_1.tex
+(./P2P/P2P.tex (./P2P/Revision_2/Observations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+) (./P2P/Revision_2/Front.tex) (./P2P/Revision_2/Reviewer_1.tex
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <10.95> not available
 (Font)              Font shape `T1/fve/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
@@ -2015,28 +2020,28 @@ LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
 )
 (./P2P/Revision_2/Reviewer_2.tex))
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 99.
+(Font)              scaled to size 8.09995pt on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 99.
+(Font)              scaled to size 5.39996pt on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <9> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 99.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 99.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 99.
+(Font)              scaled to size 8.09995pt on input line 109.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 109.
 
 (/usr/share/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 99.
+(Font)              scaled to size 8.09995pt on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 99.
+(Font)              scaled to size 12.9599pt on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 99.
+(Font)              scaled to size 7.19995pt on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <6> not available
-(Font)              Font shape `T1/fve/m/sl' tried instead on input line 99.
+(Font)              Font shape `T1/fve/m/sl' tried instead on input line 109.
 LaTeX Font Info:    Font shape `T1/fve/m/sl' will be
-(Font)              scaled to size 5.39996pt on input line 99.
+(Font)              scaled to size 5.39996pt on input line 109.
  [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2056,7 +2061,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4] [5] [6]) (./Introduction.tex [7]
+[2] [3] [4] [5] [6] [7]) (./Introduction.tex [8]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -2068,33 +2073,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-[8]) (./Methods.tex [9]
-<scatter-crop.pdf, id=243, 346.29375pt x 242.9075pt>
+[9]) (./Methods.tex
+<scatter-crop.pdf, id=245, 346.29375pt x 242.9075pt>
 File: scatter-crop.pdf Graphic file (type pdf)
 <use scatter-crop.pdf>
 Package pdftex.def Info: scatter-crop.pdf  used on input line 10.
 (pdftex.def)             Requested size: 277.03537pt x 194.32625pt.
- [10 <./scatter-crop.pdf>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
-
+[11 <./scatter-crop.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-<fig_1_t.pdf, id=278, 462.72874pt x 347.2975pt>
+[12]
+<fig_1_t.pdf, id=287, 462.72874pt x 347.2975pt>
 File: fig_1_t.pdf Graphic file (type pdf)
 <use fig_1_t.pdf>
 Package pdftex.def Info: fig_1_t.pdf  used on input line 79.
 (pdftex.def)             Requested size: 277.63939pt x 208.3801pt.
-[12]
+ [13 <./fig_1_t.pdf>]
 Package epstopdf Info: Source file: <fig_2.eps>
 (epstopdf)                    date: 2017-08-28 15:24:38
 (epstopdf)                    size: 1387472 bytes
@@ -2105,7 +2115,7 @@ Package epstopdf Info: Source file: <fig_2.eps>
  fig_2.eps>
 (epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
-<fig_2-eps-converted-to.pdf, id=290, 462.72874pt x 348.30125pt>
+<fig_2-eps-converted-to.pdf, id=414, 462.72874pt x 348.30125pt>
 File: fig_2-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_2-eps-converted-to.pdf>
 Package pdftex.def Info: fig_2-eps-converted-to.pdf  used on input line 98.
@@ -2125,7 +2135,7 @@ Package epstopdf Info: Source file: <fig_3.eps>
  fig_3.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<fig_3-eps-converted-to.pdf, id=291, 462.72874pt x 348.30125pt>
+<fig_3-eps-converted-to.pdf, id=415, 462.72874pt x 348.30125pt>
 File: fig_3-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_3-eps-converted-to.pdf>
 Package pdftex.def Info: fig_3-eps-converted-to.pdf  used on input line 104.
@@ -2135,29 +2145,30 @@ Overfull \hbox (21.50154pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
-[13 <./fig_1_t.pdf>]
+[14 <./fig_2-eps-converted-to.pdf> <./fig_3-eps-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+fve on input line 123.
 
- (/usr/share/texmf-dist/tex/latex/bera/ts1fve.fd
+
+(/usr/share/texmf-dist/tex/latex/bera/ts1fve.fd
 File: ts1fve.fd 2004/09/07 scalable font definitions for TS1/fve.
 )
 LaTeX Font Info:    Font shape `TS1/fve/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 123.
- [14 <./fig_2-eps-converted-to.pdf> <./fig_3-eps-converted-to.pdf>]
-(./Algorithms/ITGO.tex
+ [15] (./Algorithms/ITGO.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 2.
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 13.
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
 (Font)              scaled to size 4.49997pt on input line 13.
- [15])
+)
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-[16] (./Algorithms/CreatePop.tex) [17] (./Algorithms/TopographicalHeuristic.tex
-) [18] [19] (./Tables/Parameters.tex
+(./Algorithms/CreatePop.tex) [17] (./Algorithms/TopographicalHeuristic.tex
+[18]) [19] [20] (./Tables/Parameters.tex
 Overfull \hbox (4.70404pt too wide) in paragraph at lines 7--7
  \OML/cmm/b/it/6 Param$| 
  []
@@ -2182,98 +2193,101 @@ Overfull \hbox (2.13766pt too wide) in paragraph at lines 15--16
  []|\T1/fve/b/n/6 BONMIN| 
  []
 
-) [20] [21]) (./Results.tex [22] (./Tables/GAP.tex) [23] [24]
-(./Appendix/WB.tex (./Appendix/Problems/WB.tex [25])
-<Imgs/WB.jpg, id=610, 202.73973pt x 146.45868pt>
+) [21]) (./Results.tex [22] (./Tables/GAP.tex) [23] [24] (./Appendix/WB.tex
+(./Appendix/Problems/WB.tex [25])
+<Imgs/WB.jpg, id=617, 202.73973pt x 146.45868pt>
 File: Imgs/WB.jpg Graphic file (type jpg)
 <use Imgs/WB.jpg>
 Package pdftex.def Info: Imgs/WB.jpg  used on input line 13.
 (pdftex.def)             Requested size: 141.91684pt x 102.52037pt.
-) [26 <./Imgs/WB.jpg>]
-(./Tables/WB.tex) (./Appendix/TC.tex (./Appendix/Problems/TC.tex [27])
-<Imgs/TC.png, id=627, 389.455pt x 116.435pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [26] (./Tables/WB.tex) (./Appendix/TC.tex [27 <./Imgs/WB.jpg>]
+(./Appendix/Problems/TC.tex)
+<Imgs/TC.png, id=634, 389.455pt x 116.435pt>
 File: Imgs/TC.png Graphic file (type png)
 <use Imgs/TC.png>
 Package pdftex.def Info: Imgs/TC.png  used on input line 17.
 (pdftex.def)             Requested size: 233.67479pt x 69.86153pt.
-)
-(./Tables/TC.tex) [28 <./Imgs/TC.png>] (./Appendix/TB.tex
-(./Appendix/Problems/TB.tex [29])
-<Imgs/TB.png, id=643, 333.245pt x 242.9075pt>
+) [28 <./Imgs/TC.png>] (./Tables/TC.tex) [29]
+(./Appendix/TB.tex (./Appendix/Problems/TB.tex)
+<Imgs/TB.png, id=650, 333.245pt x 242.9075pt>
 File: Imgs/TB.png Graphic file (type png)
 <use Imgs/TB.png>
 Package pdftex.def Info: Imgs/TB.png  used on input line 16.
 (pdftex.def)             Requested size: 166.62209pt x 121.45345pt.
-) (./Tables/TB.tex) [30 <./Imgs/TB.png>]
-(./Appendix/SR.tex (./Appendix/Problems/SR1.tex [31])
-<Imgs/SR.jpg, id=661, 333.20947pt x 120.87637pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./Tables/TB.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [30] (./Appendix/SR.tex [31 <./Imgs/TB.png>] (./Appendix/Problems/SR1.tex)
+<Imgs/SR.jpg, id=672, 333.20947pt x 120.87637pt>
 File: Imgs/SR.jpg Graphic file (type jpg)
 <use Imgs/SR.jpg>
 Package pdftex.def Info: Imgs/SR.jpg  used on input line 15.
 (pdftex.def)             Requested size: 199.92722pt x 72.52637pt.
-) (./Tables/SP1.tex
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [32 <./Imgs/SR.jpg>] (./Tables/SP2.tex) [33] (./Appendix/PV.tex
-(./Appendix/Problems/PV.tex)
-<Imgs/PV.png, id=677, 333.245pt x 158.5925pt>
+[32]) (./Tables/SP1.tex) [33 <./Imgs/SR.jpg>] (./Tables/SP2.tex)
+(./Appendix/PV.tex (./Appendix/Problems/PV.tex [34])
+<Imgs/PV.png, id=696, 333.245pt x 158.5925pt>
 File: Imgs/PV.png Graphic file (type png)
 <use Imgs/PV.png>
 Package pdftex.def Info: Imgs/PV.png  used on input line 15.
 (pdftex.def)             Requested size: 199.94853pt x 95.15622pt.
-
+) (./Tables/PV.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [34] (./Tables/PV.tex) (./Appendix/GT.tex [35 <./Imgs/PV.png>]
-(./Appendix/Problems/GT.tex)
-<Imgs/GT.jpg, id=694, 251.3461pt x 113.84123pt>
+) [35 <./Imgs/PV.png>] (./Appendix/GT.tex (./Appendix/Problems/GT.tex)
+<Imgs/GT.jpg, id=706, 251.3461pt x 113.84123pt>
 File: Imgs/GT.jpg Graphic file (type jpg)
 <use Imgs/GT.jpg>
 Package pdftex.def Info: Imgs/GT.jpg  used on input line 14.
 (pdftex.def)             Requested size: 150.8088pt x 68.30525pt.
-) (./Tables/GT.tex) [36 <./Imgs/GT.jpg>]
-(./Appendix/MD.tex (./Appendix/Problems/MD.tex [37])
-<Imgs/MD.jpg, id=712, 216.81pt x 168.84319pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [36] (./Tables/GT.tex) (./Appendix/MD.tex (./Appendix/Problems/MD.tex
+[37 <./Imgs/GT.jpg>])
+<Imgs/MD.jpg, id=725, 216.81pt x 168.84319pt>
 File: Imgs/MD.jpg Graphic file (type jpg)
 <use Imgs/MD.jpg>
 Package pdftex.def Info: Imgs/MD.jpg  used on input line 16.
 (pdftex.def)             Requested size: 130.08699pt x 101.30667pt.
-) [38 <./Imgs/MD.jpg>]
-(./Tables/MD.tex) (./Tables/BestResults.tex
+ [38]) (./Tables/MD.tex) [39 <./Imgs/MD.jpg>]
+(./Tables/BestResults.tex
 Overfull \hbox (23.4283pt too wide) in paragraph at lines 7--37
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [39] (./Tables/SkillMack_3.tex
+) [40] (./Tables/SkillMack_3.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
-<Imgs/SkillMack_3-crop.pdf, id=739, 669.50125pt x 254.9525pt>
+<Imgs/SkillMack_3-crop.pdf, id=759, 669.50125pt x 254.9525pt>
 File: Imgs/SkillMack_3-crop.pdf Graphic file (type pdf)
 <use Imgs/SkillMack_3-crop.pdf>
 Package pdftex.def Info: Imgs/SkillMack_3-crop.pdf  used on input line 186.
 (pdftex.def)             Requested size: 401.70384pt x 152.97266pt.
- [40]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./Tables/SkillMack_5.tex
+ [41 <./Imgs/SkillMack_3-crop.pdf>] (./Tables/SkillMack_5.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
-<Imgs/SkillMack_5-crop.pdf, id=752, 506.89375pt x 234.8775pt>
+<Imgs/SkillMack_5-crop.pdf, id=817, 506.89375pt x 234.8775pt>
 File: Imgs/SkillMack_5-crop.pdf Graphic file (type pdf)
 <use Imgs/SkillMack_5-crop.pdf>
 Package pdftex.def Info: Imgs/SkillMack_5-crop.pdf  used on input line 201.
 (pdftex.def)             Requested size: 304.1386pt x 140.92758pt.
- [41] (./Tables/SignedTest.tex
+ [42] (./Tables/SignedTest.tex
 Overfull \hbox (2.40657pt too wide) in paragraph at lines 17--18
  []|\T1/fve/m/n/6 120,000| 
  []
@@ -2286,11 +2300,7 @@ Overfull \hbox (2.40657pt too wide) in paragraph at lines 34--35
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [42 <./Imgs/SkillMack_3-crop.pdf> <./Imgs/SkillMack_5-crop.pdf
-
-pdfTeX warning: pdflatex (file ./Imgs/SkillMack_5-crop.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->] (./Tables/Wilcoxon.tex
+) (./Tables/Wilcoxon.tex
 Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
  []|\T1/fve/m/n/6 0.0007229| 
  []
@@ -2298,22 +2308,23 @@ Overfull \hbox (0.73941pt too wide) in paragraph at lines 10--11
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) (./Conclusion.tex [43] [44]) (./Acknowledgment.tex) (./ITGO.bbl [45]
+)) [43] (./Conclusion.tex [44 <./Imgs/SkillMack_5-crop.pdf>])
+(./Acknowledgment.tex [45]) (./ITGO.bbl
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 29.
-
-[46] [47] [48] [49] [50]) (./Appendix.tex (./Appendix/GKLS.tex [51]
-(./Appendix/Tables/GKLS_Params.tex)
+ [46] [47] [48] [49] [50] [51])
+(./Appendix.tex (./Appendix/GKLS.tex (./Appendix/Tables/GKLS_Params.tex)
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[52] (./Appendix/Tables/ITGO.tex)
+(./Appendix/Tables/ITGO.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-(./Appendix/Tables/GKLS_Results.tex
+[53] (./Appendix/Tables/GKLS_Results.tex
 Overfull \hbox (1.70349pt too wide) in paragraph at lines 11--11
  []|\T1/fve/b/n/6 Class| 
  []
@@ -2343,13 +2354,16 @@ Overfull \hbox (61.03195pt too wide) in paragraph at lines 7--33
 [] [] 
  []
 
-) [53] (./Appendix/Tables/GKLS_Stat.tex
+) (./Appendix/Tables/GKLS_Stat.tex
 Overfull \hbox (1.70349pt too wide) in paragraph at lines 11--11
  []|\T1/fve/b/n/6 Class| 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
-<Imgs/mult_5E.pdf, id=954, 462.52802pt x 346.89601pt>
+<Imgs/mult_5E.pdf, id=976, 462.52802pt x 346.89601pt>
 File: Imgs/mult_5E.pdf Graphic file (type pdf)
 <use Imgs/mult_5E.pdf>
 Package pdftex.def Info: Imgs/mult_5E.pdf  used on input line 61.
@@ -2359,7 +2373,7 @@ Overfull \hbox (21.50154pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-<Imgs/mult_5H.pdf, id=955, 462.52798pt x 346.89601pt>
+<Imgs/mult_5H.pdf, id=977, 462.52798pt x 346.89601pt>
 File: Imgs/mult_5H.pdf Graphic file (type pdf)
 <use Imgs/mult_5H.pdf>
 Package pdftex.def Info: Imgs/mult_5H.pdf  used on input line 67.
@@ -2372,7 +2386,7 @@ Overfull \hbox (21.50154pt too wide) in paragraph at lines 67--68
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imgs/fill_5E_edit.pdf, id=956, 462.52802pt x 346.89601pt>
+<Imgs/fill_5E_edit.pdf, id=978, 462.52802pt x 346.89601pt>
 File: Imgs/fill_5E_edit.pdf Graphic file (type pdf)
 <use Imgs/fill_5E_edit.pdf>
 Package pdftex.def Info: Imgs/fill_5E_edit.pdf  used on input line 79.
@@ -2382,7 +2396,7 @@ Overfull \hbox (21.50154pt too wide) in paragraph at lines 79--80
  [][] 
  []
 
-<Imgs/fill_5H_edit.pdf, id=957, 462.52802pt x 346.89601pt>
+<Imgs/fill_5H_edit.pdf, id=979, 462.52802pt x 346.89601pt>
 File: Imgs/fill_5H_edit.pdf Graphic file (type pdf)
 <use Imgs/fill_5H_edit.pdf>
 Package pdftex.def Info: Imgs/fill_5H_edit.pdf  used on input line 85.
@@ -2395,21 +2409,26 @@ Overfull \hbox (21.50154pt too wide) in paragraph at lines 85--86
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./Appendix/Tables/Wilcoxon2.tex [54])))
+[54] (./Appendix/Tables/Wilcoxon2.tex)))
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 145.
 See the caption package documentation for explanation.
 
-[55 <./Imgs/mult_5E.pdf> <./Imgs/mult_5H.pdf
+[55]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+ [56 <./Imgs/mult_5E.pdf> <./Imgs/mult_5H.pdf
 
 pdfTeX warning: pdflatex (file ./Imgs/mult_5H.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
->] [56 <./Imgs/fill_5E_edit.pdf> <./Imgs/fill_5H_edit.pdf
+> <./Imgs/fill_5E_edit.pdf
+
+pdfTeX warning: pdflatex (file ./Imgs/fill_5E_edit.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./Imgs/fill_5H_edit.pdf
 
 pdfTeX warning: pdflatex (file ./Imgs/fill_5H_edit.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (./ITGO.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
@@ -2422,41 +2441,101 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36393 strings out of 492982
- 681421 string characters out of 6138579
- 820299 words of memory out of 5000000
+ 36420 strings out of 492982
+ 681887 string characters out of 6138579
+ 820286 words of memory out of 5000000
  39005 multiletter control sequences out of 15000+600000
  590403 words of font info for 108 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 56i,15n,77p,10376b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cmextra/cmmib9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/
-fonts/type1/public/bera/fveb8a.pfb></usr/share/texmf-dist/fonts/type1/public/be
-ra/fver8a.pfb></usr/share/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ITGO.pdf (56 pages, 2818000 bytes).
+ 56i,15n,77p,10376b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.37} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.35} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.34} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.33} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.24} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.22} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cmextra/cmmib9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fo
+nts/type1/public/bera/fveb8a.pfb></usr/share/texmf-dist/fonts/type1/public/bera
+/fver8a.pfb></usr/share/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ITGO.pdf (56 pages, 2818286 bytes).
 PDF statistics:
- 1522 PDF objects out of 1728 (max. 8388607)
- 1114 compressed objects within 12 object streams
- 188 named destinations out of 1000 (max. 500000)
+ 1551 PDF objects out of 1728 (max. 8388607)
+ 1143 compressed objects within 12 object streams
+ 209 named destinations out of 1000 (max. 500000)
  242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

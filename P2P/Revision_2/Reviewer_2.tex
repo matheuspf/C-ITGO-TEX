@@ -8,7 +8,7 @@
 
 Yes, the number of function evaluations executed in the local searches are included in the calculations of the mean number of function evaluations. 
 
-Actually, the local searches are responsible for the most part of the function calls, as stated in page 17, paragraph 3, where we comment about the impact of the maximum number of function calls allowed for each call of the local search procedure.
+Actually, the local searches are responsible for the most part of the function calls, as stated in page 17, paragraph 3, where we comment about the impact of the maximum number of function evaluations allowed for each call of the local search procedure.
 
 \end{revAns}
 
@@ -17,7 +17,7 @@ Actually, the local searches are responsible for the most part of the function c
 
 When considering the engineering design problems, all solutions found by C-ITGO were completely feasible, respecting all imposed constraints (see page 23, paragraph 3). Also, the execution of C-ITGO is halted only when the best-found solution in a run is considerably close to the global optimum, as described in Table 2, page 23. The standard deviation achieved by C-ITGO is very small in all problems, with the fitness of the worst solution being very close to the fitness of the best solution. In fact, it is one of the methods with smallest standard deviation in all cases when compared to the other methods considered. So, we believe we can consider that all runs of the C-ITGO method were successful for all the eight engineering design problems.
 
-When it comes to the GKLS class of problems, a run is considered successful if it satisfies the criteria described in \cite{ADC2}, which was also emphasized in the appendix of the text, more specifically in page 52, equation 3. If a method executes $10^6$ function evaluations and do not achieve convergence, its execution is stopped and that run is marked as unsuccessful (as displayed in Table 18 in the same fashion as \cite{NAT}).
+When it comes to the GKLS class of problems, a run is considered successful if it satisfies the criteria described in \cite{ADC2}, which was also emphasized in the appendix of the text, more specifically in page 52, equation 3. If a method executes $10^6$ function evaluations and does not achieve convergence, its execution is halted and that run is marked as unsuccessful (as displayed in Table 18 in the same fashion as \cite{NAT}).
 
 We used the same approach as described in \cite{NAT} to apply C-ITGO to the GKLS class of problems, running the algorithm 100 times for each of the 100 problems of each class (with 8 classes, this means 800 different problems, with a total of 80,000 runs), as described in page 52. We then average the number of function/gradient calls for each problem, that is, we take the mean of the 100 runs for each of the 800 problems. Every run of C-ITGO (every one of the 80,000 runs) was successful and achieved convergence under $10^6$ function calls.
 
@@ -37,9 +37,9 @@ We agree with the reviewer. Using the term unconstrained optimization for bound 
 
 \begin{revAns}{Highlights: The developed method can solve real, integer and mixed-integer constrained problems -$>$ but only continuous problems are considered.}
 
-That is not correct. Integer and mixed-integer constrained problems were also considered. The Gear Train (GT) and the Multiple Disk clutch brake (MD) are examples of integer constrained optimization problems, while the Speed Reducer (SRII and SRII) and Pressure Vessel (PV) are mixed-integer constrained optimization problems.
+Integer and mixed-integer constrained problems were also considered. The Gear Train (GT) and the Multiple Disk clutch brake (MD) are examples of integer constrained optimization problems, while the Speed Reducer (SRI and SRII) and Pressure Vessel (PV) are mixed-integer constrained optimization problems.
 
-We kindly ask the reviewer to reread the section \textbf{3. Computational Results}, where we comment about each problem, explicitly stating in both the text and in the mathematical formulation whether it is a continuous, integer, or mixed-integer constrained problem.
+In section 3, \textbf{Computational Results}, we comment about each problem, explicitly stating in both the text and in the mathematical formulation whether it is a continuous, integer, or mixed-integer constrained problem.
 
 \end{revAns}
 

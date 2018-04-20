@@ -2,6 +2,8 @@
 
 \section*{Observations}
 
-Considering that the reviewers still have some doubts about the methodology used to generate the results presented in the main paper, the authors decide to make the source code of the C-ITGO method public available, along with the logs containing the statistics of all runs executed.
+One thing that is worthwhile to explain is how we calculated the Mean Number of Function Evaluations (MNFEs) in this paper. We used the same formula as the criteria C3 as described in \cite{ADC}. Given a number $N$ of problems, a number $T$ of runs for a given problem, and the total number of function evaluations $fes_{i, j}$ required to reach a certain convergence criteria for the problem $i$ on the run number $j$, the $MNFEs$ is given by:
 
-The source code can be found in \href{https://github.com/matheuspf/C-ITGO}{https://github.com/matheuspf/C-ITGO}, and is under the MIT license.
+$$MNFEs = \frac{1}{n.t}\sum_{n=1}^N\sum_{t=1}^Tfes_{i, j}$$\\
+
+For all the engineering problems, $N=1$ and $T=25$, while for each class of the GKLS problems (for all the 8 classes with 100 problems each), $N=100$ and $T=100$.

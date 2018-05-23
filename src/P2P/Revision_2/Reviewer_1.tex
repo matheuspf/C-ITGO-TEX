@@ -13,11 +13,11 @@ The methodology used to achieve the results presented in the paper may be not ve
 
 We consider eight engineering design problems, consisting of continuous, integer and mixed-integer constrained optimization problems. We compared the results achieved by C-ITGO against 19 competitive meta-heuristic methods, with some of them reporting state of the art results for the problems considered.
 
-For each of the eight engineering design problems, we run the C-ITGO algorithm 25 times, saving all the statistics of each run. The choice of the number of runs for each problem is completely arbitrary. We chose the number 25 to match the results of one of the most competitive methods considered, the IAPSO \citep{IAPSO}. However, as the only statistic considered is the Mean Number of Function Evaluations (MNFEs), we can safely compare C-ITGO against the other meta-heuristics, even if they execute a different number of runs for each problem.
+For each of the eight engineering design problems, we run the C-ITGO algorithm 25 times, saving all the statistics of each run. The choice of the number of runs for each problem is completely arbitrary. We chose the number 25 to match the results of one of the most competitive methods considered, the IAPSO \cite{IAPSO}. However, as the only statistic considered is the Mean Number of Function Evaluations (MNFEs), we can safely compare C-ITGO against the other meta-heuristics, even if they execute a different number of runs for each problem.
 
 For each of the 25 runs for a problem, we restarted the random number generator with a different seed, so as to couple with the stochastic nature of C-ITGO. If the same seed is used for each run, the exactly same results are achieved, which is obviously not wanted.
 
-However, the same sequence of seeds was used for all problems. Specifically, we started with the seed number $270001$ (this is an arbitrary value used by some authors \citep{BRKGABB}) for problem 1 and increased the seed value by 1 for each run. That is, for run 1, we used seed number 270001, for run 2, the seed number is 270002, and so on.
+However, the same sequence of seeds was used for all problems. Specifically, we started with the seed number $270001$ (this is an arbitrary value used by some authors \cite{BRKGABB}) for problem 1 and increased the seed value by 1 for each run. That is, for run 1, we used seed number 270001, for run 2, the seed number is 270002, and so on.
 
 Any other sequence of seeds could be used. In fact, we could choose a particular sequence of seeds for each problem that would give the best results on average. This, of course, would bias the results. This was not the case with C-ITGO, as we used the same arbitrary sequence of seeds for all the eight problems.
 
